@@ -26,7 +26,7 @@
   {
     "brand": "Chapman's Ice Cream",
     "type": "Dairy",
-    "ownership": "Canadian-owned (Chapman’s)",
+    "ownership": "Canadian-owned (Chapman\u2019s)",
     "manufacturing": "Ontario, Canada",
     "rating": 10,
     "notes": "Fully Canadian-owned and made in Canada."
@@ -58,7 +58,7 @@
   {
     "brand": "Chips Ahoy!",
     "type": "Chocolate Chip",
-    "ownership": "U.S.-owned (Mondelēz International)",
+    "ownership": "U.S.-owned (Mondel\u0113z International)",
     "manufacturing": "Made in Canada",
     "rating": 6,
     "notes": "Manufactured in Canada but owned and distributed by a U.S. company."
@@ -66,111 +66,7 @@
   {
     "brand": "Dad's Oatmeal Cookies",
     "type": "Oatmeal",
-    "ownership": "U.S.-owned (Mondelēz International)",
-    "manufacturing": "Made in Canada",
-    "rating": 6,
-    "notes": "Produced in Canada, but owned and distributed by a U.S. company."
-  },
-  {
-    "brand": "Dare Whippet Oatmeal",
-    "type": "Oatmeal",
-    "ownership": "Canadian-owned (Dare Foods)",
-    "manufacturing": "Made and produced in Canada",
-    "rating": 10,
-    "notes": "Owned, produced, and distributed in Canada using primarily Canadian ingredients."
-  },
-  {
-    "brand": "Oreo",
-    "type": "Sandwich Cookies",
-    "ownership": "U.S.-owned (Mondelēz International)",
-    "manufacturing": "Made in Canada (Toronto, Ontario)",
-    "rating": 6,
-    "notes": "Manufactured in Canada but owned and distributed by a U.S. company."
-  },
-  {
-    "brand": "Fudgee-O",
-    "type": "Sandwich Cookies",
-    "ownership": "U.S.-owned (Mondelēz International)",
-    "manufacturing": "Made in Canada",
-    "rating": 6,
-    "notes": "Produced in Canada, but owned and distributed by a U.S. company."
-  },
-  {
-    "brand": "Voortman Vanilla Wafers",
-    "type": "Wafers",
-    "ownership": "U.S.-owned (Second Nature Brands)",
-    "manufacturing": "Made in Canada (Burlington, Ontario)",
-    "rating": 6,
-    "notes": "Made in Canada, but owned and distributed by a U.S. company."
-  },
-  {
-    "brand": "Leclerc Celebration Wafers",
-    "type": "Wafers",
-    "ownership": "Canadian-owned (Leclerc Foods)",
-    "manufacturing": "Made and produced in Canada",
-    "rating": 9,
-    "notes": "Owned, produced, and distributed in Canada."
-  },
-  {
-    "brand": "Walkers Shortbread",
-    "type": "Shortbread",
-    "ownership": "Scottish-owned",
-    "manufacturing": "Imported from Scotland",
-    "rating": 2,
-    "notes": "Not made, produced, or owned in Canada, but distributed in Canadian stores."
-  },
-  {
-    "brand": "President’s Choice Scottish Shortbread",
-    "type": "Shortbread",
-    "ownership": "Canadian-owned (Loblaw Companies)",
-    "manufacturing": "Made in Canada",
-    "rating": 9,
-    "notes": "Owned and distributed by a Canadian company. Made in Canada."
-  },
-  {
-    "brand": "Dare Maple Leaf Cookies",
-    "type": "Maple Cookies",
-    "ownership": "Canadian-owned (Dare Foods)",
-    "manufacturing": "Made and produced in Canada",
-    "rating": 10,
-    "notes": "Fully owned, made, and distributed in Canada."
-  },
-  {
-    "brand": "Leclerc Maple Cookies",
-    "type": "Maple Cookies",
-    "ownership": "Canadian-owned (Leclerc Foods)",
-    "manufacturing": "Made in Canada",
-    "rating": 9,
-    "notes": "Owned and distributed by a Canadian company. Made in Canada."
-  },
-  {
-    "brand": "MadeGood Chocolate Chip Cookies",
-    "type": "Health & Organic",
-    "ownership": "Canadian-owned",
-    "manufacturing": "Made in Canada",
-    "rating": 10,
-    "notes": "Fully owned, made, and distributed in Canada. Organic and allergen-free."
-  },
-  {
-    "brand": "Sweet Nutrition Keto Cookies",
-    "type": "Health & Organic",
-    "ownership": "Canadian-owned",
-    "manufacturing": "Made in Canada (Saskatoon, Saskatchewan)",
-    "rating": 10,
-    "notes": "Fully owned, made, and distributed in Canada."
-  },
-  {
-    "brand": "Kinnikinnick Gluten-Free Cookies",
-    "type": "Gluten-Free",
-    "ownership": "Canadian-owned",
-    "manufacturing": "Made in Canada (Edmonton, Alberta)",
-    "rating": 10,
-    "notes": "Fully owned, made, and distributed in Canada. Specializes in gluten-free baking."
-  },
-  {
-    "brand": "Ginger Snap Cookies (Christie)",
-    "type": "Ginger & Spiced",
-    "ownership": "U.S.-owned (Mondelēz International)",
+    "ownership": "U.S.-owned (Mondel\u0113z International)",
     "manufacturing": "Made in Canada",
     "rating": 6,
     "notes": "Produced in Canada, but owned and distributed by a U.S. company."
