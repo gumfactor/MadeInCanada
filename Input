@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canadian Cookie Product Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f2f2f2;
+    }
+    h1 {
+      text-align: center;
+    }
+    #search-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input[type="text"] {
+      padding: 8px;
+      width: 300px;
+      font-size: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: auto;
+      background: #fff;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    th {
+      background: #ddd;
+    }
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Canadian Cookie Product Search</h1>
+  <div id="search-container">
+    <input type="text" id="searchInput" placeholder="Search for cookie brands..." onkeyup="filterTable()">
+  </div>
+  <table id="productTable">
+    <thead>
+      <tr>
+        <th>Cookie Brand</th>
+        <th>Ownership</th>
+        <th>Manufacturing Location(s)</th>
+        <th>Rating (/10)</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+      <!-- Table rows will be inserted here by JavaScript -->
+    </tbody>
+  </table>
+
+  <script>
+    // Define product data using our 10-point rating system
+    const products = [
+      {
+        brand: "President's Choice Decadent Chocolate Chip Cookies",
+        ownership: "Canadian-owned (Loblaw Companies)",
+        manufacturing: "Primarily Canada",
+        rating: 9,
+        notes: "Canadian brand, manufactured in Canada, but some ingredients (e.g., cocoa, vanilla) are imported."
+      },
+      {
+        brand: "Irresistibles Chocolate Chip Cookies",
+        ownership: "Canadian-owned (Metro Inc.)",
+        manufacturing: "Primarily Canada",
+        rating: 9,
+        notes: "Metro's house brand is Canadian-made, with some ingredients sourced globally."
+      },
+      {
+        brand: "Dare Bear Paws",
+        ownership: "Canadian-owned (Dare Foods)",
+        manufacturing: "Multiple locations in Canada",
+        rating: 10,
+        notes: "Fully Canadian-owned and manufactured, using Canadian ingredients whenever possible."
+      },
+      {
+        brand: "Leclerc Celebration Cookies",
+        ownership: "Canadian-owned (Leclerc Foods)",
+        manufacturing: "Multiple locations in Canada",
+        rating: 9,
+        notes: "Mostly Canadian-made, but some products may contain internationally sourced ingredients."
+      },
+      {
+        brand: "Voortman Vanilla Wafers",
+        ownership: "U.S.-owned (Second Nature Brands)",
+        manufacturing: "Burlington, Ontario",
+        rating: 6,
+        notes: "Manufactured in Canada, but foreign-owned."
+      },
+      {
+        brand: "Girl Guide Cookies",
+        ownership: "Canadian partnership (Girl Guides & Dare Foods)",
+        manufacturing: "Canada",
+        rating: 10,
+        notes: "100% Canadian-made and owned, supporting a Canadian organization."
+      },
+      {
+        brand: "Oreo",
+        ownership: "U.S.-owned (Mondelēz International)",
+        manufacturing: "Toronto, Ontario (East York Bakery)",
+        rating: 6,
+        notes: "Made in Canada, but owned by a U.S. corporation."
+      },
+      {
+        brand: "Chips Ahoy!",
+        ownership: "U.S.-owned (Mondelēz International)",
+        manufacturing: "Scarborough, Ontario (Scarborough Bakery)",
+        rating: 6,
+        notes: "Manufactured in Canada, but owned by Mondelēz."
+      },
+      {
+        brand: "Peek Freans",
+        ownership: "U.S.-owned (Mondelēz International)",
+        manufacturing: "Toronto, Ontario (East York Bakery)",
+        rating: 6,
+        notes: "Manufactured in Canada, but owned by a U.S. corporation."
+      },
+      {
+        brand: "Dad's Cookies",
+        ownership: "U.S.-owned (Mondelēz International)",
+        manufacturing: "Scarborough, Ontario (Scarborough Bakery)",
+        rating: 6,
+        notes: "Same as Chips Ahoy! – made in Canada, but foreign-owned."
+      },
+      {
+        brand: "Fudgee-O",
+        ownership: "U.S.-owned (Mondelēz International)",
+        manufacturing: "Toronto, Ontario (East York Bakery)",
+        rating: 6,
+        notes: "Canadian production, but U.S.-owned."
+      },
+      {
+        brand: "Christie",
+        ownership: "U.S.-owned (Mondelēz International)",
+        manufacturing: "Multiple locations in Ontario",
+        rating: 5,
+        notes: "Some Christie products are still made in Canada, but not all. Foreign ownership."
+      }
+    ];
+
+    // Function to populate the table with product data
+    function populateTable() {
+      const tbody = document.getElementById("tableBody");
+      tbody.innerHTML = "";
+      products.forEach(product => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${product.brand}</td>
+          <td>${product.ownership}</td>
+          <td>${product.manufacturing}</td>
+          <td>${product.rating}/10</td>
+          <td>${product.notes}</td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    // Function to filter the table based on the search input
+    function filterTable() {
+      const input = document.getElementById("searchInput");
+      const filter = input.value.toLowerCase();
+      const tbody = document.getElementById("tableBody");
+      tbody.innerHTML = "";
+      products.forEach(product => {
+        if (
+          product.brand.toLowerCase().includes(filter) ||
+          product.ownership.toLowerCase().includes(filter) ||
+          product.manufacturing.toLowerCase().includes(filter) ||
+          product.notes.toLowerCase().includes(filter)
+        ) {
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td>${product.brand}</td>
+            <td>${product.ownership}</td>
+            <td>${product.manufacturing}</td>
+            <td>${product.rating}/10</td>
+            <td>${product.notes}</td>
+          `;
+          tbody.appendChild(row);
+        }
+      });
+    }
+
+    // Populate table when the page loads
+    window.onload = populateTable;
+  </script>
+</body>
+</html>
