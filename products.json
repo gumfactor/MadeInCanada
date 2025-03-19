@@ -8,6 +8,14 @@
     "notes": "Canadian brand, manufactured in Canada, but some ingredients (e.g., cocoa, vanilla) are imported."
   },
   {
+    "brand": "President's Choice Decadent Chocolate Chip Cookies",
+    "type": "Cookies",
+    "ownership": "Canadian-owned (Loblaw Companies)",
+    "manufacturing": "Primarily Canada",
+    "rating": 9,
+    "notes": "Canadian brand, manufactured in Canada, but some ingredients (e.g., cocoa, vanilla) are imported."
+  },
+  {
     "brand": "Irresistibles Chocolate Chip Cookies",
     "type": "Cookies",
     "ownership": "Canadian-owned (Metro Inc.)",
