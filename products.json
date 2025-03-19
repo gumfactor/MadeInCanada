@@ -1,0 +1,42 @@
+[
+  {
+    "brand": "President's Choice Decadent Chocolate Chip Cookies",
+    "type": "Cookies",
+    "ownership": "Canadian-owned (Loblaw Companies)",
+    "manufacturing": "Primarily Canada",
+    "rating": 9,
+    "notes": "Canadian brand, manufactured in Canada, but some ingredients (e.g., cocoa, vanilla) are imported."
+  },
+  {
+    "brand": "Irresistibles Chocolate Chip Cookies",
+    "type": "Cookies",
+    "ownership": "Canadian-owned (Metro Inc.)",
+    "manufacturing": "Primarily Canada",
+    "rating": 9,
+    "notes": "Metro's house brand is Canadian-made, but some ingredients are sourced globally."
+  },
+  {
+    "brand": "Dare Bear Paws",
+    "type": "Cookies",
+    "ownership": "Canadian-owned (Dare Foods)",
+    "manufacturing": "Multiple locations in Canada",
+    "rating": 10,
+    "notes": "Fully Canadian-owned and manufactured, using Canadian ingredients whenever possible."
+  },
+  {
+    "brand": "Chapman's Ice Cream",
+    "type": "Dairy",
+    "ownership": "Canadian-owned (Chapman’s)",
+    "manufacturing": "Ontario, Canada",
+    "rating": 10,
+    "notes": "Fully Canadian-owned and made in Canada."
+  },
+  {
+    "brand": "Quaker Oats",
+    "type": "Cereal",
+    "ownership": "U.S.-owned (PepsiCo)",
+    "manufacturing": "Peterborough, Ontario",
+    "rating": 6,
+    "notes": "Made in Canada, but foreign-owned."
+  }
+]
