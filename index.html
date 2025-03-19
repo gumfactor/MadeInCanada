@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -12,13 +12,13 @@
     h1 {
       text-align: center;
     }
-    #search-container {
+    #controls {
       text-align: center;
       margin-bottom: 20px;
     }
-    input[type="text"] {
+    input, select {
       padding: 8px;
-      width: 300px;
+      margin: 5px;
       font-size: 16px;
     }
     table {
@@ -34,6 +34,7 @@
     }
     th {
       background: #ddd;
+      cursor: pointer;
     }
     tr:nth-child(even) {
       background: #f9f9f9;
@@ -42,119 +43,45 @@
 </head>
 <body>
   <h1>Canadian Product Search</h1>
-  <div id="search-container">
-    <input type="text" id="searchInput" placeholder="Search for products..." onkeyup="filterTable()">
+  <div id="controls">
+    <input type="text" id="searchInput" placeholder="Search products..." onkeyup="filterTable()">
+    <select id="productTypeFilter" onchange="filterTable()">
+      <option value="">All Types</option>
+    </select>
+    <select id="sortOptions" onchange="sortTable()">
+      <option value="">Sort By</option>
+      <option value="brand">Product Name</option>
+      <option value="type">Product Type</option>
+      <option value="rating">Rating (Highest First)</option>
+    </select>
   </div>
   <table id="productTable">
     <thead>
       <tr>
-        <th>Product</th>
-        <th>Type</th>
+        <th onclick="sortTable('brand')">Product</th>
+        <th onclick="sortTable('type')">Type</th>
         <th>Ownership</th>
         <th>Manufacturing Location(s)</th>
-        <th>Rating (/10)</th>
+        <th onclick="sortTable('rating')">Rating (/10)</th>
         <th>Notes</th>
       </tr>
     </thead>
     <tbody id="tableBody">
-      <!-- Table rows will be inserted here by JavaScript -->
+      <!-- Table rows will be inserted dynamically -->
     </tbody>
   </table>
 
   <script>
-    // Define product data with an added "type" field
-    const products = [
-      {
-        brand: "President's Choice Decadent Chocolate Chip Cookies",
-        type: "Cookies",
-        ownership: "Canadian-owned (Loblaw Companies)",
-        manufacturing: "Primarily Canada",
-        rating: 9,
-        notes: "Canadian brand, manufactured in Canada, but some ingredients (e.g., cocoa, vanilla) are imported."
-      },
-      {
-        brand: "Irresistibles Chocolate Chip Cookies",
-        type: "Cookies",
-        ownership: "Canadian-owned (Metro Inc.)",
-        manufacturing: "Primarily Canada",
-        rating: 9,
-        notes: "Metro's house brand is Canadian-made, but some ingredients are sourced globally."
-      },
-      {
-        brand: "Dare Bear Paws",
-        type: "Cookies",
-        ownership: "Canadian-owned (Dare Foods)",
-        manufacturing: "Multiple locations in Canada",
-        rating: 10,
-        notes: "Fully Canadian-owned and manufactured, using Canadian ingredients whenever possible."
-      },
-      {
-        brand: "Leclerc Celebration Cookies",
-        type: "Cookies",
-        ownership: "Canadian-owned (Leclerc Foods)",
-        manufacturing: "Multiple locations in Canada",
-        rating: 9,
-        notes: "Mostly Canadian-made, but some products may contain internationally sourced ingredients."
-      },
-      {
-        brand: "Voortman Vanilla Wafers",
-        type: "Cookies",
-        ownership: "U.S.-owned (Second Nature Brands)",
-        manufacturing: "Burlington, Ontario",
-        rating: 6,
-        notes: "Manufactured in Canada, but foreign-owned."
-      },
-      {
-        brand: "Girl Guide Cookies",
-        type: "Cookies",
-        ownership: "Canadian partnership (Girl Guides & Dare Foods)",
-        manufacturing: "Canada",
-        rating: 10,
-        notes: "100% Canadian-made and owned, supporting a Canadian organization."
-      },
-      {
-        brand: "Oreo",
-        type: "Cookies",
-        ownership: "U.S.-owned (Mondelēz International)",
-        manufacturing: "Toronto, Ontario",
-        rating: 6,
-        notes: "Made in Canada, but owned by a U.S. corporation."
-      },
-      {
-        brand: "Chips Ahoy!",
-        type: "Cookies",
-        ownership: "U.S.-owned (Mondelēz International)",
-        manufacturing: "Scarborough, Ontario",
-        rating: 6,
-        notes: "Manufactured in Canada, but owned by Mondelēz."
-      },
-      {
-        brand: "Natrel Milk",
-        type: "Dairy",
-        ownership: "Canadian-owned (Agropur)",
-        manufacturing: "Multiple locations in Canada",
-        rating: 10,
-        notes: "100% Canadian dairy, fully owned and produced domestically."
-      },
-      {
-        brand: "Chapman's Ice Cream",
-        type: "Dairy",
-        ownership: "Canadian-owned (Chapman’s)",
-        manufacturing: "Ontario, Canada",
-        rating: 10,
-        notes: "Fully Canadian-owned and made in Canada."
-      },
-      {
-        brand: "Quaker Oats",
-        type: "Cereal",
-        ownership: "U.S.-owned (PepsiCo)",
-        manufacturing: "Peterborough, Ontario",
-        rating: 6,
-        notes: "Made in Canada, but foreign-owned."
-      }
-    ];
+    let products = [];
 
-    // Function to populate the table with product data
+    // Fetch data from JSON file
+    async function fetchProducts() {
+      const response = await fetch('products.json');
+      products = await response.json();
+      populateTable();
+      populateFilterOptions();
+    }
+
     function populateTable() {
       const tbody = document.getElementById("tableBody");
       tbody.innerHTML = "";
@@ -172,18 +99,20 @@
       });
     }
 
-    // Function to filter the table based on the search input
     function filterTable() {
-      const input = document.getElementById("searchInput").value.toLowerCase();
+      const searchValue = document.getElementById("searchInput").value.toLowerCase();
+      const typeFilter = document.getElementById("productTypeFilter").value;
       const tbody = document.getElementById("tableBody");
       tbody.innerHTML = "";
+
       products.forEach(product => {
         if (
-          product.brand.toLowerCase().includes(input) ||
-          product.type.toLowerCase().includes(input) ||
-          product.ownership.toLowerCase().includes(input) ||
-          product.manufacturing.toLowerCase().includes(input) ||
-          product.notes.toLowerCase().includes(input)
+          (product.brand.toLowerCase().includes(searchValue) ||
+          product.type.toLowerCase().includes(searchValue) ||
+          product.ownership.toLowerCase().includes(searchValue) ||
+          product.manufacturing.toLowerCase().includes(searchValue) ||
+          product.notes.toLowerCase().includes(searchValue)) &&
+          (typeFilter === "" || product.type === typeFilter)
         ) {
           const row = document.createElement("tr");
           row.innerHTML = `
@@ -199,8 +128,28 @@
       });
     }
 
-    // Populate table when the page loads
-    window.onload = populateTable;
+    function sortTable() {
+      const sortBy = document.getElementById("sortOptions").value;
+      if (sortBy === "rating") {
+        products.sort((a, b) => b.rating - a.rating);
+      } else if (sortBy === "brand" || sortBy === "type") {
+        products.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
+      }
+      populateTable();
+    }
+
+    function populateFilterOptions() {
+      const filterSelect = document.getElementById("productTypeFilter");
+      const types = [...new Set(products.map(product => product.type))];
+      types.forEach(type => {
+        const option = document.createElement("option");
+        option.value = type;
+        option.textContent = type;
+        filterSelect.appendChild(option);
+      });
+    }
+
+    window.onload = fetchProducts;
   </script>
 </body>
 </html>
