@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Canadian Cookie Product Search</title>
+  <title>Canadian Product Search</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -41,14 +41,15 @@
   </style>
 </head>
 <body>
-  <h1>Canadian Cookie Product Search</h1>
+  <h1>Canadian Product Search</h1>
   <div id="search-container">
-    <input type="text" id="searchInput" placeholder="Search for cookie brands..." onkeyup="filterTable()">
+    <input type="text" id="searchInput" placeholder="Search for products..." onkeyup="filterTable()">
   </div>
   <table id="productTable">
     <thead>
       <tr>
-        <th>Cookie Brand</th>
+        <th>Product</th>
+        <th>Type</th>
         <th>Ownership</th>
         <th>Manufacturing Location(s)</th>
         <th>Rating (/10)</th>
@@ -61,10 +62,11 @@
   </table>
 
   <script>
-    // Define product data using our 10-point rating system
+    // Define product data with an added "type" field
     const products = [
       {
         brand: "President's Choice Decadent Chocolate Chip Cookies",
+        type: "Cookies",
         ownership: "Canadian-owned (Loblaw Companies)",
         manufacturing: "Primarily Canada",
         rating: 9,
@@ -72,13 +74,15 @@
       },
       {
         brand: "Irresistibles Chocolate Chip Cookies",
+        type: "Cookies",
         ownership: "Canadian-owned (Metro Inc.)",
         manufacturing: "Primarily Canada",
         rating: 9,
-        notes: "Metro's house brand is Canadian-made, with some ingredients sourced globally."
+        notes: "Metro's house brand is Canadian-made, but some ingredients are sourced globally."
       },
       {
         brand: "Dare Bear Paws",
+        type: "Cookies",
         ownership: "Canadian-owned (Dare Foods)",
         manufacturing: "Multiple locations in Canada",
         rating: 10,
@@ -86,6 +90,7 @@
       },
       {
         brand: "Leclerc Celebration Cookies",
+        type: "Cookies",
         ownership: "Canadian-owned (Leclerc Foods)",
         manufacturing: "Multiple locations in Canada",
         rating: 9,
@@ -93,6 +98,7 @@
       },
       {
         brand: "Voortman Vanilla Wafers",
+        type: "Cookies",
         ownership: "U.S.-owned (Second Nature Brands)",
         manufacturing: "Burlington, Ontario",
         rating: 6,
@@ -100,6 +106,7 @@
       },
       {
         brand: "Girl Guide Cookies",
+        type: "Cookies",
         ownership: "Canadian partnership (Girl Guides & Dare Foods)",
         manufacturing: "Canada",
         rating: 10,
@@ -107,45 +114,43 @@
       },
       {
         brand: "Oreo",
+        type: "Cookies",
         ownership: "U.S.-owned (Mondelēz International)",
-        manufacturing: "Toronto, Ontario (East York Bakery)",
+        manufacturing: "Toronto, Ontario",
         rating: 6,
         notes: "Made in Canada, but owned by a U.S. corporation."
       },
       {
         brand: "Chips Ahoy!",
+        type: "Cookies",
         ownership: "U.S.-owned (Mondelēz International)",
-        manufacturing: "Scarborough, Ontario (Scarborough Bakery)",
+        manufacturing: "Scarborough, Ontario",
         rating: 6,
         notes: "Manufactured in Canada, but owned by Mondelēz."
       },
       {
-        brand: "Peek Freans",
-        ownership: "U.S.-owned (Mondelēz International)",
-        manufacturing: "Toronto, Ontario (East York Bakery)",
-        rating: 6,
-        notes: "Manufactured in Canada, but owned by a U.S. corporation."
+        brand: "Natrel Milk",
+        type: "Dairy",
+        ownership: "Canadian-owned (Agropur)",
+        manufacturing: "Multiple locations in Canada",
+        rating: 10,
+        notes: "100% Canadian dairy, fully owned and produced domestically."
       },
       {
-        brand: "Dad's Cookies",
-        ownership: "U.S.-owned (Mondelēz International)",
-        manufacturing: "Scarborough, Ontario (Scarborough Bakery)",
-        rating: 6,
-        notes: "Same as Chips Ahoy! – made in Canada, but foreign-owned."
+        brand: "Chapman's Ice Cream",
+        type: "Dairy",
+        ownership: "Canadian-owned (Chapman’s)",
+        manufacturing: "Ontario, Canada",
+        rating: 10,
+        notes: "Fully Canadian-owned and made in Canada."
       },
       {
-        brand: "Fudgee-O",
-        ownership: "U.S.-owned (Mondelēz International)",
-        manufacturing: "Toronto, Ontario (East York Bakery)",
+        brand: "Quaker Oats",
+        type: "Cereal",
+        ownership: "U.S.-owned (PepsiCo)",
+        manufacturing: "Peterborough, Ontario",
         rating: 6,
-        notes: "Canadian production, but U.S.-owned."
-      },
-      {
-        brand: "Christie",
-        ownership: "U.S.-owned (Mondelēz International)",
-        manufacturing: "Multiple locations in Ontario",
-        rating: 5,
-        notes: "Some Christie products are still made in Canada, but not all. Foreign ownership."
+        notes: "Made in Canada, but foreign-owned."
       }
     ];
 
@@ -157,6 +162,7 @@
         const row = document.createElement("tr");
         row.innerHTML = `
           <td>${product.brand}</td>
+          <td>${product.type}</td>
           <td>${product.ownership}</td>
           <td>${product.manufacturing}</td>
           <td>${product.rating}/10</td>
@@ -168,20 +174,21 @@
 
     // Function to filter the table based on the search input
     function filterTable() {
-      const input = document.getElementById("searchInput");
-      const filter = input.value.toLowerCase();
+      const input = document.getElementById("searchInput").value.toLowerCase();
       const tbody = document.getElementById("tableBody");
       tbody.innerHTML = "";
       products.forEach(product => {
         if (
-          product.brand.toLowerCase().includes(filter) ||
-          product.ownership.toLowerCase().includes(filter) ||
-          product.manufacturing.toLowerCase().includes(filter) ||
-          product.notes.toLowerCase().includes(filter)
+          product.brand.toLowerCase().includes(input) ||
+          product.type.toLowerCase().includes(input) ||
+          product.ownership.toLowerCase().includes(input) ||
+          product.manufacturing.toLowerCase().includes(input) ||
+          product.notes.toLowerCase().includes(input)
         ) {
           const row = document.createElement("tr");
           row.innerHTML = `
             <td>${product.brand}</td>
+            <td>${product.type}</td>
             <td>${product.ownership}</td>
             <td>${product.manufacturing}</td>
             <td>${product.rating}/10</td>
