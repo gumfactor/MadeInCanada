@@ -1,0 +1,54 @@
+name: Clean JSON Before Merge
+
+on: [push, pull_request]
+
+jobs:
+  clean-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install json
+
+      - name: Run JSON Cleaner
+        run: |
+          python - <<EOF
+          import json
+
+          PRODUCTS_FILE = "products.json"
+
+          try:
+              with open(PRODUCTS_FILE, "r", encoding="utf-8") as f:
+                  data = json.load(f)
+
+              seen = set()
+              cleaned_data = []
+              for product in data:
+                  key = (product["brand"], product["type"])
+                  if key not in seen:
+                      seen.add(key)
+                      cleaned_data.append(product)
+
+              with open(PRODUCTS_FILE, "w", encoding="utf-8") as f:
+                  json.dump(cleaned_data, f, indent=2)
+
+              print("✅ Duplicates removed. `products.json` is clean.")
+          except Exception as e:
+              print(f"❌ Error processing `products.json`: {e}")
+              exit(1)
+          EOF
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions@github.com"
+          git add products.json
+          git commit -m "Auto-cleaned products.json (duplicates removed)" || echo "No changes to commit"
+          git push
