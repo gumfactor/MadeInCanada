@@ -55,6 +55,9 @@
       <option value="CANADIAN Score (out of 10)">Rating (Highest First)</option>
     </select>
   </div>
+  <p id="emptyMessage" style="text-align:center; display:none; font-style:italic; margin-top:20px;">
+  No products found — try broadening your search.
+</p>
   <table id="productTable">
     <thead>
       <tr>
@@ -88,7 +91,10 @@
       products.forEach(product => {
         const row = document.createElement("tr");
         row.innerHTML = `
-          <td>${product["Product Name"]}</td>
+          <td>
+          ${product["Product Name"]}
+          ${product["Ownership (Country)"] === "Canada" && product["Manufacturing (Countries)"] === "Canada" ? " 🇨🇦" : ""}
+          </td>
           <td>${product["Product Category"]}</td>
           <td>${product["Ownership (Company)"]}</td>
           <td>${product["Ownership (Country)"]}</td>
@@ -101,43 +107,53 @@
     }
 
     
-    function filterTable() {
-      const searchValue = document.getElementById("searchInput").value.toLowerCase();
-      const typeFilter = document.getElementById("productTypeFilter").value;
-      const tbody = document.getElementById("tableBody");
-      tbody.innerHTML = "";
+function filterTable() {
+  const searchValue = document.getElementById("searchInput").value.toLowerCase();
+  const typeFilter = document.getElementById("productTypeFilter").value;
+  const tbody = document.getElementById("tableBody");
+  const emptyMessage = document.getElementById("emptyMessage");
+  tbody.innerHTML = "";
 
-      products.forEach(product => {
-        const searchFields = [
-          product["Product Name"],
-          product["Product Category"],
-          product["Ownership (Company)"],
-          product["Ownership (Country)"],
-          product["Manufacturing (Countries)"],
-          product["Notes"]
-        ];
+  let matches = 0;
 
-        const matchesSearch = searchFields.some(field =>
-          field?.toLowerCase().includes(searchValue)
-        );
+  products.forEach(product => {
+    const searchFields = [
+      product["Product Name"],
+      product["Product Category"],
+      product["Ownership (Company)"],
+      product["Ownership (Country)"],
+      product["Manufacturing (Countries)"],
+      product["Notes"]
+    ];
 
-        const matchesType = !typeFilter || product["Product Category"] === typeFilter;
+    const matchesSearch = searchFields.some(field =>
+      field?.toLowerCase().includes(searchValue)
+    );
 
-        if (matchesSearch && matchesType) {
-          const row = document.createElement("tr");
-          row.innerHTML = `
-            <td>${product["Product Name"]}</td>
-            <td>${product["Product Category"]}</td>
-            <td>${product["Ownership (Company)"]}</td>
-            <td>${product["Ownership (Country)"]}</td>
-            <td>${product["Manufacturing (Countries)"]}</td>
-            <td>${product["CANADIAN Score (out of 10)"]}/10</td>
-            <td>${product["Notes"]}</td>
-          `;
-          tbody.appendChild(row);
-        }
-      });
+    const matchesType = !typeFilter || product["Product Category"] === typeFilter;
+
+    if (matchesSearch && matchesType) {
+      matches++;
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>
+          ${product["Product Name"]}
+          ${product["Ownership (Country)"] === "Canada" && product["Manufacturing (Countries)"] === "Canada" ? " 🇨🇦" : ""}
+        </td>
+        <td>${product["Product Category"]}</td>
+        <td>${product["Ownership (Company)"]}</td>
+        <td>${product["Ownership (Country)"]}</td>
+        <td>${product["Manufacturing (Countries)"]}</td>
+        <td>${product["CANADIAN Score (out of 10)"]}/10</td>
+        <td>${product["Notes"]}</td>
+      `;
+      tbody.appendChild(row);
     }
+  });
+
+  emptyMessage.style.display = matches === 0 ? "block" : "none";
+}
+
 
     function sortTable() {
       const sortBy = document.getElementById("sortOptions").value;
