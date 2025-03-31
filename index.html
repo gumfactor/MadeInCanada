@@ -76,7 +76,7 @@
 
     // Fetch data from JSON file
     async function fetchProducts() {
-      const response = await fetch('products.json');
+      const response = await fetch('TheCanadaList.json');
       products = await response.json();
       populateTable();
       populateFilterOptions();
