@@ -55,9 +55,6 @@
       <option value="CANADIAN Score (out of 10)">Rating (Highest First)</option>
     </select>
   </div>
-  <p id="emptyMessage" style="text-align:center; display:none; font-style:italic; margin-top:20px;">
-  No products found — try broadening your search.
-</p>
   <table id="productTable">
     <thead>
       <tr>
@@ -71,7 +68,12 @@
     </thead>
     <tbody id="tableBody">
       <!-- Table rows will be inserted dynamically -->
-    </tbody>
+      <tr id="emptyMessageRow" style="display:none;">
+        <td colspan="7" style="text-align:center; font-style:italic; padding: 20px;">
+          No products found — try broadening your search.
+        </td>
+      </tr>
+  </tbody>
   </table>
 
   <script>
@@ -93,7 +95,7 @@
         row.innerHTML = `
           <td>
           ${product["Product Name"]}
-          ${product["Ownership (Country)"] === "Canada" && product["Manufacturing (Countries)"] === "Canada" ? " 🇨🇦" : ""}
+          ${product["Ownership (Country)"] === "Canada" && product["Manufacturing (Countries)"] === "Canada" ? " 🍁" : ""}
           </td>
           <td>${product["Product Category"]}</td>
           <td>${product["Ownership (Company)"]}</td>
@@ -111,7 +113,7 @@ function filterTable() {
   const searchValue = document.getElementById("searchInput").value.toLowerCase();
   const typeFilter = document.getElementById("productTypeFilter").value;
   const tbody = document.getElementById("tableBody");
-  const emptyMessage = document.getElementById("emptyMessage");
+  const emptyMessageRow = document.getElementById("emptyMessageRow");
   tbody.innerHTML = "";
 
   let matches = 0;
@@ -151,7 +153,7 @@ function filterTable() {
     }
   });
 
-  emptyMessage.style.display = matches === 0 ? "block" : "none";
+  emptyMessageRow.style.display = matches === 0 ? "table-row" : "none";
 }
 
 
