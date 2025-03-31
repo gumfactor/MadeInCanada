@@ -58,11 +58,11 @@
   <table id="productTable">
     <thead>
       <tr>
-        <th onclick="sortTable('brand')">Product</th>
-        <th onclick="sortTable('type')">Type</th>
-        <th>Ownership</th>
-        <th>Manufacturing Location(s)</th>
-        <th onclick="sortTable('rating')">Rating (/10)</th>
+        <th onclick="sortTable('Product Name')">Product Name</th>
+        <th onclick="sortTable('Product Category')">Product Category</th>
+        <th>Ownership (Company)</th><th>Ownership (Country)</th>
+        <th>Manufacturing (Countries)</th>
+        <th onclick="sortTable('CANADIAN Score (out of 10)')">Score (/10)</th>
         <th>Notes</th>
       </tr>
     </thead>
@@ -88,12 +88,13 @@
       products.forEach(product => {
         const row = document.createElement("tr");
         row.innerHTML = `
-          <td>${product.brand}</td>
-          <td>${product.type}</td>
-          <td>${product.ownership}</td>
-          <td>${product.manufacturing}</td>
-          <td>${product.rating}/10</td>
-          <td>${product.notes}</td>
+          <td>${product["Product Name"]}</td>
+          <td>${product["Product Category"]}</td>
+          <td>${product["Ownership (Company)"]}</td>
+          <td>${product["Ownership (Country)"]}</td>
+          <td>${product["Manufacturing (Countries)"]}</td>
+          <td>${product["CANADIAN Score (out of 10)"]}/10</td>
+          <td>${product["Notes"]}</td>
         `;
         tbody.appendChild(row);
       });
