@@ -1,0 +1,3773 @@
+[
+  {
+    "Product Name":"Febreze",
+    "Product Category":"Air Fresheners",
+    "Ownership (Company)":"Procter & Gamble",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/International",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned and manufactured mostly outside Canada; widely sold in Canada."
+  },
+  {
+    "Product Name":"Glade",
+    "Product Category":"Air Fresheners",
+    "Ownership (Company)":"SC Johnson",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/Mexico\/China",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US-owned and globally manufactured"
+  },
+  {
+    "Product Name":"Air Wick",
+    "Product Category":"Air Fresheners",
+    "Ownership (Company)":"Reckitt Benckiser",
+    "Ownership (Country)":"UK",
+    "Manufacturing (Countries)":"USA\/Mexico",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"UK-owned"
+  },
+  {
+    "Product Name":"Renuzit",
+    "Product Category":"Air Fresheners",
+    "Ownership (Company)":"Henkel",
+    "Ownership (Country)":"Germany",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned with production in the US; available in Canada."
+  },
+  {
+    "Product Name":"Mrs. Meyer's Clean Day",
+    "Product Category":"Air Fresheners\/Fragrance",
+    "Ownership (Company)":"SC Johnson",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Owned by SC Johnson"
+  },
+  {
+    "Product Name":"Caldrea",
+    "Product Category":"Air Fresheners\/Fragrance",
+    "Ownership (Company)":"SC Johnson",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Same ownership as Mrs. Meyer's"
+  },
+  {
+    "Product Name":"Fresh Wave",
+    "Product Category":"Air Fresheners",
+    "Ownership (Company)":"OMI Industries",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US-owned and produced; sold in Canada via online retailers."
+  },
+  {
+    "Product Name":"Poo-Pourri",
+    "Product Category":"Air Fresheners",
+    "Ownership (Company)":"Scentsible LLC",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US brand"
+  },
+  {
+    "Product Name":"Lysol",
+    "Product Category":"Air Fresheners\/Disinfectants",
+    "Ownership (Company)":"Reckitt Benckiser",
+    "Ownership (Country)":"UK",
+    "Manufacturing (Countries)":"USA\/China\/Europe",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned with international production; sold in Canada."
+  },
+  {
+    "Product Name":"Yankee Candle",
+    "Product Category":"Home Fragrance",
+    "Ownership (Company)":"Newell Brands",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US company"
+  },
+  {
+    "Product Name":"Bath & Body Works",
+    "Product Category":"Home Fragrance\/Personal Care",
+    "Ownership (Company)":"Bath & Body Works Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US-based retail chain; products made in US."
+  },
+  {
+    "Product Name":"Arm & Hammer",
+    "Product Category":"Air Fresheners\/Deodorizer",
+    "Ownership (Company)":"Church & Dwight",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/Canada",
+    "CANADIAN Score (out of 10)":5.0,
+    "Notes":"US-owned but some Canadian manufacturing for select products."
+  },
+  {
+    "Product Name":"Air Scense",
+    "Product Category":"Air Fresheners",
+    "Ownership (Company)":"Quantum",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American company with US production; small Canadian availability."
+  },
+  {
+    "Product Name":"AirBOSS",
+    "Product Category":"Odor Control\/Air Fresheners",
+    "Ownership (Company)":"Willert Home Products",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US company"
+  },
+  {
+    "Product Name":"Ozium",
+    "Product Category":"Air Fresheners",
+    "Ownership (Company)":"WD-40 Company",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US-made product"
+  },
+  {
+    "Product Name":"Diptyque",
+    "Product Category":"Home Fragrance",
+    "Ownership (Company)":"Manzanita Capital (Private Equity)",
+    "Ownership (Country)":"UK\/France",
+    "Manufacturing (Countries)":"France",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Luxury French brand; no Canadian production or ownership."
+  },
+  {
+    "Product Name":"Malin + Goetz",
+    "Product Category":"Home Fragrance\/Skincare",
+    "Ownership (Company)":"Malin + Goetz",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US-based"
+  },
+  {
+    "Product Name":"Aesop",
+    "Product Category":"Home Fragrance\/Skincare",
+    "Ownership (Company)":"Natura &Co",
+    "Ownership (Country)":"Brazil",
+    "Manufacturing (Countries)":"Australia",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Brazilian-owned"
+  },
+  {
+    "Product Name":"DedCool",
+    "Product Category":"Fragrance\/Diffusers",
+    "Ownership (Company)":"DedCool",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US-based indie brand"
+  },
+  {
+    "Product Name":"Kai",
+    "Product Category":"Home Fragrance",
+    "Ownership (Company)":"Beautyhabit",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Luxury US brand"
+  },
+  {
+    "Product Name":"Jo Malone London",
+    "Product Category":"Home Fragrance",
+    "Ownership (Company)":"Est\u00e9e Lauder",
+    "Ownership (Country)":"USA\/UK",
+    "Manufacturing (Countries)":"UK",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"US-owned (Est\u00e9e Lauder)"
+  },
+  {
+    "Product Name":"Espa",
+    "Product Category":"Home Fragrance\/Wellness",
+    "Ownership (Company)":"The Hut Group",
+    "Ownership (Country)":"UK",
+    "Manufacturing (Countries)":"UK",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"UK-owned"
+  },
+  {
+    "Product Name":"Maison Francis Kurkdjian",
+    "Product Category":"Home Fragrance\/Luxury",
+    "Ownership (Company)":"LVMH",
+    "Ownership (Country)":"France",
+    "Manufacturing (Countries)":"France",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Luxury French brand; imported to Canada."
+  },
+  {
+    "Product Name":"Le Labo",
+    "Product Category":"Home Fragrance",
+    "Ownership (Company)":"Est\u00e9e Lauder",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Owned by Est\u00e9e Lauder; made in US"
+  },
+  {
+    "Product Name":"Boy Smells",
+    "Product Category":"Candles\/Home Fragrance",
+    "Ownership (Company)":"Boy Smells Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US-based"
+  },
+  {
+    "Product Name":"Loewe",
+    "Product Category":"Home Fragrance\/Luxury",
+    "Ownership (Company)":"LVMH",
+    "Ownership (Country)":"France\/Spain",
+    "Manufacturing (Countries)":"Spain",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Spanish brand under LVMH; no Canadian connection."
+  },
+  {
+    "Product Name":"Trudon",
+    "Product Category":"Home Fragrance (Luxury)",
+    "Ownership (Company)":"Trudon SAS",
+    "Ownership (Country)":"France",
+    "Manufacturing (Countries)":"France",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"French-made candles; luxury import with no Canadian base."
+  },
+  {
+    "Product Name":"Homecourt",
+    "Product Category":"Home Fragrance",
+    "Ownership (Company)":"Courteney Cox (Private Co.)",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"New US brand; online availability only in Canada."
+  },
+  {
+    "Product Name":"Abel Fragrances",
+    "Product Category":"Home Fragrance\/Perfume",
+    "Ownership (Company)":"Abel",
+    "Ownership (Country)":"Netherlands",
+    "Manufacturing (Countries)":"New Zealand\/Netherlands",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"No Canadian manufacturing or ownership."
+  },
+  {
+    "Product Name":"Flamingo Estate",
+    "Product Category":"Home Fragrance",
+    "Ownership (Company)":"F.E.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Small luxury brand from US; available via select Canadian retailers."
+  },
+  {
+    "Product Name":"Scandiscents",
+    "Product Category":"Home Fragrance",
+    "Ownership (Company)":"Scandiscents",
+    "Ownership (Country)":"UK",
+    "Manufacturing (Countries)":"UK",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"UK-based; imported to Canada."
+  },
+  {
+    "Product Name":"The White Company",
+    "Product Category":"Home Fragrance",
+    "Ownership (Company)":"The White Company",
+    "Ownership (Country)":"UK",
+    "Manufacturing (Countries)":"UK",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"UK retailer; imports only to Canada."
+  },
+  {
+    "Product Name":"Aromatherapy Associates",
+    "Product Category":"Home Fragrance\/Wellness",
+    "Ownership (Company)":"Aromatherapy Associates",
+    "Ownership (Country)":"UK",
+    "Manufacturing (Countries)":"UK",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"UK brand"
+  },
+  {
+    "Product Name":"Airvel",
+    "Product Category":"Air Fresheners",
+    "Ownership (Company)":"Airvel LLC",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Limited brand visibility in Canada; US-owned and made."
+  },
+  {
+    "Product Name":"Ganesha's Garden",
+    "Product Category":"Air Fresheners\/Natural",
+    "Ownership (Company)":"Private",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and produced; natural incense and oils."
+  },
+  {
+    "Product Name":"e3 Naturals",
+    "Product Category":"Air Fresheners\/Personal Care",
+    "Ownership (Company)":"e3 Naturals",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian natural care brand"
+  },
+  {
+    "Product Name":"All Things Jill",
+    "Product Category":"Home Fragrance\/Body",
+    "Ownership (Company)":"All Things Jill",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and operated with Canadian-made goods."
+  },
+  {
+    "Product Name":"Sun Bum",
+    "Product Category":"Air Fresheners\/Personal Care",
+    "Ownership (Company)":"Edgewell Personal Care",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US-based"
+  },
+  {
+    "Product Name":"Bin Buddy",
+    "Product Category":"Odor Control",
+    "Ownership (Company)":"Challs",
+    "Ownership (Country)":"UK",
+    "Manufacturing (Countries)":"UK",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"UK-made"
+  },
+  {
+    "Product Name":"Frsh Scents",
+    "Product Category":"Air Fresheners",
+    "Ownership (Company)":"Enviroscent",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US-based brand"
+  },
+  {
+    "Product Name":"Love Child Organics",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Nature's Path",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and manufactured in Canada with organic ingredients; some minor ingredients may be imported."
+  },
+  {
+    "Product Name":"Baby Gourmet",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Baby Gourmet Foods",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and produced in Canada; most ingredients are locally sourced with high organic standards."
+  },
+  {
+    "Product Name":"PC Organics",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Loblaw Companies Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Canadian-owned; made in Canada with some imported ingredients under the President\u2019s Choice brand."
+  },
+  {
+    "Product Name":"Parent's Choice",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Walmart Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/Canada\/Other",
+    "CANADIAN Score (out of 10)":4.0,
+    "Notes":"Foreign-owned (Walmart); some manufacturing for Canadian market may occur in Canada"
+  },
+  {
+    "Product Name":"Holle",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Holle Baby Food AG",
+    "Ownership (Country)":"Switzerland",
+    "Manufacturing (Countries)":"Switzerland\/Germany",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned and manufactured in Europe; sold in Canadian markets through distributors."
+  },
+  {
+    "Product Name":"Gerber",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Nestl\u00e9",
+    "Ownership (Country)":"Switzerland",
+    "Manufacturing (Countries)":"USA\/Other",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"Swiss-owned via Nestl\u00e9; little Canadian production but strong market presence and branding in Canada."
+  },
+  {
+    "Product Name":"Heinz",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Kraft Heinz Company",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/Other",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"Foreign-owned; baby food products are largely made outside Canada with limited local operations."
+  },
+  {
+    "Product Name":"Earth's Best Organic",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Hain Celestial Group",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned; products made in USA and exported to Canada."
+  },
+  {
+    "Product Name":"Happy Baby",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Nurture Inc. (Danone)",
+    "Ownership (Country)":"France",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"French-owned; products primarily made in USA"
+  },
+  {
+    "Product Name":"Once Upon a Farm",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Once Upon a Farm PBC",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned and manufactured; no Canadian production facilities."
+  },
+  {
+    "Product Name":"Cerebelly",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Cerebelly Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned startup; made in USA and imported into Canada via select retailers."
+  },
+  {
+    "Product Name":"Beech-Nut",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Beech-Nut Nutrition Company",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"U.S.-owned and produced; sold in Canada through online and select retail channels."
+  },
+  {
+    "Product Name":"Amara",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Amara Organic Foods",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned; freeze-dried baby food made in USA"
+  },
+  {
+    "Product Name":"Yumi",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Yumi",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American company offering delivery service; not locally manufactured or distributed in Canada."
+  },
+  {
+    "Product Name":"Little Spoon",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Lil\u2019 Gourmets Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned; made in USA with no significant Canadian operations."
+  },
+  {
+    "Product Name":"NurturMe",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"NurturMe",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"U.S.-owned and manufactured; sold in Canada online only."
+  },
+  {
+    "Product Name":"Plum Organics",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Campbell Soup Company",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"U.S.-owned; baby food products manufactured in USA"
+  },
+  {
+    "Product Name":"Sprout Organic Baby Food",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Sprout Foods Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American company with no Canadian production; products available through select stores."
+  },
+  {
+    "Product Name":"Ella's Kitchen",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Hain Celestial Group",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"UK",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"U.S.-owned through Hain Celestial; production in UK"
+  },
+  {
+    "Product Name":"Similac",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Abbott Laboratories",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned formula brand; infant cereals also made abroad"
+  },
+  {
+    "Product Name":"Enfamil",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Reckitt Benckiser",
+    "Ownership (Country)":"UK",
+    "Manufacturing (Countries)":"USA\/Other",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"UK-based; most manufacturing outside Canada"
+  },
+  {
+    "Product Name":"Nestl\u00e9 Nido",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Nestl\u00e9",
+    "Ownership (Country)":"Switzerland",
+    "Manufacturing (Countries)":"Europe\/USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Swiss-owned; milk beverages produced outside Canada and imported."
+  },
+  {
+    "Product Name":"Kabrita",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Ausnutria",
+    "Ownership (Country)":"Netherlands",
+    "Manufacturing (Countries)":"Netherlands",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Dutch-owned; goat milk formulas produced in Europe"
+  },
+  {
+    "Product Name":"Bellamy's Organic",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Bellamy's Organic",
+    "Ownership (Country)":"Australia",
+    "Manufacturing (Countries)":"Australia",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Australian company; products made in Australia"
+  },
+  {
+    "Product Name":"Milupa",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Danone",
+    "Ownership (Country)":"France",
+    "Manufacturing (Countries)":"Europe",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"French-owned; baby cereals made in Europe and sold in Canada."
+  },
+  {
+    "Product Name":"Pablum",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Nestl\u00e9 Canada",
+    "Ownership (Country)":"Switzerland\/Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Nestl\u00e9-owned but Pablum has Canadian production; longstanding Canadian brand with limited local operations now."
+  },
+  {
+    "Product Name":"Mother Hen",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"La M\u00e8re Poule",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and produced in Quebec; organic frozen baby food made in Canada."
+  },
+  {
+    "Product Name":"Heinz By Nature",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Kraft Heinz Company",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"Europe",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"U.S.-owned; baby products made abroad"
+  },
+  {
+    "Product Name":"Nestl\u00e9 Gerber Organic",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Nestl\u00e9",
+    "Ownership (Country)":"Switzerland",
+    "Manufacturing (Countries)":"USA\/Other",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"Swiss-owned; organic baby food line made outside Canada"
+  },
+  {
+    "Product Name":"President's Choice Organics",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Loblaw Companies Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Canadian-owned brand; baby food made in Canada or North America with local oversight."
+  },
+  {
+    "Product Name":"Simply Organic Baby",
+    "Product Category":"Baby Food",
+    "Ownership (Company)":"Unknown (Independent)",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Canadian-based and likely Canadian-manufactured; smaller presence but emphasizes local organic ingredients."
+  },
+  {
+    "Product Name":"Circle K",
+    "Product Category":"Convenience Store",
+    "Ownership (Company)":"Alimentation Couche-Tard",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and operated by Alimentation Couche-Tard"
+  },
+  {
+    "Product Name":"7-Eleven Canada",
+    "Product Category":"Convenience Store",
+    "Ownership (Company)":"Seven & I Holdings",
+    "Ownership (Country)":"Japan",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Foreign-owned (Japan)"
+  },
+  {
+    "Product Name":"Hasty Market",
+    "Product Category":"Convenience Store",
+    "Ownership (Company)":"Independent Operators",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Canadian-owned chain with stores mostly in Ontario; often independently franchised"
+  },
+  {
+    "Product Name":"Mac\u2019s Convenience Stores",
+    "Product Category":"Convenience Store",
+    "Ownership (Company)":"Alimentation Couche-Tard",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Previously an iconic Canadian brand"
+  },
+  {
+    "Product Name":"Couche-Tard",
+    "Product Category":"Convenience Store",
+    "Ownership (Company)":"Alimentation Couche-Tard",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Original brand in Quebec under Couche-Tard"
+  },
+  {
+    "Product Name":"Becker\u2019s",
+    "Product Category":"Convenience Store",
+    "Ownership (Company)":"Alimentation Couche-Tard",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Legacy Ontario brand now under Couche-Tard umbrella; limited standalone presence but some co-branded stores remain."
+  },
+  {
+    "Product Name":"Quickie Convenience Stores",
+    "Product Category":"Convenience Store",
+    "Ownership (Company)":"MacEwen Petroleum",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Ontario and Quebec chain owned by MacEwen Petroleum"
+  },
+  {
+    "Product Name":"On the Run",
+    "Product Category":"Convenience Store",
+    "Ownership (Company)":"Suncor Energy",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Canadian brand affiliated with Petro-Canada gas stations (Suncor Energy); many locations across Canada"
+  },
+  {
+    "Product Name":"AVU Convenience Stores",
+    "Product Category":"Convenience Store",
+    "Ownership (Company)":"AVU Retail Group",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":7.0,
+    "Notes":"Smaller Canadian-owned chain with operations mostly in Western Canada; localized operations and franchising."
+  },
+  {
+    "Product Name":"Needs Convenience",
+    "Product Category":"Convenience Store",
+    "Ownership (Company)":"Empire Company (Sobeys)",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Primarily in Atlantic Canada"
+  },
+  {
+    "Product Name":"Giant Tiger",
+    "Product Category":"Discount and Variety Stores",
+    "Ownership (Company)":"Giant Tiger Stores Limited",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada and international",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Privately held Canadian company with Canadian headquarters and distribution centers; some products imported"
+  },
+  {
+    "Product Name":"Miniso Canada",
+    "Product Category":"Discount and Variety Stores",
+    "Ownership (Company)":"Miniso Group Holding Ltd.",
+    "Ownership (Country)":"China",
+    "Manufacturing (Countries)":"Primarily international (China)",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Chinese-owned with most products manufactured in China; Canadian operations limited to retail storefronts."
+  },
+  {
+    "Product Name":"Red Apple Stores",
+    "Product Category":"Discount and Variety Stores",
+    "Ownership (Company)":"BlackRock Capital Investment Corporation",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"Canada and international",
+    "CANADIAN Score (out of 10)":5.0,
+    "Notes":"Operates as a Canadian discount chain"
+  },
+  {
+    "Product Name":"One's Better Living",
+    "Product Category":"Discount and Variety Stores",
+    "Ownership (Company)":"One\u2019s Better Living",
+    "Ownership (Country)":"Japan",
+    "Manufacturing (Countries)":"Japan and international",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Japanese brand with some Canadian retail presence; products manufactured primarily in Asia."
+  },
+  {
+    "Product Name":"A Buck or Two Plus",
+    "Product Category":"Discount and Variety Stores",
+    "Ownership (Company)":"Canadian Dollar Stores Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Primarily international",
+    "CANADIAN Score (out of 10)":7.0,
+    "Notes":"Canadian-owned and franchised with Canadian presence; products often imported from Asia"
+  },
+  {
+    "Product Name":"Structube",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Structube",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Asia",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Canadian-owned and operated"
+  },
+  {
+    "Product Name":"Bouclair",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Bouclair Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Primarily Asia",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Canadian-owned and operated"
+  },
+  {
+    "Product Name":"Hudson's Bay",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"The Bay (HBC)",
+    "Ownership (Country)":"USA (owned by NRDC Equity Partners)",
+    "Manufacturing (Countries)":"Various",
+    "CANADIAN Score (out of 10)":4.0,
+    "Notes":"Historic Canadian brand now foreign-owned; some local operations"
+  },
+  {
+    "Product Name":"EQ3",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"EQ3 Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Fully Canadian-owned with Canadian manufacturing (Winnipeg); emphasizes local design and production."
+  },
+  {
+    "Product Name":"Urban Barn",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Urban Barn Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Asia",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Canadian-owned with national retail presence; manufacturing largely outsourced."
+  },
+  {
+    "Product Name":"JYSK",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"JYSK",
+    "Ownership (Country)":"Denmark",
+    "Manufacturing (Countries)":"Asia\/Europe",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Danish-owned; all products imported; Canadian retail presence only."
+  },
+  {
+    "Product Name":"Article",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Article",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Asia",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Canadian-founded and headquartered but most products manufactured overseas."
+  },
+  {
+    "Product Name":"Rove Concepts",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Rove Concepts",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Asia",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Canadian-owned; designs in Vancouver but manufacturing is overseas."
+  },
+  {
+    "Product Name":"Mobilia",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Mobilia",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Asia\/Europe",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Canadian-owned with imported manufacturing."
+  },
+  {
+    "Product Name":"Costco Canada",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Costco Wholesale",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"International",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US-owned with imported product lines; limited Canadian sourcing."
+  },
+  {
+    "Product Name":"Bad Boy Furniture",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Lastman's Bad Boy",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Asia",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Canadian-owned; majority of goods are imported."
+  },
+  {
+    "Product Name":"Palliser Rooms \/ EQ3",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Palliser \/ EQ3",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Both Canadian companies with domestic manufacturing and design."
+  },
+  {
+    "Product Name":"Surplus Furniture & Mattress Warehouse",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Surplus Furniture",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Asia",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Canadian company but imports most of its inventory."
+  },
+  {
+    "Product Name":"Home Hardware",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Home Hardware Stores Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada\/International",
+    "CANADIAN Score (out of 10)":7.0,
+    "Notes":"Canadian-owned co-op; some Canadian-made furniture but much is sourced abroad."
+  },
+  {
+    "Product Name":"Staples Canada",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Staples Inc. (divested to Sycamore Partners)",
+    "Ownership (Country)":"USA\/Canada (Staples Canada is semi-independent)",
+    "Manufacturing (Countries)":"International",
+    "CANADIAN Score (out of 10)":4.0,
+    "Notes":"Foreign ownership with independent Canadian operations; limited Canadian production."
+  },
+  {
+    "Product Name":"Best Buy Canada",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Best Buy Co.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"International",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned"
+  },
+  {
+    "Product Name":"Amazon Canada",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Amazon.com Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"International",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned platform; Canadian presence but no manufacturing."
+  },
+  {
+    "Product Name":"Overstock",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Overstock.com",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"International",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US-based; ships to Canada but no production."
+  },
+  {
+    "Product Name":"Etsy",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Etsy Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"Varies (independent sellers)",
+    "CANADIAN Score (out of 10)":5.0,
+    "Notes":"US-owned"
+  },
+  {
+    "Product Name":"RH (Restoration Hardware)",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"RH",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"International",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Luxury US brand; products made abroad"
+  },
+  {
+    "Product Name":"Moe's Home Collection",
+    "Product Category":"Furniture Stores",
+    "Ownership (Company)":"Moe's Home Collection",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Asia",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Canadian-owned brand; majority of products manufactured abroad."
+  },
+  {
+    "Product Name":"Loblaws",
+    "Product Category":"Supermarket",
+    "Ownership (Company)":"Loblaw Companies Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Loblaw Companies is Canadian-owned and headquartered in Brampton"
+  },
+  {
+    "Product Name":"Sobeys",
+    "Product Category":"Supermarket",
+    "Ownership (Company)":"Empire Company Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Empire is Canadian-owned and headquartered in Stellarton"
+  },
+  {
+    "Product Name":"Metro",
+    "Product Category":"Supermarket",
+    "Ownership (Company)":"Metro Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Metro Inc. is fully Canadian-owned and headquartered in Montreal"
+  },
+  {
+    "Product Name":"No Frills",
+    "Product Category":"Supermarket",
+    "Ownership (Company)":"Loblaw Companies Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Owned by Canadian company Loblaw. No Frills is a discount banner with Canadian supply chains and domestic job creation."
+  },
+  {
+    "Product Name":"Real Canadian Superstore",
+    "Product Category":"Supermarket",
+    "Ownership (Company)":"Loblaw Companies Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Another Loblaw banner; strong Canadian presence and branding with domestic sourcing and job creation."
+  },
+  {
+    "Product Name":"FreshCo",
+    "Product Category":"Supermarket",
+    "Ownership (Company)":"Empire Company Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Owned by Empire Company. Canadian-owned and operated"
+  },
+  {
+    "Product Name":"Save-On-Foods",
+    "Product Category":"Supermarket",
+    "Ownership (Company)":"Overwaitea Food Group (Jim Pattison Group)",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Fully Canadian-owned under Jim Pattison Group. Strong Western Canada footprint"
+  },
+  {
+    "Product Name":"Longo's",
+    "Product Category":"Supermarket",
+    "Ownership (Company)":"Sobeys (Empire Company Ltd.)",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Originally family-owned"
+  },
+  {
+    "Product Name":"T & T Supermarket",
+    "Product Category":"Supermarket",
+    "Ownership (Company)":"Loblaw Companies Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"International\/Canada",
+    "CANADIAN Score (out of 10)":7.0,
+    "Notes":"Owned by Loblaw but specializes in Asian imports. While Canadian-owned"
+  },
+  {
+    "Product Name":"Whole Foods Market",
+    "Product Category":"Supermarket",
+    "Ownership (Company)":"Amazon",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/Canada",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Owned by U.S.-based Amazon. Operates some stores in Canada but imports most products and has limited Canadian supply chain integration."
+  },
+  {
+    "Product Name":"Walmart Canada",
+    "Product Category":"Supermarket",
+    "Ownership (Company)":"Walmart Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"Canada\/USA",
+    "CANADIAN Score (out of 10)":5.0,
+    "Notes":"Walmart is U.S.-owned but has extensive Canadian operations and distribution centers. Some Canadian manufacturing\/sourcing"
+  },
+  {
+    "Product Name":"Costco Canada",
+    "Product Category":"Supermarket",
+    "Ownership (Company)":"Costco Wholesale Corp.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/Canada",
+    "CANADIAN Score (out of 10)":4.0,
+    "Notes":"U.S.-owned company with a notable Canadian presence. Some Canadian-sourced items"
+  },
+  {
+    "Product Name":"IGA",
+    "Product Category":"Supermarket",
+    "Ownership (Company)":"Empire Company Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Part of Empire (Canadian-owned). Strong roots in Quebec and robust Canadian supply chains."
+  },
+  {
+    "Product Name":"Food Basics",
+    "Product Category":"Supermarket",
+    "Ownership (Company)":"Metro Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Discount banner under Metro Inc. Fully Canadian-owned with domestic operations."
+  },
+  {
+    "Product Name":"Valu-Mart",
+    "Product Category":"Supermarket",
+    "Ownership (Company)":"Loblaw Companies Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Owned by Loblaw. Small-town focus with Canadian operations and supply chains."
+  },
+  {
+    "Product Name":"Your Independent Grocer",
+    "Product Category":"Supermarket",
+    "Ownership (Company)":"Loblaw Companies Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Independent banner under Loblaw. Canadian-owned with mostly domestic suppliers."
+  },
+  {
+    "Product Name":"Stonemill Kitchens",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Reser's Fine Foods",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Stonemill Kitchens is a U.S.-based company known for deli sides and dips, not a Canadian bakery. No Canadian production facilities."
+  },
+  {
+    "Product Name":"Little Northern Bakehouse",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Silver Hills Bakery",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Little Northern Bakehouse is part of Silver Hills Bakery, a Canadian company producing gluten-free buns in Canada."
+  },
+  {
+    "Product Name":"BFree Foods",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"BFree Foods",
+    "Ownership (Country)":"Ireland",
+    "Manufacturing (Countries)":"Ireland",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"BFree Foods is an Irish brand producing gluten-free buns in Ireland and distributing them in Canada. No Canadian production."
+  },
+  {
+    "Product Name":"Maple Leaf",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Maple Leaf Foods",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Maple Leaf is a Canadian food company with significant bakery operations and Canadian-based manufacturing."
+  },
+  {
+    "Product Name":"Weston Bakeries",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Weston Foods",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Weston Bakeries is a major Canadian bakery producer with operations across Canada. Some ingredients may be imported."
+  },
+  {
+    "Product Name":"POM",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Weston Foods",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"POM is a brand under Weston Foods, with buns baked in Canadian facilities. It's a well-known Quebec brand."
+  },
+  {
+    "Product Name":"Compliments",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Sobeys Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Compliments is Sobeys\u2019 private label brand. As a Canadian grocer, Sobeys sources many products locally, including buns."
+  },
+  {
+    "Product Name":"Co-Op Gold",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Federated Co-operatives Limited",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Co-Op Gold is the store brand for Canadian co-ops. Products like buns are typically sourced from Canadian manufacturers."
+  },
+  {
+    "Product Name":"Organic Works Bakery",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Organic Works Bakery",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Organic Works Bakery is an independent Canadian gluten-free bakery based in Ontario, using organic, local ingredients."
+  },
+  {
+    "Product Name":"L\u2019Anc\u00eatre",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"L\u2019Anc\u00eatre Cheese Factory",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Primarily a cheese brand, but when producing baked goods, they\u2019re organic and made in Quebec, with Canadian sourcing."
+  },
+  {
+    "Product Name":"Kinnikinnick",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Kinnikinnick Foods",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Edmonton-based Kinnikinnick is a gluten-free bakery with all production in Canada, using Canadian ingredients where possible."
+  },
+  {
+    "Product Name":"Epi Breads",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Epi Breads",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Epi Breads is a U.S. bakery. No Canadian ownership or manufacturing; buns are imported."
+  },
+  {
+    "Product Name":"Artisan Bake Shoppe",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Artisan Bake Shoppe",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Local Canadian bakery producing artisan-style buns, fully owned and operated in Canada."
+  },
+  {
+    "Product Name":"Grissol (for buns or sliders)",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Dare Foods",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Grissol is a Canadian brand under Dare Foods. Though better known for melba toast, any buns would be made in Canada."
+  },
+  {
+    "Product Name":"Les Moulins Lafayette",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Les Moulins Lafayette",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"A Quebec-based artisan bakery chain that bakes all products locally in their own facilities."
+  },
+  {
+    "Product Name":"Breadland Bakery",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Breadland Bakery",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Local Toronto bakery specializing in artisan bread and buns. All production is Canadian."
+  },
+  {
+    "Product Name":"La Petite Bretonne",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"La Petite Bretonne",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Quebec-based bakery producing a range of baked goods including buns. All products are made in Canada."
+  },
+  {
+    "Product Name":"Blackbird Baking Co.",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Blackbird Baking Co.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Toronto-based artisanal bakery specializing in sourdough and buns. Fully Canadian owned and operated."
+  },
+  {
+    "Product Name":"Bon Matin",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Bimbo Canada",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Bon Matin is a brand under Bimbo Canada. Products are made in Canada, but ownership is foreign (Grupo Bimbo)."
+  },
+  {
+    "Product Name":"The Bagel House (some sell buns too)",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"The Bagel House",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Toronto-based bagel shop chain. Any buns sold are likely locally made in-house. Canadian owned and operated."
+  },
+  {
+    "Product Name":"Les Boulangeries Ren\u00e9",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Les Boulangeries Ren\u00e9",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Independent Quebec bakery producing a range of baked goods including buns, all made in Canada."
+  },
+  {
+    "Product Name":"Ozery Bakery",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Ozery Bakery",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned bakery known for healthy buns and flatbreads. Manufacturing based in Ontario, Canada."
+  },
+  {
+    "Product Name":"Dempster's",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Bimbo Canada",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Bimbo Canada, formerly Canada Bread, has been operating in Canada for over 110 years and produces Dempster's buns in its Canadian bakeries. While the company operates independently in Canada, it is a subsidiary of Grupo Bimbo, a Mexican multinational. :contentReference[oaicite:0]{index=0}"
+  },
+  {
+    "Product Name":"Villaggio",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Bimbo Canada",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Villaggio is another brand under Bimbo Canada, with products baked in Canadian facilities. Despite its Canadian operations, the parent company is Grupo Bimbo from Mexico. :contentReference[oaicite:1]{index=1}"
+  },
+  {
+    "Product Name":"D'Italiano",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Bimbo Canada",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"D'Italiano is part of Bimbo Canada's portfolio, with products made in Canada. The parent company is Grupo Bimbo, based in Mexico. :contentReference[oaicite:2]{index=2}"
+  },
+  {
+    "Product Name":"Irr\u00e9sistibles",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"M\u00e9tro Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Irr\u00e9sistibles is a private label brand of M\u00e9tro Inc., a Canadian company. The products are manufactured in Canada, primarily for the Quebec market."
+  },
+  {
+    "Product Name":"La Fourn\u00e9e Dor\u00e9e",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"La Fourn\u00e9e Dor\u00e9e",
+    "Ownership (Country)":"France",
+    "Manufacturing (Countries)":"France",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"La Fourn\u00e9e Dor\u00e9e is a French bakery brand. Their products are imported into Canada, with no significant Canadian operations."
+  },
+  {
+    "Product Name":"Selection",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"M\u00e9tro Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Selection is another private label brand of M\u00e9tro Inc., a Canadian company. The products are produced in Canada."
+  },
+  {
+    "Product Name":"Great Value",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Walmart",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"Various",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"Great Value is Walmart's private label. While some products may be sourced from Canadian manufacturers, many are produced internationally. Specific manufacturing details for buns are not publicly disclosed."
+  },
+  {
+    "Product Name":"Sch\u00e4r",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Dr. Sch\u00e4r AG",
+    "Ownership (Country)":"Italy",
+    "Manufacturing (Countries)":"Europe",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Sch\u00e4r is an Italian company specializing in gluten-free products. Their buns are manufactured in Europe and imported into Canada."
+  },
+  {
+    "Product Name":"O'Doughs",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"O'Doughs",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"O'Doughs is a Canadian company that produces gluten-free buns in Canada, using local ingredients whenever possible."
+  },
+  {
+    "Product Name":"Front Street Bakery",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Loblaw Companies Limited",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Front Street Bakery is a brand under Loblaw Companies Limited, a Canadian company. Their buns are baked in Canada."
+  },
+  {
+    "Product Name":"Pretzilla",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Milwaukee Pretzel Company",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Pretzilla is an American brand specializing in pretzel buns, manufactured in the USA and imported into Canada."
+  },
+  {
+    "Product Name":"Ball Park",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Bimbo Bakeries USA",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Ball Park buns are produced by Bimbo Bakeries USA, a subsidiary of Grupo Bimbo. They are manufactured in the USA and imported into Canada."
+  },
+  {
+    "Product Name":"Sara Lee",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Bimbo Bakeries USA",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Sara Lee is another brand under Bimbo Bakeries USA, with buns produced in the USA and imported into Canada."
+  },
+  {
+    "Product Name":"King's Hawaiian",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"King's Hawaiian",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"King's Hawaiian is an American company known for its sweet buns, all manufactured in the USA and imported into Canada."
+  },
+  {
+    "Product Name":"Nature's Own",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Flowers Foods",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Nature's Own is an American brand by Flowers Foods, with buns made in the USA and imported into Canada."
+  },
+  {
+    "Product Name":"Wonder",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Weston Foods",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Wonder is a brand under Weston Foods, a Canadian company. Their buns are produced in Canadian facilities."
+  },
+  {
+    "Product Name":"St. Pierre",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"St. Pierre Groupe",
+    "Ownership (Country)":"UK",
+    "Manufacturing (Countries)":"UK",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"St. Pierre is a UK-based brand specializing in European-style bakery products, manufactured in the UK and imported into Canada."
+  },
+  {
+    "Product Name":"Ace Bakery",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Weston Foods",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Ace Bakery is a Canadian artisan bakery under Weston Foods, with products baked in Canada."
+  },
+  {
+    "Product Name":"Country Harvest",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Bimbo Canada",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Country Harvest is another brand under Bimbo Canada, with products made in Canadian bakeries. The parent company is Grupo Bimbo from Mexico. :contentReference[oaicite:3]{index=3}"
+  },
+  {
+    "Product Name":"Sun-Maid",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Sun-Maid Growers of California",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Sun-Maid is an American company primarily known for dried fruits. Their bakery products are produced in the USA and imported into Canada."
+  },
+  {
+    "Product Name":"Pepperidge Farm",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Campbell Soup Company",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Pepperidge Farm is an American brand under the Campbell Soup Company, with buns manufactured in the USA and imported into Canada."
+  },
+  {
+    "Product Name":"Glutino",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Conagra Brands",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Glutino is an American brand specializing in gluten-free products, produced in the USA and imported into Canada."
+  },
+  {
+    "Product Name":"Udi's",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Conagra Brands",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Udi's is another gluten-free brand under Conagra Brands, with buns made in the USA and imported into Canada."
+  },
+  {
+    "Product Name":"President's Choice",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Loblaw Companies Limited",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"President's Choice is a private label brand of Loblaw Companies Limited, a Canadian company. Their buns are produced in Canada."
+  },
+  {
+    "Product Name":"Bakery Express",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Bakery Express",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Bakery Express is a Canadian bakery producing buns locally, using Canadian ingredients whenever possible."
+  },
+  {
+    "Product Name":"Costco (Kirkland Signature)",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Costco Wholesale",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"Various",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"Kirkland Signature is Costco's private label. While some products are sourced from Canadian manufacturers, many are produced internationally. Specific manufacturing details for buns are not publicly disclosed."
+  },
+  {
+    "Product Name":"Silver Hills",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Silver Hills Bakery",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Silver Hills Bakery is a Canadian company specializing in sprouted grain products, all made in Canada. :contentReference[oaicite:4]{index=4}"
+  },
+  {
+    "Product Name":"Stonemill Bakehouse",
+    "Product Category":"Hotdog\/hamburger buns",
+    "Ownership (Company)":"Bimbo Canada",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Stonemill Bakehouse is part of Bimbo Canada, with products baked in Canada. The parent company is Grupo Bimbo from Mexico. :contentReference[oaicite:5]{index=5}"
+  },
+  {
+    "Product Name":"Cactus Club Cafe",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"The Fuller Family",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned"
+  },
+  {
+    "Product Name":"Hy's Steakhouse & Cocktail Bar",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Hy's of Canada Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and operated exclusively in Canada."
+  },
+  {
+    "Product Name":"The Capital Grille",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Darden Restaurants",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned with no Canadian operations; strictly U.S.-based."
+  },
+  {
+    "Product Name":"Mastro's Restaurants",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Landry's Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"B\u00e2ton Rouge Steakhouse & Bar",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Foodtastic",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and primarily operating in Qu\u00e9bec and Ontario."
+  },
+  {
+    "Product Name":"STK Steakhouse",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"The ONE Group Hospitality",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned with no Canadian operations."
+  },
+  {
+    "Product Name":"Fleming's Prime Steakhouse & Wine Bar",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Bloomin' Brands",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"The Palm",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Landry's Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned with no Canadian operations."
+  },
+  {
+    "Product Name":"Del Frisco's Double Eagle Steak House",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Landry's Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Perry's Steakhouse & Grille",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Perry's Restaurants",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned with no operations in Canada."
+  },
+  {
+    "Product Name":"Gibsons Bar & Steakhouse",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Gibsons Restaurant Group",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"U.S.-based and American-owned"
+  },
+  {
+    "Product Name":"Smith & Wollensky",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Danu Partners",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Lawry's The Prime Rib",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Lawry's Restaurants Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned with no Canadian operations."
+  },
+  {
+    "Product Name":"Chophouse & Brewery",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Ram International",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Ocean Prime",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Cameron Mitchell Restaurants",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned with no Canadian operations."
+  },
+  {
+    "Product Name":"Eddie V's Prime Seafood",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Darden Restaurants",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Chart House",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Landry's Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned with no Canadian operations."
+  },
+  {
+    "Product Name":"McCormick & Schmick's Seafood & Steaks",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Landry's Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Legal Sea Foods",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"PPX Hospitality Brands",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Bonefish Grill",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Bloomin' Brands",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned with no Canadian operations."
+  },
+  {
+    "Product Name":"Seasons 52",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Darden Restaurants",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Fogo de Ch\u00e3o",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Rhodium Holdings",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned with no Canadian operations."
+  },
+  {
+    "Product Name":"Texas de Brazil",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Texas de Brazil",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Chama Gaucha Brazilian Steakhouse",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Chama Gaucha",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned with no Canadian operations."
+  },
+  {
+    "Product Name":"Rodizio Grill",
+    "Product Category":"High-end Restaurant",
+    "Ownership (Company)":"Rodizio Grill",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Kewpie Japanese Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Kewpie Corporation",
+    "Ownership (Country)":"Japan",
+    "Manufacturing (Countries)":"Japan\/USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Japanese-owned; primarily manufactured in Japan and the U.S.; no Canadian manufacturing presence."
+  },
+  {
+    "Product Name":"Kewpie Deep-Roasted Sesame Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Kewpie Corporation",
+    "Ownership (Country)":"Japan",
+    "Manufacturing (Countries)":"Japan\/USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Same as above\u2014manufactured outside of Canada."
+  },
+  {
+    "Product Name":"Blue Plate Real Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Reily Foods Company",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"United States",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"U.S.-owned and manufactured; no Canadian production."
+  },
+  {
+    "Product Name":"Trader Joe\u2019s Organic Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Trader Joe\u2019s",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"United States",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Exclusive to U.S.-based Trader Joe's stores; not manufactured or sold in Canada officially."
+  },
+  {
+    "Product Name":"365 by Whole Foods Organic Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Amazon (Whole Foods)",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"United States",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"U.S.-owned and manufactured; not a Canadian brand and no manufacturing in Canada."
+  },
+  {
+    "Product Name":"Chosen Foods Avocado Oil Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Chosen Foods",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"United States",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"U.S.-based brand; no Canadian production"
+  },
+  {
+    "Product Name":"Wildfare Avocado Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Wildfare",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"United States",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"U.S.-owned brand with no Canadian manufacturing."
+  },
+  {
+    "Product Name":"Simply Natural Organic Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Richards Packaging (Canada)",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian brand; some ingredients may be imported but product is made in Canada."
+  },
+  {
+    "Product Name":"BetterBody Foods Avocado Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"BetterBody Foods",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"United States",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"U.S.-owned and manufactured."
+  },
+  {
+    "Product Name":"Becel Plant-Based Mayo",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Upfield (Becel)",
+    "Ownership (Country)":"Netherlands",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Foreign-owned (Netherlands) but manufactured in Canada."
+  },
+  {
+    "Product Name":"Just Mayo (Egg-Free)",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Hampton Creek (Eat Just)",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"United States",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"U.S. company with no Canadian manufacturing."
+  },
+  {
+    "Product Name":"Mother Raw Plant-Based Mayo",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Mother Raw",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and manufactured in Ontario using plant-based ingredients."
+  },
+  {
+    "Product Name":"Primal Kitchen Avocado Oil Mayo",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Kraft Heinz",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"United States",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Owned by Kraft Heinz (U.S.)"
+  },
+  {
+    "Product Name":"Vegenaise Original (Follow Your Heart)",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Follow Your Heart",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"United States",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"U.S. brand"
+  },
+  {
+    "Product Name":"Vegenaise Soy-Free",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Follow Your Heart",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"United States",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Same as above."
+  },
+  {
+    "Product Name":"Noble Bean Soy-Free Vegan Mayo",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Noble Bean",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and made; focuses on organic"
+  },
+  {
+    "Product Name":"PC Plant-Based Mayo-Style Spread",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Loblaw Companies Limited",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and made under President\u2019s Choice brand."
+  },
+  {
+    "Product Name":"Silver Hills Vegan Mayo",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Silver Hills Bakery",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and operated; ingredients sourced and product made in Canada."
+  },
+  {
+    "Product Name":"Field Roast Plant-Based Garlic Mayo",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Greenleaf Foods (Maple Leaf Foods)",
+    "Ownership (Country)":"Canada\/United States",
+    "Manufacturing (Countries)":"U.S.",
+    "CANADIAN Score (out of 10)":4.0,
+    "Notes":"Owned by Maple Leaf (Canadian)"
+  },
+  {
+    "Product Name":"The Good Fat Co. Avocado Mayo",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"The Good Fat Co.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and manufactured; some avocado oil may be imported."
+  },
+  {
+    "Product Name":"Canola Harvest Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Richardson International",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned agri-food giant; made in Canada using prairie-grown canola."
+  },
+  {
+    "Product Name":"S&F Garlic Aioli Mayo",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Schwartz & Fils",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Quebec-based Canadian company; produces in Canada."
+  },
+  {
+    "Product Name":"Compliments Real Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Empire Company (Sobeys)",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned (Sobeys) and manufactured in Canada."
+  },
+  {
+    "Product Name":"Western Family Real Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Save-On-Foods",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and distributed via Canadian grocers; manufactured in Canada."
+  },
+  {
+    "Product Name":"Irresistibles Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Metro Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned (Metro) and made in Canada."
+  },
+  {
+    "Product Name":"Kirkland Signature Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Costco",
+    "Ownership (Country)":"United States\/Canada",
+    "Manufacturing (Countries)":"Varies (including Canada)",
+    "CANADIAN Score (out of 10)":5.0,
+    "Notes":"Kirkland brand items are sometimes Canadian-made; exact source for mayo unclear."
+  },
+  {
+    "Product Name":"Wildbrine Probiotic Vegan Sriracha Mayo",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Wildbrine",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"United States",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"U.S. company; no Canadian production."
+  },
+  {
+    "Product Name":"Renee\u2019s Garlic Aioli Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Kraft Heinz",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Owned by Kraft Heinz; Renee\u2019s is manufactured in Canada."
+  },
+  {
+    "Product Name":"Ogilvie\u2019s Fresh Garlic Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Ogilvie\u2019s",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Small-batch"
+  },
+  {
+    "Product Name":"Hellmann\u2019s Real Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Unilever",
+    "Ownership (Country)":"United Kingdom",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Owned by UK-based Unilever; manufactured in Canada using Canadian ingredients like free-run eggs from Ontario and Quebec"
+  },
+  {
+    "Product Name":"Hellmann\u2019s Vegan Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Unilever",
+    "Ownership (Country)":"United Kingdom",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Owned by UK-based Unilever; manufactured in Canada using Canadian ingredients. :contentReference[oaicite:2]{index=2}"
+  },
+  {
+    "Product Name":"Hellmann\u2019s Spicy Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Unilever",
+    "Ownership (Country)":"United Kingdom",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Owned by UK-based Unilever; manufactured in Canada using Canadian ingredients. :contentReference[oaicite:3]{index=3}"
+  },
+  {
+    "Product Name":"MAG Classic Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"MAG",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and manufactured in Quebec using 100% Canadian products. :contentReference[oaicite:4]{index=4}"
+  },
+  {
+    "Product Name":"Neal Brothers Organic Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Neal Brothers Foods",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and manufactured in Canada with organic ingredients."
+  },
+  {
+    "Product Name":"Neal Brothers Chipotle Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Neal Brothers Foods",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and manufactured in Canada with organic ingredients."
+  },
+  {
+    "Product Name":"Select Foods Classic Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Select Foods Products",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and manufactured in Canada."
+  },
+  {
+    "Product Name":"President\u2019s Choice Olive Oil Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Loblaw Companies Limited",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and manufactured in Canada under the President's Choice brand."
+  },
+  {
+    "Product Name":"President\u2019s Choice Chipotle Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Loblaw Companies Limited",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and manufactured in Canada under the President's Choice brand."
+  },
+  {
+    "Product Name":"No Name Real Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Loblaw Companies Limited",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and manufactured in Canada under the No Name brand."
+  },
+  {
+    "Product Name":"Miracle Whip Original Dressing",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Kraft Heinz",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Owned by US-based Kraft Heinz; manufactured in Canada. :contentReference[oaicite:5]{index=5}"
+  },
+  {
+    "Product Name":"Miracle Whip Light Dressing",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Kraft Heinz",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Owned by US-based Kraft Heinz; manufactured in Canada. :contentReference[oaicite:6]{index=6}"
+  },
+  {
+    "Product Name":"Heinz Garlic & Caramelized Onion Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Kraft Heinz",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Owned by US-based Kraft Heinz; manufactured in Canada. :contentReference[oaicite:7]{index=7}"
+  },
+  {
+    "Product Name":"Sir Kensington\u2019s Avocado Oil Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Unilever",
+    "Ownership (Country)":"United Kingdom",
+    "Manufacturing (Countries)":"United States",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Owned by UK-based Unilever; primarily manufactured in the USA."
+  },
+  {
+    "Product Name":"Sir Kensington\u2019s Sriracha Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Unilever",
+    "Ownership (Country)":"United Kingdom",
+    "Manufacturing (Countries)":"United States",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Owned by UK-based Unilever; primarily manufactured in the USA."
+  },
+  {
+    "Product Name":"Maison Orph\u00e9e Basil & Lemon Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Maison Orph\u00e9e",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and manufactured in Canada with high-quality ingredients."
+  },
+  {
+    "Product Name":"Maison Orph\u00e9e Dijon Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Maison Orph\u00e9e",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and manufactured in Canada with high-quality ingredients."
+  },
+  {
+    "Product Name":"Cuisine Poirier Classic Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Cuisine Poirier",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and manufactured in Canada."
+  },
+  {
+    "Product Name":"Maill\u00e9 Dijon Mustard Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Unilever",
+    "Ownership (Country)":"United Kingdom",
+    "Manufacturing (Countries)":"France",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Owned by UK-based Unilever; manufactured in France."
+  },
+  {
+    "Product Name":"Maill\u00e9 Wholegrain Mustard Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"Unilever",
+    "Ownership (Country)":"United Kingdom",
+    "Manufacturing (Countries)":"France",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Owned by UK-based Unilever; manufactured in France."
+  },
+  {
+    "Product Name":"Duke\u2019s Real Mayonnaise",
+    "Product Category":"Mayonnaise",
+    "Ownership (Company)":"CF Sauer Company",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"United States",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned and manufactured in the USA."
+  },
+  {
+    "Product Name":"Amazon Canada",
+    "Product Category":"Online Retailer",
+    "Ownership (Company)":"Amazon Inc.",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"Primarily International",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned (U.S.) with fulfillment centers and localized operations in Canada; limited Canadian production or ownership."
+  },
+  {
+    "Product Name":"Well.ca",
+    "Product Category":"Online Health & Wellness Retailer",
+    "Ownership (Company)":"McKesson Canada",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"Primarily Canada",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"U.S.-owned via McKesson"
+  },
+  {
+    "Product Name":"Clearly",
+    "Product Category":"Online Eyewear Retailer",
+    "Ownership (Company)":"EssilorLuxottica",
+    "Ownership (Country)":"France",
+    "Manufacturing (Countries)":"International (some Canadian distribution)",
+    "CANADIAN Score (out of 10)":4.0,
+    "Notes":"French-owned multinational"
+  },
+  {
+    "Product Name":"SSENSE",
+    "Product Category":"Online Luxury Fashion Retailer",
+    "Ownership (Company)":"SSENSE",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Primarily International (brands)",
+    "CANADIAN Score (out of 10)":7.0,
+    "Notes":"Canadian-owned and headquartered in Montreal"
+  },
+  {
+    "Product Name":"Frank And Oak",
+    "Product Category":"Sustainable Fashion Retailer",
+    "Ownership (Company)":"Unified Commerce Group",
+    "Ownership (Country)":"United States\/Canada",
+    "Manufacturing (Countries)":"Primarily International",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Canadian-founded with some Canadian operations"
+  },
+  {
+    "Product Name":"Indigo.ca",
+    "Product Category":"Online Book & Gift Retailer",
+    "Ownership (Company)":"Indigo Books & Music",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Primarily International (products)",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Canadian-owned with strong Canadian presence; products are mostly imported but operations are Canadian."
+  },
+  {
+    "Product Name":"TSC (Today\u2019s Shopping Choice)",
+    "Product Category":"Home Shopping Network",
+    "Ownership (Company)":"Rogers Communications",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Primarily International (products)",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Canadian-owned and operated under Rogers"
+  },
+  {
+    "Product Name":"Wayfair Canada",
+    "Product Category":"Online Furniture Retailer",
+    "Ownership (Company)":"Wayfair Inc.",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"Primarily International",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"U.S.-owned with limited Canadian fulfillment operations; little to no Canadian production."
+  },
+  {
+    "Product Name":"Newegg Canada",
+    "Product Category":"Tech Retailer",
+    "Ownership (Company)":"Newegg Inc.",
+    "Ownership (Country)":"United States\/China",
+    "Manufacturing (Countries)":"Primarily International",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"U.S.-owned with origins in China; minimal Canadian operations beyond a localized website and shipping infrastructure."
+  },
+  {
+    "Product Name":"Simons",
+    "Product Category":"Online Fashion & Home Goods Retailer",
+    "Ownership (Company)":"La Maison Simons",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada & International",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Family-owned Canadian company based in Quebec with both Canadian-made and imported goods; strong commitment to Canadian-made lines."
+  },
+  {
+    "Product Name":"MEC (Mountain Equipment Company)",
+    "Product Category":"Outdoor Gear & Apparel",
+    "Ownership (Company)":"MEC",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Primarily International",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Canadian-owned and operated cooperative-turned-corporation; many products are imported"
+  },
+  {
+    "Product Name":"Etsy Canada",
+    "Product Category":"Online Artisan Marketplace",
+    "Ownership (Company)":"Etsy Inc.",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"Primarily International",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"U.S.-based platform; some Canadian artisans sell through Etsy"
+  },
+  {
+    "Product Name":"Best Buy Canada",
+    "Product Category":"Electronics Retailer",
+    "Ownership (Company)":"Best Buy Co. Inc.",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"Primarily International",
+    "CANADIAN Score (out of 10)":4.0,
+    "Notes":"U.S.-owned; Canadian website and retail presence offer jobs"
+  },
+  {
+    "Product Name":"Staples Canada",
+    "Product Category":"Office Supplies Retailer",
+    "Ownership (Company)":"Staples Canada (owned by Sycamore Partners)",
+    "Ownership (Country)":"United States",
+    "Manufacturing (Countries)":"Primarily International",
+    "CANADIAN Score (out of 10)":5.0,
+    "Notes":"Foreign-owned but Staples Canada operates semi-independently with Canadian distribution centers and jobs."
+  },
+  {
+    "Product Name":"Browns Shoes",
+    "Product Category":"Footwear Retailer",
+    "Ownership (Company)":"Browns Shoes Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Primarily International",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Canadian-owned and headquartered in Montreal; most products are imported"
+  },
+  {
+    "Product Name":"Yogti",
+    "Product Category":"Plastic Wrap",
+    "Ownership (Company)":"Yogti Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Yogti is Canadian-owned and offers stretch film wraps"
+  },
+  {
+    "Product Name":"Rao's Homemade",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Sovos Brands",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned and manufactured in the US; no significant Canadian production."
+  },
+  {
+    "Product Name":"Classico",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Kraft Heinz",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/Canada",
+    "CANADIAN Score (out of 10)":5.0,
+    "Notes":"Foreign-owned but some manufacturing occurs in Canada."
+  },
+  {
+    "Product Name":"Prego",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Campbell Soup Company",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/Canada",
+    "CANADIAN Score (out of 10)":5.0,
+    "Notes":"American-owned with some Canadian production through Campbell Canada."
+  },
+  {
+    "Product Name":"Bertolli",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Mizkan Group",
+    "Ownership (Country)":"Japan",
+    "Manufacturing (Countries)":"Italy\/USA",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"Japanese-owned"
+  },
+  {
+    "Product Name":"Mutti",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Mutti S.p.A.",
+    "Ownership (Country)":"Italy",
+    "Manufacturing (Countries)":"Italy",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Italian-owned and manufactured in Italy; only distributed in Canada."
+  },
+  {
+    "Product Name":"Marinelli",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Marinelli Foods Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and manufactured; some imported ingredients."
+  },
+  {
+    "Product Name":"Antico",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Antico Foods",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned"
+  },
+  {
+    "Product Name":"GiGi",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"GiGi Importing",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Canadian-owned"
+  },
+  {
+    "Product Name":"Selection",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Metro Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned grocery chain"
+  },
+  {
+    "Product Name":"President's Choice",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Loblaw Companies Limited",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned"
+  },
+  {
+    "Product Name":"David Rocco",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"David Rocco",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada\/Italy",
+    "CANADIAN Score (out of 10)":7.0,
+    "Notes":"Canadian-owned brand"
+  },
+  {
+    "Product Name":"Regina Molisana",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Regina Molisana Foods Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and made"
+  },
+  {
+    "Product Name":"Stefano",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Stefano Foods",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and manufactured in Montreal"
+  },
+  {
+    "Product Name":"Catelli Garden Select",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Barilla (formerly Catelli Foods)",
+    "Ownership (Country)":"Italy",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Foreign-owned but still manufactured in Canada."
+  },
+  {
+    "Product Name":"Hunt's",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"ConAgra Brands",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/Canada",
+    "CANADIAN Score (out of 10)":5.0,
+    "Notes":"American-owned with some Canadian production."
+  },
+  {
+    "Product Name":"Dolmio",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Mars Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/Europe",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Barilla",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Barilla Group",
+    "Ownership (Country)":"Italy",
+    "Manufacturing (Countries)":"USA\/Italy",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Italian-owned"
+  },
+  {
+    "Product Name":"Mama Sita's",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Marigold Commodities Corporation",
+    "Ownership (Country)":"Philippines",
+    "Manufacturing (Countries)":"Philippines",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Philippines-owned"
+  },
+  {
+    "Product Name":"Unico",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Sun-Brite Foods",
+    "Ownership (Country)":"Canada (subsidiary of an Italian group)",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Canadian manufacturing"
+  },
+  {
+    "Product Name":"Primo",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Sun-Brite Foods",
+    "Ownership (Country)":"Canada (subsidiary of an Italian group)",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Same as Unico \u2013 Canadian operations"
+  },
+  {
+    "Product Name":"Blue Kettle",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Blue Kettle Specialty Foods",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned"
+  },
+  {
+    "Product Name":"Sun-Brite Foods",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Sun-Brite Foods Inc.",
+    "Ownership (Country)":"Canada (Italpasta Group)",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Canadian facilities and jobs"
+  },
+  {
+    "Product Name":"Victoria White Linen",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Victoria Fine Foods (subsidiary of B&G Foods)",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned and manufactured in the US; only sold in Canada via Costco."
+  },
+  {
+    "Product Name":"Newman's Own",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Newman's Own Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US-based charitable brand; sauces made in the US"
+  },
+  {
+    "Product Name":"Silver Palate",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Silver Palate Kitchens",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American brand"
+  },
+  {
+    "Product Name":"Lucini",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"B&G Foods",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Gefen",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Kedem Food Products",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/Israel",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Foreign-owned and made abroad"
+  },
+  {
+    "Product Name":"Lieber's",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Lieber's",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American kosher brand"
+  },
+  {
+    "Product Name":"Victoria",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Victoria Fine Foods (B&G Foods)",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Same company as White Linen; American-owned and produced."
+  },
+  {
+    "Product Name":"Spinato's",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Spinato's Fine Foods",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Arizona-based brand with no Canadian production or operations; only distributed in Canada."
+  },
+  {
+    "Product Name":"Cento",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Cento Fine Foods",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"Italy\/USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US-owned with Italian production for sauces; no Canadian operations."
+  },
+  {
+    "Product Name":"Pomi",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Consorzio Casalasco del Pomodoro",
+    "Ownership (Country)":"Italy",
+    "Manufacturing (Countries)":"Italy",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Italian cooperative"
+  },
+  {
+    "Product Name":"Trader Joe's",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Trader Joe's",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American grocery chain with no presence in Canada; some products imported unofficially."
+  },
+  {
+    "Product Name":"Tuttorosso",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Red Gold Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"American-owned and made; no Canadian production or official distribution."
+  },
+  {
+    "Product Name":"Whole Foods 365",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Amazon (Whole Foods)",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"US-based brand"
+  },
+  {
+    "Product Name":"Cucina Antica",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Cucina Antica Foods Corp.",
+    "Ownership (Country)":"USA\/Italy",
+    "Manufacturing (Countries)":"USA\/Italy",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American brand with Italian roots; no Canadian production."
+  },
+  {
+    "Product Name":"Molisana",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"La Molisana S.p.A.",
+    "Ownership (Country)":"Italy",
+    "Manufacturing (Countries)":"Italy",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Italian-owned and produced; Canadian version is distributed by Italpasta."
+  },
+  {
+    "Product Name":"Stefano Faita",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Stefano Foods",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian chef-owned"
+  },
+  {
+    "Product Name":"PC Blue Menu",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Loblaw Companies Limited",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned brand focused on healthier options"
+  },
+  {
+    "Product Name":"Great Value",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Walmart",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/Canada",
+    "CANADIAN Score (out of 10)":5.0,
+    "Notes":"Walmart brand; some Canadian production under contract."
+  },
+  {
+    "Product Name":"Kirkland Signature",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Costco",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US brand; pasta sauces manufactured in the USA"
+  },
+  {
+    "Product Name":"Ragu",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Mizkan Group",
+    "Ownership (Country)":"Japan",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"Japanese-owned"
+  },
+  {
+    "Product Name":"Delallo",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Delallo Foods",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/Italy",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned with Italian connections; sauces made outside Canada."
+  },
+  {
+    "Product Name":"Emeril's",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"B&G Foods",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American brand"
+  },
+  {
+    "Product Name":"Mario Batali",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Colavita USA (formerly licensed)",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Brand discontinued in many markets; was made in the US."
+  },
+  {
+    "Product Name":"Paesana",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Paesana",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Family-owned US company"
+  },
+  {
+    "Product Name":"Mezzetta",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"G.L. Mezzetta Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"US-based company"
+  },
+  {
+    "Product Name":"Stefano",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Stefano Faita",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and manufactured in Quebec using Italian tomatoes."
+  },
+  {
+    "Product Name":"Marinelli",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Marinelli",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and produced"
+  },
+  {
+    "Product Name":"Antico",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Antico",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and manufactured"
+  },
+  {
+    "Product Name":"GiGi",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"GiGi",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and produced"
+  },
+  {
+    "Product Name":"President\u2019s Choice",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Loblaw Companies Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and mostly manufactured in Canada under private label."
+  },
+  {
+    "Product Name":"David Rocco",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"David Rocco (partnered brands)",
+    "Ownership (Country)":"Canada\/Italy",
+    "Manufacturing (Countries)":"Italy",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"Canadian personality but sauce is manufactured in Italy."
+  },
+  {
+    "Product Name":"Regina Molisana",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Regina Molisana",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Canadian-owned"
+  },
+  {
+    "Product Name":"Prego",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Campbell Company of Canada",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/Canada",
+    "CANADIAN Score (out of 10)":5.0,
+    "Notes":"Foreign-owned; Canadian division does some production locally."
+  },
+  {
+    "Product Name":"Canada Red",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Canada Red",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned"
+  },
+  {
+    "Product Name":"Unico",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Concord Premium Meats (Unico)",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned"
+  },
+  {
+    "Product Name":"Primo",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Sun-Brite Foods Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned"
+  },
+  {
+    "Product Name":"Bertolli",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Mizkan Holdings",
+    "Ownership (Country)":"Japan",
+    "Manufacturing (Countries)":"Italy\/USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned"
+  },
+  {
+    "Product Name":"Hunt's",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"ConAgra Brands",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Dolmio",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Mars Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"Various (Not Canada)",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Heinz",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Kraft Heinz Company",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"Canada\/USA",
+    "CANADIAN Score (out of 10)":5.0,
+    "Notes":"Some manufacturing in Canada (Leamington)"
+  },
+  {
+    "Product Name":"Aurora",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Aurora Importing",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada\/Italy",
+    "CANADIAN Score (out of 10)":7.0,
+    "Notes":"Canadian-owned but imports and rebrands some sauces from Italy."
+  },
+  {
+    "Product Name":"Catelli",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Barilla Group (formerly Catelli Foods)",
+    "Ownership (Country)":"Italy",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Manufactured in Canada"
+  },
+  {
+    "Product Name":"Chef Boyardee",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"ConAgra Brands",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned and manufactured in the US."
+  },
+  {
+    "Product Name":"Bravo",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Bravo",
+    "Ownership (Country)":"Unknown",
+    "Manufacturing (Countries)":"Unknown",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"Limited public info; sold in Canadian supermarkets but likely imported."
+  },
+  {
+    "Product Name":"Blue Kettle",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Blue Kettle",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Alberta-based and Canadian-owned with local production."
+  },
+  {
+    "Product Name":"Sun-Brite Foods",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Sun-Brite Foods Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and operated"
+  },
+  {
+    "Product Name":"Ragu",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Mizkan Holdings",
+    "Ownership (Country)":"Japan",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned and produced outside Canada."
+  },
+  {
+    "Product Name":"Newman's Own",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Newman's Own Foundation",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American brand"
+  },
+  {
+    "Product Name":"Simply Natural",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Urban Accents\/Naturally Homegrown Foods (Canada for distribution)",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"Distributed in Canada"
+  },
+  {
+    "Product Name":"Amy's Kitchen",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Amy's Kitchen",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Kirkland Signature",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Costco",
+    "Ownership (Country)":"USA\/Canada",
+    "Manufacturing (Countries)":"USA\/Canada",
+    "CANADIAN Score (out of 10)":5.0,
+    "Notes":"Foreign-owned but some products may be co-packed in Canada."
+  },
+  {
+    "Product Name":"San Remo",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"San Remo Macaroni Co.",
+    "Ownership (Country)":"Australia",
+    "Manufacturing (Countries)":"Australia\/Italy",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned and produced outside Canada."
+  },
+  {
+    "Product Name":"Victoria Fine Foods",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"B&G Foods",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Muir Glen",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"General Mills",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Del Monte",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Del Monte Foods",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Annie's Homegrown",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"General Mills",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Eden Organic",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Eden Foods",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"American-owned"
+  },
+  {
+    "Product Name":"Huntsman",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Huntsman",
+    "Ownership (Country)":"Unknown",
+    "Manufacturing (Countries)":"Unknown",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"Little public info"
+  },
+  {
+    "Product Name":"La San Marzano",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"La Regina di San Marzano",
+    "Ownership (Country)":"Italy",
+    "Manufacturing (Countries)":"Italy",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Italian-owned and manufactured in Italy."
+  },
+  {
+    "Product Name":"Sacla'",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Sacla Italia",
+    "Ownership (Country)":"Italy",
+    "Manufacturing (Countries)":"Italy",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Italian-owned"
+  },
+  {
+    "Product Name":"Seggiano",
+    "Product Category":"Spaghetti Sauce",
+    "Ownership (Company)":"Casina Rossa\/Seggiano",
+    "Ownership (Country)":"Italy",
+    "Manufacturing (Countries)":"Italy",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Italian-owned"
+  },
+  {
+    "Product Name":"Tampax",
+    "Product Category":"Tampon",
+    "Ownership (Company)":"Procter & Gamble",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned, manufactured primarily in the USA, no Canadian manufacturing presence."
+  },
+  {
+    "Product Name":"U by Kotex",
+    "Product Category":"Tampon",
+    "Ownership (Company)":"Kimberly-Clark",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned and manufactured mainly in the U.S., available in Canada but no Canadian production."
+  },
+  {
+    "Product Name":"Playtex",
+    "Product Category":"Tampon",
+    "Ownership (Company)":"Energizer Holdings",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/Mexico",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned, primarily manufactured in the U.S. and Mexico, no Canadian manufacturing."
+  },
+  {
+    "Product Name":"o.b.",
+    "Product Category":"Tampon",
+    "Ownership (Company)":"Johnson & Johnson",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"Slovakia",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned, manufactured overseas (e.g., Slovakia), with no Canadian facilities for production."
+  },
+  {
+    "Product Name":"Seventh Generation",
+    "Product Category":"Tampon",
+    "Ownership (Company)":"Unilever",
+    "Ownership (Country)":"UK\/Netherlands",
+    "Manufacturing (Countries)":"Global (EU\/USA)",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"Foreign-owned (Unilever), some eco-conscious branding appeals to Canadian consumers but no Canadian manufacturing."
+  },
+  {
+    "Product Name":"Natracare",
+    "Product Category":"Tampon",
+    "Ownership (Company)":"Natracare Ltd",
+    "Ownership (Country)":"UK",
+    "Manufacturing (Countries)":"Europe",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"UK-based, focuses on sustainability and natural ingredients, no Canadian ownership or production."
+  },
+  {
+    "Product Name":"Only",
+    "Product Category":"Tampon",
+    "Ownership (Company)":"Only (Independent)",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and operated, manufactures organic cotton tampons in Canada using eco-friendly practices. Minor components may be imported."
+  },
+  {
+    "Product Name":"Marlow",
+    "Product Category":"Tampon",
+    "Ownership (Company)":"Marlow",
+    "Ownership (Country)":"CANADA",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and operated, designed and manufactured in Canada. Some packaging components may be imported."
+  },
+  {
+    "Product Name":"Joni",
+    "Product Category":"Tampon",
+    "Ownership (Company)":"Joni Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian company with strong sustainability values and local production. May import small components."
+  },
+  {
+    "Product Name":"Nixit",
+    "Product Category":"Tampon\/Niche Menstrual Products",
+    "Ownership (Company)":"Nixit",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Canadian-owned, products designed and distributed in Canada, though some components (e.g., silicone) may be sourced internationally."
+  },
+  {
+    "Product Name":"Always",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Procter & Gamble",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned, manufactured primarily in the U.S., no significant Canadian production."
+  },
+  {
+    "Product Name":"Stayfree",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Johnson & Johnson",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned, primarily manufactured in the U.S., with limited Canadian presence."
+  },
+  {
+    "Product Name":"U by Kotex",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Kimberly-Clark",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned and manufactured mainly in the U.S., with no Canadian manufacturing."
+  },
+  {
+    "Product Name":"Carefree",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Johnson & Johnson",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned brand, mostly produced in the U.S., sold in Canada without production here."
+  },
+  {
+    "Product Name":"Life Brand",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Loblaw Companies",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":8.0,
+    "Notes":"Canadian-owned brand, products manufactured in Canada or through Canadian suppliers. May source some materials internationally."
+  },
+  {
+    "Product Name":"Joni",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Joni Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and made, focused on sustainable and accessible menstrual care."
+  },
+  {
+    "Product Name":"Natracare",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Natracare Ltd",
+    "Ownership (Country)":"UK",
+    "Manufacturing (Countries)":"Europe",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"UK-based, with eco-conscious values, no Canadian ownership or manufacturing."
+  },
+  {
+    "Product Name":"Aisle",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Aisle (formerly Lunapads)",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned and operated, reusable pads made in Canada using sustainable practices."
+  },
+  {
+    "Product Name":"Tree Hugger Cloth Pads",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Tree Hugger Cloth Pads",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned, handmade reusable cloth pads, manufactured in Canada."
+  },
+  {
+    "Product Name":"Knix",
+    "Product Category":"Maxi Pad Alternative",
+    "Ownership (Company)":"Knixwear Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned, leakproof underwear manufactured mostly in Canada with some global sourcing."
+  },
+  {
+    "Product Name":"Diva Cup",
+    "Product Category":"Menstrual Cup\/Accessories",
+    "Ownership (Company)":"Diva International",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Canadian-owned, headquartered and manufactures its products in Ontario, including cups and accessories."
+  },
+  {
+    "Product Name":"Nixit",
+    "Product Category":"Menstrual Cup\/Accessories",
+    "Ownership (Company)":"Nixit",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned, menstrual cup brand with Canadian distribution and design. May source materials internationally."
+  },
+  {
+    "Product Name":"Lunapads (see Aisle)",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Aisle",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":10.0,
+    "Notes":"Rebranded as Aisle. Canadian-made reusable pads."
+  },
+  {
+    "Product Name":"GladRags",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"GladRags",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"U.S.-based reusable pad company, no Canadian manufacturing presence."
+  },
+  {
+    "Product Name":"Organyc",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Corman S.p.A.",
+    "Ownership (Country)":"Italy",
+    "Manufacturing (Countries)":"Europe",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"European-owned, organic cotton pads made in Italy, sold in Canada but no Canadian operations."
+  },
+  {
+    "Product Name":"Always Discreet",
+    "Product Category":"Incontinence Pad",
+    "Ownership (Company)":"Procter & Gamble",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned, made in the U.S., no Canadian manufacturing."
+  },
+  {
+    "Product Name":"Poise",
+    "Product Category":"Incontinence Pad",
+    "Ownership (Company)":"Kimberly-Clark",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned, primarily manufactured in the U.S., no Canadian production."
+  },
+  {
+    "Product Name":"Equate",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Walmart Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA\/Global",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned house brand, manufactured internationally, some Canadian distribution."
+  },
+  {
+    "Product Name":"Up & Up",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Target Corp.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":1.0,
+    "Notes":"Foreign-owned, no Canadian stores or manufacturing, only available via cross-border or online."
+  },
+  {
+    "Product Name":"Prevail",
+    "Product Category":"Incontinence Pad",
+    "Ownership (Company)":"First Quality Enterprises",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned, U.S.-based manufacturer, sold in Canada, no production here."
+  },
+  {
+    "Product Name":"Attends",
+    "Product Category":"Incontinence Pad",
+    "Ownership (Company)":"Domtar (Now part of Paper Excellence)",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":5.0,
+    "Notes":"Previously Canadian-owned (Domtar), now foreign-owned (Paper Excellence - Indonesia-based). Some production in North America."
+  },
+  {
+    "Product Name":"TENA",
+    "Product Category":"Incontinence Pad",
+    "Ownership (Company)":"Essity",
+    "Ownership (Country)":"Sweden",
+    "Manufacturing (Countries)":"Canada\/USA",
+    "CANADIAN Score (out of 10)":6.0,
+    "Notes":"Foreign-owned (Sweden), but has manufacturing facilities in Canada (e.g., Drummondville, QC), creating Canadian jobs."
+  },
+  {
+    "Product Name":"Always Infinity",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Procter & Gamble",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned, manufactured in the U.S., no Canadian operations."
+  },
+  {
+    "Product Name":"Always Radiant",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Procter & Gamble",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned, U.S. production, marketed globally including Canada."
+  },
+  {
+    "Product Name":"Always Pure Cotton",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Procter & Gamble",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned, marketed as natural but manufactured outside Canada."
+  },
+  {
+    "Product Name":"Stayfree Secure",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Johnson & Johnson",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned, products manufactured outside Canada."
+  },
+  {
+    "Product Name":"Stayfree Dry-Max",
+    "Product Category":"Maxi Pad",
+    "Ownership (Company)":"Johnson & Johnson",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"Foreign-owned, no Canadian production, sold in Canadian retail market."
+  },
+  {
+    "Product Name":"Jamieson Vitamins",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Jamieson Laboratories",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Jamieson is Canada's largest vitamin brand, headquartered in Toronto with manufacturing in Windsor, Ontario. Canadian-owned and manufactured, with some ingredients likely sourced internationally."
+  },
+  {
+    "Product Name":"Webber Naturals",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Factors Group Canada",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Privately owned Canadian company with organic farms and GMP-certified manufacturing facilities in British Columbia. Most production is in Canada, though some ingredients may be imported."
+  },
+  {
+    "Product Name":"Natural Factors",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Factors Group Canada",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Same parent company as Webber Naturals, with Canadian ownership and manufacturing. Strong commitment to local sourcing where possible."
+  },
+  {
+    "Product Name":"CanPrev",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"CanPrev Natural Health Products Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned and operated, with manufacturing in Canada. Products are formulated by Canadian health professionals with a focus on high quality."
+  },
+  {
+    "Product Name":"AOR (Advanced Orthomolecular Research)",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"AOR Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Headquartered in Calgary with in-house manufacturing. Canadian-owned with innovative, science-based formulas. Some raw materials likely sourced globally."
+  },
+  {
+    "Product Name":"Sisu",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Sisu Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian company based in British Columbia. Manufactures most products in Canada using high-quality ingredients. Some ingredients may be imported."
+  },
+  {
+    "Product Name":"Organika",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Organika Health Products Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Family-owned Canadian company based in Richmond, BC. Manufacturing is done locally. Focus on wellness and natural sourcing."
+  },
+  {
+    "Product Name":"Progressive",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Body Plus Nutritional Products Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned company with manufacturing in Canada. Offers a range of nutritional supplements tailored to various lifestyles."
+  },
+  {
+    "Product Name":"New Roots Herbal",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"New Roots Herbal Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Located in Quebec with Canadian ownership and local manufacturing. Strong focus on purity and potency."
+  },
+  {
+    "Product Name":"Genestra Brands",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Seroyal International Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned company specializing in professional-grade supplements. Manufacturing is conducted in Canada with an emphasis on quality and efficacy."
+  },
+  {
+    "Product Name":"Pure Encapsulations",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Nestl\u00e9 Health Science",
+    "Ownership (Country)":"Switzerland",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":4.0,
+    "Notes":"Swiss-owned company with manufacturing primarily in the USA. Products are available in Canada but have limited Canadian operations."
+  },
+  {
+    "Product Name":"Thorne Research",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Thorne HealthTech Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"American-owned company with manufacturing in the USA. Products are sold in Canada but without significant Canadian operations."
+  },
+  {
+    "Product Name":"Douglas Laboratories",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Atrium Innovations",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned company with manufacturing in the USA. Despite foreign manufacturing, the company's Canadian ownership and operations contribute to its score."
+  },
+  {
+    "Product Name":"Metagenics",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Metagenics Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"American-owned company with manufacturing in the USA. Products are available in Canada but without significant Canadian operations."
+  },
+  {
+    "Product Name":"Garden of Life",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Nestl\u00e9 Health Science",
+    "Ownership (Country)":"Switzerland",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":4.0,
+    "Notes":"Swiss-owned company with manufacturing in the USA. Products are sold in Canada but have limited Canadian operations."
+  },
+  {
+    "Product Name":"MegaFood",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"FoodState Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"American-owned company with manufacturing in the USA. Products are available in Canada but without significant Canadian operations."
+  },
+  {
+    "Product Name":"Nature's Way",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Schwabe Group",
+    "Ownership (Country)":"Germany",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"German-owned company with manufacturing primarily in the USA. Products are sold in Canada but have limited Canadian operations."
+  },
+  {
+    "Product Name":"NOW Foods",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Now Health Group Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"American-owned company with manufacturing in the USA. Products are available in Canada but without significant Canadian operations."
+  },
+  {
+    "Product Name":"Kirkland Signature",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Costco Wholesale Corporation",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"Various",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"American-owned private label brand with manufacturing in various countries. Products are sold in Canada but have limited Canadian operations."
+  },
+  {
+    "Product Name":"Nature's Bounty",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"The Bountiful Company",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"American-owned company with manufacturing in the USA. Products are available in Canada but without significant Canadian operations."
+  },
+  {
+    "Product Name":"Centrum",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Haleon",
+    "Ownership (Country)":"UK",
+    "Manufacturing (Countries)":"Various",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"British-owned company with manufacturing in various countries. Products are sold in Canada but have limited Canadian operations."
+  },
+  {
+    "Product Name":"One A Day",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Bayer AG",
+    "Ownership (Country)":"Germany",
+    "Manufacturing (Countries)":"Various",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"German-owned company with manufacturing in various countries. Products are available in Canada but have limited Canadian operations."
+  },
+  {
+    "Product Name":"Emergen-C",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Haleon",
+    "Ownership (Country)":"UK",
+    "Manufacturing (Countries)":"Various",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"British-owned company with manufacturing in various countries. Products are sold in Canada but have limited Canadian operations."
+  },
+  {
+    "Product Name":"Caltrate",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Haleon",
+    "Ownership (Country)":"UK",
+    "Manufacturing (Countries)":"Various",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"British-owned company with manufacturing in various countries. Products are available in Canada but have limited Canadian operations."
+  },
+  {
+    "Product Name":"USANA Health Sciences",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"USANA Health Sciences Inc.",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"USA",
+    "CANADIAN Score (out of 10)":3.0,
+    "Notes":"American-owned company with manufacturing in the USA. Products are available in Canada but without significant Canadian operations."
+  },
+  {
+    "Product Name":"Pure Lab Vitamins",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Pure Lab Vitamins",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned company with manufacturing in Canada. Focuses on high-quality vitamin supplements with local production."
+  },
+  {
+    "Product Name":"Salus Haus (Floradix)",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Salus Haus",
+    "Ownership (Country)":"Germany",
+    "Manufacturing (Countries)":"Germany",
+    "CANADIAN Score (out of 10)":2.0,
+    "Notes":"German-owned company with manufacturing in Germany. Products are sold in Canada but have minimal Canadian presence."
+  },
+  {
+    "Product Name":"Iron Vegan",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Body Plus Nutritional Products Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned brand with manufacturing in Canada. Offers plant-based nutritional supplements with local production."
+  },
+  {
+    "Product Name":"Smart Solutions",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Smart Solutions Canada",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned company providing health products tailored for women's wellness. Manufacturing is conducted in Canada."
+  },
+  {
+    "Product Name":"Precision",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Precision Supplements",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned company offering sports nutrition products. Manufacturing is done in Canada with a focus on athletic performance."
+  },
+  {
+    "Product Name":"Vitasave",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Vitasave.ca",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned online health and beauty store offering a wide range of vitamins and supplements. Supports Canadian brands and products."
+  },
+  {
+    "Product Name":"Liquid Nutrition",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Liquid Nutrition Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned company providing functional beverages and supplements. Manufacturing and operations are based in Canada."
+  },
+  {
+    "Product Name":"Vitalux",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Alcon Canada",
+    "Ownership (Country)":"USA",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":5.0,
+    "Notes":"American-owned company with manufacturing in Canada. Specializes in eye health supplements with local production."
+  },
+  {
+    "Product Name":"NutraSea",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Ascenta Health Ltd.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned company providing omega-3 supplements. Manufacturing is conducted in Canada with a focus on purity and sustainability."
+  },
+  {
+    "Product Name":"Omega Alpha",
+    "Product Category":"Vitamins",
+    "Ownership (Company)":"Omega Alpha Pharmaceuticals Inc.",
+    "Ownership (Country)":"Canada",
+    "Manufacturing (Countries)":"Canada",
+    "CANADIAN Score (out of 10)":9.0,
+    "Notes":"Canadian-owned company offering natural health products. Manufacturing is done in Canada with an emphasis on holistic wellness."
+  }
+]
