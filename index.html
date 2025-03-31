@@ -50,9 +50,9 @@
     </select>
     <select id="sortOptions" onchange="sortTable()">
       <option value="">Sort By</option>
-      <option value="brand">Product Name</option>
-      <option value="type">Product Type</option>
-      <option value="rating">Rating (Highest First)</option>
+      <option value="Product Name">Product Name</option>
+      <option value="Product Category">Product Category</option>
+      <option value="CANADIAN Score (out of 10)">Rating (Highest First)</option>
     </select>
   </div>
   <table id="productTable">
@@ -100,6 +100,7 @@
       });
     }
 
+    
     function filterTable() {
       const searchValue = document.getElementById("searchInput").value.toLowerCase();
       const typeFilter = document.getElementById("productTypeFilter").value;
@@ -107,22 +108,31 @@
       tbody.innerHTML = "";
 
       products.forEach(product => {
-        if (
-          (product.brand.toLowerCase().includes(searchValue) ||
-          product.type.toLowerCase().includes(searchValue) ||
-          product.ownership.toLowerCase().includes(searchValue) ||
-          product.manufacturing.toLowerCase().includes(searchValue) ||
-          product.notes.toLowerCase().includes(searchValue)) &&
-          (typeFilter === "" || product.type === typeFilter)
-        ) {
+        const searchFields = [
+          product["Product Name"],
+          product["Product Category"],
+          product["Ownership (Company)"],
+          product["Ownership (Country)"],
+          product["Manufacturing (Countries)"],
+          product["Notes"]
+        ];
+
+        const matchesSearch = searchFields.some(field =>
+          field?.toLowerCase().includes(searchValue)
+        );
+
+        const matchesType = !typeFilter || product["Product Category"] === typeFilter;
+
+        if (matchesSearch && matchesType) {
           const row = document.createElement("tr");
           row.innerHTML = `
-            <td>${product.brand}</td>
-            <td>${product.type}</td>
-            <td>${product.ownership}</td>
-            <td>${product.manufacturing}</td>
-            <td>${product.rating}/10</td>
-            <td>${product.notes}</td>
+            <td>${product["Product Name"]}</td>
+            <td>${product["Product Category"]}</td>
+            <td>${product["Ownership (Company)"]}</td>
+            <td>${product["Ownership (Country)"]}</td>
+            <td>${product["Manufacturing (Countries)"]}</td>
+            <td>${product["CANADIAN Score (out of 10)"]}/10</td>
+            <td>${product["Notes"]}</td>
           `;
           tbody.appendChild(row);
         }
@@ -131,9 +141,9 @@
 
     function sortTable() {
       const sortBy = document.getElementById("sortOptions").value;
-      if (sortBy === "rating") {
-        products.sort((a, b) => b.rating - a.rating);
-      } else if (sortBy === "brand" || sortBy === "type") {
+      if (sortBy === "CANADIAN Score (out of 10)") {
+        products.sort((a, b) => b[sortBy] - a[sortBy]);
+      } else if (sortBy === "Product Name" || sortBy === "Product Category") {
         products.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
       }
       populateTable();
@@ -141,7 +151,7 @@
 
     function populateFilterOptions() {
       const filterSelect = document.getElementById("productTypeFilter");
-      const types = [...new Set(products.map(product => product.type))];
+      const types = [...new Set(products.map(product => product["Product Category"]))];
       types.forEach(type => {
         const option = document.createElement("option");
         option.value = type;
@@ -149,6 +159,7 @@
         filterSelect.appendChild(option);
       });
     }
+
 
     window.onload = fetchProducts;
   </script>
