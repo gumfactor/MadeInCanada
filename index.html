@@ -9,93 +9,201 @@
       margin: 20px;
       background: #f2f2f2;
     }
-    h1 {
-      text-align: center;
+
+    #siteHeader {
+      background: linear-gradient(to right, #e5e5e5, #ffffff);
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
     }
+
+    #siteHeader img.flag {
+      width: 90px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    #siteHeader h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+      margin: 0;
+      color: #cc0000;
+    }
+
+    #siteHeader h1 span {
+      color: #000;
+      letter-spacing: 2px;
+    }
+
+    #siteHeader .subtitle {
+      font-size: 1.1em;
+      color: #555;
+      font-style: italic;
+      margin-top: 5px;
+    }
+
     #controls {
       text-align: center;
       margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 20px;
     }
+
+    #filtersContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
     input, select {
       padding: 8px;
       margin: 5px;
       font-size: 16px;
     }
+
+    label {
+      font-size: 16px;
+      margin-left: 0;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
       margin: auto;
       background: #fff;
     }
+
     th, td {
+      text-align: center;
       padding: 10px;
       border: 1px solid #ccc;
       text-align: left;
     }
+
     th {
       background: #ddd;
       cursor: pointer;
+      position: relative;
     }
+
+    .arrow {
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 0.8em;
+    }
+
+    .arrow span {
+      color: #ccc;
+    }
+
+    th.active-asc .arrow .up,
+    th.active-desc .arrow .down {
+      color: #000;
+    }
+
     tr:nth-child(even) {
       background: #f9f9f9;
+    }
+
+    .highlight {
+      color: #cc0000;
     }
   </style>
 </head>
 <body>
-  <h1>Canadian Product Search</h1>
+  <header id="siteHeader">
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" class="flag">
+    <h1><span>The</span> <span class="highlight">CANADA</span> <span>List</span></h1>
+    <div class="subtitle">Know what you're supporting</div>
+  </header>
+
   <div id="controls">
-    <input type="text" id="searchInput" placeholder="Search products..." onkeyup="filterTable()">
-    <select id="productTypeFilter" onchange="filterTable()">
-      <option value="">All Types</option>
-    </select>
-    <select id="sortOptions" onchange="sortTable()">
-      <option value="">Sort By</option>
-      <option value="Product Name">Product Name</option>
-      <option value="Product Category">Product Category</option>
-      <option value="CANADIAN Score (out of 10)">Rating (Highest First)</option>
-    </select>
+    <div>
+      <input type="text" id="searchInput" placeholder="Search products..." onkeyup="filterTable()">
+      <select id="productTypeFilter" onchange="filterTable()">
+        <option value="">All Types</option>
+      </select>
+    </div>
+    <div id="filtersContainer">
+      <label><input type="checkbox" id="ownershipCanada" onchange="filterTable()"> Filter Canadian Ownership only</label>
+      <label><input type="checkbox" id="manufacturingCanada" onchange="filterTable()"> Filter Canadian Manufacturing only</label>
+    </div>
   </div>
+
   <table id="productTable">
     <thead>
       <tr>
-        <th onclick="sortTable('Product Name')">Product Name</th>
-        <th onclick="sortTable('Product Category')">Product Category</th>
-        <th>Ownership (Company)</th><th>Ownership (Country)</th>
-        <th>Manufacturing (Countries)</th>
-        <th onclick="sortTable('CANADIAN Score (out of 10)')">Score (/10)</th>
+        <th onclick="sortTable('Product Name')" id="th-Product Name">
+          Product Name
+          <span class="arrow"><span class="up">▲</span><span class="down">▼</span></span>
+        </th>
+        <th onclick="sortTable('Product Category')" id="th-Product Category">
+          Product Category
+          <span class="arrow"><span class="up">▲</span><span class="down">▼</span></span>
+        </th>
+        <th>Parent Company</th>
+        <th>Ownership</th>
+        <th>Manufacturing</th>
+        <th onclick="sortTable('CANADIAN Score (out of 10)')" id="th-CANADIAN Score (out of 10)">
+          The <span class="highlight">CANADA</span> Score
+          <span class="arrow"><span class="up">▲</span><span class="down">▼</span></span>
+        </th>
         <th>Notes</th>
       </tr>
     </thead>
     <tbody id="tableBody">
-      <!-- Table rows will be inserted dynamically -->
       <tr id="emptyMessageRow" style="display:none;">
         <td colspan="7" style="text-align:center; font-style:italic; padding: 20px;">
           No products found — try broadening your search.
         </td>
       </tr>
-  </tbody>
+    </tbody>
   </table>
 
   <script>
     let products = [];
+    let currentSortField = '';
+    let sortAscending = true;
 
-    // Fetch data from JSON file
     async function fetchProducts() {
-      const response = await fetch('TheCanadaList.json');
+      const response = await fetch('./TheCanadaList.json');
       products = await response.json();
       populateTable();
       populateFilterOptions();
     }
 
+    function updateSortArrow(sortBy) {
+      document.querySelectorAll('th').forEach(th => {
+        th.classList.remove('active-asc', 'active-desc');
+      });
+
+      const th = document.getElementById(`th-${sortBy}`);
+      if (th) {
+        th.classList.add(sortAscending ? 'active-asc' : 'active-desc');
+      }
+    }
+
     function populateTable() {
       const tbody = document.getElementById("tableBody");
-      tbody.innerHTML = "";
+      const rows = Array.from(tbody.querySelectorAll("tr:not(#emptyMessageRow)"));
+      rows.forEach(row => row.remove());
+
       products.forEach(product => {
         const row = document.createElement("tr");
         row.innerHTML = `
           <td>
-          ${product["Product Name"]}
-          ${product["Ownership (Country)"] === "Canada" && product["Manufacturing (Countries)"] === "Canada" ? " 🍁" : ""}
+            ${product["Product Name"]}
+            ${product["Ownership (Country)"] === "Canada" && product["Manufacturing (Countries)"] === "Canada" 
+              ? '<img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" style="height: 16px; vertical-align: middle; margin-left: 6px;">'
+              : ""}
           </td>
           <td>${product["Product Category"]}</td>
           <td>${product["Ownership (Company)"]}</td>
@@ -106,65 +214,91 @@
         `;
         tbody.appendChild(row);
       });
+
+      document.getElementById("emptyMessageRow").style.display = "none";
     }
 
-    
-function filterTable() {
-  const searchValue = document.getElementById("searchInput").value.toLowerCase();
-  const typeFilter = document.getElementById("productTypeFilter").value;
-  const tbody = document.getElementById("tableBody");
-  const emptyMessageRow = document.getElementById("emptyMessageRow");
-  tbody.innerHTML = "";
+    function filterTable() {
+      const searchValue = document.getElementById("searchInput").value.toLowerCase();
+      const typeFilter = document.getElementById("productTypeFilter").value;
+      const ownershipCanada = document.getElementById("ownershipCanada").checked;
+      const manufacturingCanada = document.getElementById("manufacturingCanada").checked;
 
-  let matches = 0;
+      const tbody = document.getElementById("tableBody");
+      const emptyMessageRow = document.getElementById("emptyMessageRow");
+      const rows = Array.from(tbody.querySelectorAll("tr:not(#emptyMessageRow)"));
+      rows.forEach(row => row.remove());
 
-  products.forEach(product => {
-    const searchFields = [
-      product["Product Name"],
-      product["Product Category"],
-      product["Ownership (Company)"],
-      product["Ownership (Country)"],
-      product["Manufacturing (Countries)"],
-      product["Notes"]
-    ];
+      let matches = 0;
 
-    const matchesSearch = searchFields.some(field =>
-      field?.toLowerCase().includes(searchValue)
-    );
+      products.forEach(product => {
+        const searchFields = [
+          product["Product Name"],
+          product["Product Category"],
+          product["Ownership (Company)"],
+          product["Ownership (Country)"],
+          product["Manufacturing (Countries)"],
+          product["Notes"]
+        ];
 
-    const matchesType = !typeFilter || product["Product Category"] === typeFilter;
+        const matchesSearch = searchFields.some(field =>
+          field?.toLowerCase().includes(searchValue)
+        );
 
-    if (matchesSearch && matchesType) {
-      matches++;
-      const row = document.createElement("tr");
-      row.innerHTML = `
-        <td>
-          ${product["Product Name"]}
-          ${product["Ownership (Country)"] === "Canada" && product["Manufacturing (Countries)"] === "Canada" ? " 🇨🇦" : ""}
-        </td>
-        <td>${product["Product Category"]}</td>
-        <td>${product["Ownership (Company)"]}</td>
-        <td>${product["Ownership (Country)"]}</td>
-        <td>${product["Manufacturing (Countries)"]}</td>
-        <td>${product["CANADIAN Score (out of 10)"]}/10</td>
-        <td>${product["Notes"]}</td>
-      `;
-      tbody.appendChild(row);
+        const matchesType = !typeFilter || product["Product Category"] === typeFilter;
+        const matchesOwnership = !ownershipCanada || product["Ownership (Country)"] === "Canada";
+        const matchesManufacturing = !manufacturingCanada || product["Manufacturing (Countries)"] === "Canada";
+
+        if (matchesSearch && matchesType && matchesOwnership && matchesManufacturing) {
+          matches++;
+          const row = document.createElement("tr");
+          row.innerHTML = `
+            <td>
+              ${product["Product Name"]}
+              ${product["Ownership (Country)"] === "Canada" && product["Manufacturing (Countries)"] === "Canada" 
+                ? '<img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" style="height: 16px; vertical-align: middle; margin-left: 6px;">'
+                : ""}
+            </td>
+            <td>${product["Product Category"]}</td>
+            <td>${product["Ownership (Company)"]}</td>
+            <td>${product["Ownership (Country)"]}</td>
+            <td>${product["Manufacturing (Countries)"]}</td>
+            <td>${product["CANADIAN Score (out of 10)"]}/10</td>
+            <td>${product["Notes"]}</td>
+          `;
+          tbody.appendChild(row);
+        }
+      });
+
+      emptyMessageRow.style.display = matches === 0 ? "table-row" : "none";
     }
-  });
 
-  emptyMessageRow.style.display = matches === 0 ? "table-row" : "none";
-}
+    function sortTable(sortBy = null) {
+      if (!sortBy) return;
 
-
-    function sortTable() {
-      const sortBy = document.getElementById("sortOptions").value;
-      if (sortBy === "CANADIAN Score (out of 10)") {
-        products.sort((a, b) => b[sortBy] - a[sortBy]);
-      } else if (sortBy === "Product Name" || sortBy === "Product Category") {
-        products.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
+      if (sortBy === currentSortField) {
+        sortAscending = !sortAscending;
+      } else {
+        currentSortField = sortBy;
+        sortAscending = true;
       }
-      populateTable();
+
+      updateSortArrow(sortBy);
+
+      products.sort((a, b) => {
+        const aVal = a[sortBy];
+        const bVal = b[sortBy];
+
+        if (typeof aVal === "number" && typeof bVal === "number") {
+          return sortAscending ? aVal - bVal : bVal - aVal;
+        } else {
+          return sortAscending
+            ? aVal.localeCompare(bVal)
+            : bVal.localeCompare(aVal);
+        }
+      });
+
+      filterTable();
     }
 
     function populateFilterOptions() {
@@ -177,7 +311,6 @@ function filterTable() {
         filterSelect.appendChild(option);
       });
     }
-
 
     window.onload = fetchProducts;
   </script>
