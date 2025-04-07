@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - The CANADA List</title>
+</head>
+<body>
+  <header style="background-color:#003366;color:#fff;padding:1em;">
+    <h1>The CANADA List</h1>
+  </header>
+
+  <main style="padding:1em;">
+    <h2>What is This Site About?</h2>
+    <p>This platform helps Canadians discover, compare, and choose products and brands based on how much they support the Canadian economy. Whether you're shopping for food, clothing, or household goods, you can quickly see which options are truly Canadian—and which ones just feel like they are.</p>
+
+    <h3>Why It Exists</h3>
+    <p>Canadians often want to support local businesses, but it's not always easy to tell which brands are genuinely Canadian-owned or which products are actually made here. Many companies use branding that suggests Canadian identity without meaningfully contributing to Canadian jobs, manufacturing, or ownership. This site cuts through the noise.</p>
+
+    <h3>Why It Matters</h3>
+    <p>Every dollar you spend is a vote. By choosing Canadian-owned and Canadian-made products, you're helping to strengthen our economy, create local jobs, reduce supply chain vulnerability, and support businesses that reinvest in Canadian communities. Our purchasing choices shape the kind of economy—and country—we live in.</p>
+
+    <h3>How It Works</h3>
+    <p>Search, sort, and filter thousands of products by category, ownership, manufacturing location, and more. Each listing includes a CANADA Score—a clear, 1-to-10 rating of how much the product or brand supports the Canadian economy.</p>
+  </main>
+</body>
+</html>
