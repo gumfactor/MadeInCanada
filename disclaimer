@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Legal Disclaimer & Liability Statement</title>
+</head>
+<body>
+  <header style="background-color:#003366;color:#fff;padding:1em;">
+    <h1>The CANADA List</h1>
+  </header>
+
+  <main style="padding:1em;">
+    <h2>Legal Disclaimer & Liability Statement</h2>
+    <p><strong>Last updated:</strong> Apr 8, 2025</p>
+
+    <p>The CANADA List is an informational tool designed to help Canadians make more informed purchasing decisions. The data presented on this site—including CANADA Scores, ownership information, and manufacturing details—is compiled using a combination of AI analysis, publicly available information, company websites, regulatory databases, and, in some cases, user contributions. While we strive for accuracy and transparency, the information on this site is not guaranteed to be complete, up to date, or error-free.</p>
+
+    <h3>No Warranty</h3>
+    <p>We make no express or implied warranties about the reliability, accuracy, or completeness of the information provided. This includes, but is not limited to, any implied warranties of merchantability or fitness for a particular purpose.</p>
+
+    <h3>Use at Your Own Risk</h3>
+    <p>By using this website, you agree that your reliance on the information provided is entirely at your own risk. We are not liable for any decisions made based on this information, nor for any damages (direct, indirect, incidental, or consequential) arising from its use.</p>
+
+    <h3>AI-Generated Content</h3>
+    <p>Much of the analysis provided is supported by artificial intelligence, which interprets and synthesizes data from various sources. While we take care to review and validate this information, AI is not infallible. Errors can and do occur.</p>
+
+    <h3>Corrections</h3>
+    <p>We are committed to improving our accuracy. If you believe any information on this site is incorrect or misleading, please contact us at <a href="mailto:support@thecanadalist.ca">support@thecanadalist.ca</a>. We will investigate all credible claims and, if the error is verified, update the listing as quickly as possible.</p>
+
+    <h3>Third-Party Links</h3>
+    <p>Some pages may link to external websites. We do not control or endorse the content on those sites and are not responsible for any third-party content or services.</p>
+
+    <h3>Intellectual Property</h3>
+    <p>All trademarks, logos, brand names, and product images remain the property of their respective owners. Their inclusion on this site does not imply any affiliation or endorsement.</p>
+  </main>
+</body>
+</html>
