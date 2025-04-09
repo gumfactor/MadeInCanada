@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submit a Product | The CANADA List</title>
+  <meta name="description" content="Know a product we missed? Submit it here and help expand our database of Canadian-rated items.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<nav class="top-nav">
+  <div class="nav-container">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="mobileMenu">
+      <li><a href="index.html">The List</a></li>
+      <li><a href="submit.html">Submit a Product</a></li>
+      <li><a href="support.html">Support the Site</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <header id="siteHeader">
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" class="flag">
+    <h1><span>The</span> <span style="color: #cc0000">CANADA</span> <span>List</span></h1>
+    <div class="subtitle">Know what you're buying. Support what matters.</div>
+  </header>
+
+  <main>
+    <section id="submit-product" class="form-section">
+        <h1>Submit a Product</h1>
+        <p>Help expand our Canadian product database by sharing something you’ve found!</p>
+      
+        <form id="product-form" action="https://formsubmit.co/newproduct@thecanadalist.com" method="POST">
+          <div>
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" required placeholder="e.g., Kirkland Organic Peanut Butter">
+          </div>
+      
+          <div>
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+              <option value="" disabled selected hidden>Select Product Category</option>
+            </select>
+          </div>
+          
+          <div>
+            <label for="brand">Brand (if known):</label>
+            <input type="text" id="brand" name="brand" placeholder="e.g., Kirkland">
+          </div>
+      
+          <div>
+            <label for="retailer">Retailer or Store Name:</label>
+            <input type="text" id="retailer" name="retailer" placeholder="e.g., Costco">
+          </div>
+      
+         <div>
+            <label for="location">Location (optional):</label>
+            <input type="text" id="location" name="location" placeholder="e.g., Toronto, ON or Online">
+          </div>
+      
+          <div>
+            <label for="photo">Upload a Photo (optional):</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+          </div>
+      
+          <div>
+            <label for="notes">Additional Notes:</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Provide any additional product notes, as relevant"></textarea>
+          </div>
+      
+          <div id="credit-name-container" style="display: none;">
+            <label for="credit-name">Name or handle:</label>
+            <input type="text" id="credit-name" name="credit-name">
+          </div>  
+
+          <button type="submit">Submit</button>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Product Submission">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_autoresponse" value="Thank you! Your product submission has been received and will appear on the site once verified.">
+        
+          <div id="submission-popup" style="display:none; text-align:center; margin-top:20px; padding:15px; background-color:#e0ffe0; color:#006600; border:1px solid #90ee90; border-radius:6px; font-weight:bold;">
+            ✅ Your product has been submitted and will appear on the site once verified.
+          </div>
+        
+          <script src="./categoriesData.js"></script>
+          <script>
+            const categorySelect = document.getElementById('category');
+
+          function populateCategoryDropdown(dataArray, prefix = "") {
+            dataArray.forEach(item => {
+              if (item.subcategories && item.subcategories.length > 0) {
+                populateCategoryDropdown(item.subcategories, prefix + item.label + " → ");
+              } else if (item.label) {
+                const option = document.createElement('option');
+                option.value = item.label;
+                option.textContent = prefix + item.label;
+                categorySelect.appendChild(option);
+              }
+            });
+          }
+
+          populateCategoryDropdown(categoriesData);
+          </script>
+          </form>
+
+        <div>
+          <h3>✅ What Happens Next?</h3>
+          <p style="color: #000;">Once submitted, our team will review the product and verify key details like ownership, manufacturing and sourcing. Approved submissions will appear in the database once verified.</p>
+          <p style="color: #000;">Thank you for helping make <strong>The CANADA List</strong> more beneficial for Canadians everywhere!</p>
+        </div>
+      </section>
+      
+      <script>
+        document.querySelectorAll('input[name="credit"]').forEach((el) => {
+          el.addEventListener('change', function () {
+            const creditContainer = document.getElementById('credit-name-container');
+            creditContainer.style.display = this.value === 'yes' ? 'block' : 'none';
+          });
+        });
+      </script>
+  </main>
+  <footer style="text-align: center; padding: 20px; font-size: 0.8em; color: #555;">
+    <a href="terms.html" style="color: #0077cc; text-decoration: none; margin-right: 15px;">
+      Terms of Service
+    </a>
+    <a href="disclaimer.html" style="color: #0077cc; text-decoration: none;">
+      Liability Statement
+    </a>
+  </footer>
+</body>
+</html>
+      

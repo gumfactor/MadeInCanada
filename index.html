@@ -2,141 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Canadian Product Search</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background: #f2f2f2;
-    }
+  <title>About The CANADA List | Why We Made This Site</title>
+  <meta name="description" content="Learn how The CANADA List helps Canadians find products that support local jobs and businesses. See what inspired the project.">
+  <meta name="google-site-verification" content="tnvrwqMttr-LnJRmyhdmeQ8o3zhnBJTXH_tqEfqud1U" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    #siteHeader {
-      background: linear-gradient(to right, #e5e5e5, #ffffff);
-      padding: 20px 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      margin-bottom: 30px;
-    }
-
-    #siteHeader img.flag {
-      width: 90px;
-      height: auto;
-      margin-bottom: 10px;
-    }
-
-    #siteHeader h1 {
-      font-size: 2.5em;
-      font-weight: 700;
-      margin: 0;
-      color: #cc0000;
-    }
-
-    #siteHeader h1 span {
-      color: #000;
-      letter-spacing: 2px;
-    }
-
-    #siteHeader .subtitle {
-      font-size: 1.1em;
-      color: #555;
-      font-style: italic;
-      margin-top: 5px;
-    }
-
-    #controls {
-      text-align: center;
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      gap: 20px;
-    }
-
-    #filtersContainer {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    input, select {
-      padding: 8px;
-      margin: 5px;
-      font-size: 16px;
-    }
-
-    label {
-      font-size: 16px;
-      margin-left: 0;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: auto;
-      background: #fff;
-    }
-
-    th, td {
-      text-align: center;
-      padding: 10px;
-      border: 1px solid #ccc;
-      text-align: left;
-    }
-
-    th {
-      background: #ddd;
-      cursor: pointer;
-      position: relative;
-    }
-
-    .arrow {
-      display: inline-block;
-      margin-left: 5px;
-      font-size: 0.8em;
-    }
-
-    .arrow span {
-      color: #ccc;
-    }
-
-    th.active-asc .arrow .up,
-    th.active-desc .arrow .down {
-      color: #000;
-    }
-
-    tr:nth-child(even) {
-      background: #f9f9f9;
-    }
-
-    .highlight {
-      color: #cc0000;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
+<nav class="top-nav">
+  <div class="nav-container">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="mobileMenu">
+      <li><a href="index.html">The List</a></li>
+      <li><a href="submit.html">Submit a Product</a></li>
+      <li><a href="support.html">Support the Site</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
 <body>
-  <header id="siteHeader">
+  <header id="siteHeader" style="position: relative;">
+ 
+    <!-- Banner content -->
     <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" class="flag">
-    <h1><span>The</span> <span class="highlight">CANADA</span> <span>List</span></h1>
-    <div class="subtitle">Know what you're supporting</div>
-  </header>
+    <h1><span>The</span> <span style="color: #cc0000">CANADA</span> <span>List</span></h1>
+    <div class="subtitle">Know what you're buying. Support what matters.</div>
+
+    <div class="header-links">
+      <a href="about.html">Why this site exists</a>
+      <a href="scoring.html">How the CANADA scores are derived</a>
+    </div>
+  </header>  
+
+
 
   <div id="controls">
     <div>
-      <input type="text" id="searchInput" placeholder="Search products..." onkeyup="filterTable()">
-      <select id="productTypeFilter" onchange="filterTable()">
+      <input type="text" id="searchInput" placeholder="Search by keyword...">
+      <select id="productTypeFilter">
         <option value="">All Types</option>
       </select>
     </div>
     <div id="filtersContainer">
-      <label><input type="checkbox" id="ownershipCanada" onchange="filterTable()"> Filter Canadian Ownership only</label>
-      <label><input type="checkbox" id="manufacturingCanada" onchange="filterTable()"> Filter Canadian Manufacturing only</label>
+      <label><input type="checkbox" id="ownershipCanada"> Filter Canadian Ownership only</label>
+      <label><input type="checkbox" id="manufacturingCanada"> Filter Canadian Manufacturing only</label>
     </div>
   </div>
+  <div id="selectedCategoryDisplay"></div>
 
   <table id="productTable">
     <thead>
@@ -161,77 +75,120 @@
     </thead>
     <tbody id="tableBody">
       <tr id="emptyMessageRow" style="display:none;">
-        <td colspan="7" style="text-align:center; font-style:italic; padding: 20px;">
+        <td colspan="7" style="text-align:center; font-style:italic; padding:20px;">
           No products found — try broadening your search.
         </td>
       </tr>
     </tbody>
   </table>
 
+  <div id="paginationControls">
+    <span id="prevLink" class="disabled" onclick="goToPrevPage()">Previous Page</span>
+    <span id="paginationInfo" style="margin-bottom: 8px; font-size: 16px;"></span>
+    <span id="nextLink" onclick="goToNextPage()">Next Page</span>
+  </div>
+
+  <script src="./categoriesData.js"></script>
+
   <script>
+    /////////////////////////////////////////////////
+    // We'll store all products in memory, but only
+    // do minimal DOM updates to avoid full rebuild.
+    /////////////////////////////////////////////////
+
     let products = [];
+    let selectedCategory = "";
+
+    // We'll keep a global array of filtered data
+    let filteredProducts = [];
+
+    // We'll keep track of the last known filter state
+    let lastSearchValue = null;
+    let lastTypeFilter = null;
+    let lastOwnershipCanada = false;
+    let lastManufacturingCanada = false;
+
     let currentSortField = '';
     let sortAscending = true;
+    let currentPage = 1;
+    const pageSize = 100;
 
-    async function fetchProducts() {
-      const response = await fetch('./TheCanadaList.json');
-      products = await response.json();
-      populateTable();
+    // Debounce for the search input
+    let searchDebounceTimer = null;
+
+    // We'll store references to the <tr> elements we create.
+    let currentRowMap = new Map();
+
+    // Single onload
+    window.onload = async function() {
+      await fetchProducts();
+      console.log("categoriesData?", categoriesData);
       populateFilterOptions();
-    }
+    };
 
-    function updateSortArrow(sortBy) {
-      document.querySelectorAll('th').forEach(th => {
-        th.classList.remove('active-asc', 'active-desc');
-      });
+    // Fetch TheCanadaList.json
+    async function fetchProducts() {
+  try {
+    const response = await fetch('./TheCanadaList.json');
+    products = await response.json();
+    // Set default sort: Score column in descending order
+    currentSortField = "CANADIAN Score (out of 10)";
+    sortAscending = false;
+    doFullFilter();
+  } catch (error) {
+    console.error("Error fetching products:", error);
+  }
+}
 
-      const th = document.getElementById(`th-${sortBy}`);
-      if (th) {
-        th.classList.add(sortAscending ? 'active-asc' : 'active-desc');
-      }
-    }
+    // Debounce for search input
+    document.getElementById("searchInput").addEventListener("input", () => {
+      currentPage = 1;
+      clearTimeout(searchDebounceTimer);
+      searchDebounceTimer = setTimeout(() => {
+        doFullFilter();
+      }, 300);
+    });
 
-    function populateTable() {
-      const tbody = document.getElementById("tableBody");
-      const rows = Array.from(tbody.querySelectorAll("tr:not(#emptyMessageRow)"));
-      rows.forEach(row => row.remove());
+    document.getElementById("productTypeFilter").addEventListener("change", () => {
+      currentPage = 1;
+      doFullFilter();
+    });
 
-      products.forEach(product => {
-        const row = document.createElement("tr");
-        row.innerHTML = `
-          <td>
-            ${product["Product Name"]}
-            ${product["Ownership (Country)"] === "Canada" && product["Manufacturing (Countries)"] === "Canada" 
-              ? '<img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" style="height: 16px; vertical-align: middle; margin-left: 6px;">'
-              : ""}
-          </td>
-          <td>${product["Product Category"]}</td>
-          <td>${product["Ownership (Company)"]}</td>
-          <td>${product["Ownership (Country)"]}</td>
-          <td>${product["Manufacturing (Countries)"]}</td>
-          <td>${product["CANADIAN Score (out of 10)"]}/10</td>
-          <td>${product["Notes"]}</td>
-        `;
-        tbody.appendChild(row);
-      });
+    document.getElementById("ownershipCanada").addEventListener("change", () => {
+      currentPage = 1;
+      doFullFilter();
+    });
 
-      document.getElementById("emptyMessageRow").style.display = "none";
-    }
+    document.getElementById("manufacturingCanada").addEventListener("change", () => {
+      currentPage = 1;
+      doFullFilter();
+    });
 
-    function filterTable() {
+    function doFullFilter() {
       const searchValue = document.getElementById("searchInput").value.toLowerCase();
       const typeFilter = document.getElementById("productTypeFilter").value;
       const ownershipCanada = document.getElementById("ownershipCanada").checked;
       const manufacturingCanada = document.getElementById("manufacturingCanada").checked;
 
-      const tbody = document.getElementById("tableBody");
-      const emptyMessageRow = document.getElementById("emptyMessageRow");
-      const rows = Array.from(tbody.querySelectorAll("tr:not(#emptyMessageRow)"));
-      rows.forEach(row => row.remove());
+      // If filter conditions didn't change, skip re-filter.
+      if (
+        searchValue === lastSearchValue &&
+        typeFilter === lastTypeFilter &&
+        ownershipCanada === lastOwnershipCanada &&
+        manufacturingCanada === lastManufacturingCanada &&
+        currentSortField
+      ) {
+        doSort();
+        updatePaginationAndRender();
+        return;
+      }
 
-      let matches = 0;
+      lastSearchValue = searchValue;
+      lastTypeFilter = typeFilter;
+      lastOwnershipCanada = ownershipCanada;
+      lastManufacturingCanada = manufacturingCanada;
 
-      products.forEach(product => {
+      filteredProducts = products.filter(product => {
         const searchFields = [
           product["Product Name"],
           product["Product Category"],
@@ -240,79 +197,239 @@
           product["Manufacturing (Countries)"],
           product["Notes"]
         ];
-
         const matchesSearch = searchFields.some(field =>
-          field?.toLowerCase().includes(searchValue)
+          String(field || "").toLowerCase().includes(searchValue)
         );
-
-        const matchesType = !typeFilter || product["Product Category"] === typeFilter;
-        const matchesOwnership = !ownershipCanada || product["Ownership (Country)"] === "Canada";
-        const matchesManufacturing = !manufacturingCanada || product["Manufacturing (Countries)"] === "Canada";
-
-        if (matchesSearch && matchesType && matchesOwnership && matchesManufacturing) {
-          matches++;
-          const row = document.createElement("tr");
-          row.innerHTML = `
-            <td>
-              ${product["Product Name"]}
-              ${product["Ownership (Country)"] === "Canada" && product["Manufacturing (Countries)"] === "Canada" 
-                ? '<img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" style="height: 16px; vertical-align: middle; margin-left: 6px;">'
-                : ""}
-            </td>
-            <td>${product["Product Category"]}</td>
-            <td>${product["Ownership (Company)"]}</td>
-            <td>${product["Ownership (Country)"]}</td>
-            <td>${product["Manufacturing (Countries)"]}</td>
-            <td>${product["CANADIAN Score (out of 10)"]}/10</td>
-            <td>${product["Notes"]}</td>
-          `;
-          tbody.appendChild(row);
-        }
+        const matchesType =
+          !typeFilter ||
+          product["Product Category"]?.toLowerCase().trim() === typeFilter.toLowerCase().trim();
+        const matchesOwnership =
+          !ownershipCanada || product["Ownership (Country)"] === "Canada";
+        const matchesManufacturing =
+          !manufacturingCanada || product["Manufacturing (Countries)"] === "Canada";
+        return matchesSearch && matchesType && matchesOwnership && matchesManufacturing;
       });
 
-      emptyMessageRow.style.display = matches === 0 ? "table-row" : "none";
+      doSort();
+      updatePaginationAndRender();
+    }
+
+    function doSort() {
+  if (!currentSortField) return;
+  filteredProducts.sort((a, b) => {
+    let aVal = a[currentSortField];
+    let bVal = b[currentSortField];
+    // If sorting by Canada Score, force numeric conversion.
+    if (currentSortField === "CANADIAN Score (out of 10)") {
+      aVal = parseFloat(String(aVal).trim());
+      bVal = parseFloat(String(bVal).trim());
+      if (isNaN(aVal)) aVal = 0;
+      if (isNaN(bVal)) bVal = 0;
+    }
+    if (typeof aVal === "number" && typeof bVal === "number") {
+      return sortAscending ? aVal - bVal : bVal - aVal;
+    } else {
+      return sortAscending
+        ? String(aVal).localeCompare(String(bVal))
+        : String(bVal).localeCompare(String(aVal));
+    }
+  });
+}
+
+
+    function updatePaginationAndRender() {
+      const totalPages = Math.ceil(filteredProducts.length / pageSize) || 1;
+      if (currentPage > totalPages) currentPage = totalPages;
+      if (currentPage < 1) currentPage = 1;
+
+      const pageProducts = filteredProducts.slice(
+        (currentPage - 1) * pageSize,
+        currentPage * pageSize
+      );
+      patchTable(pageProducts);
+
+      document.getElementById("emptyMessageRow").style.display =
+        filteredProducts.length === 0 ? "table-row" : "none";
+      renderPaginationControls(totalPages);
+    }
+
+    function patchTable(newPageProducts) {
+  const tbody = document.getElementById("tableBody");
+  tbody.innerHTML = ""; // clear the table body
+  currentRowMap.clear(); // clear the map so the new order is built fresh
+  newPageProducts.forEach(product => {
+    const newRow = createRow(product);
+    tbody.appendChild(newRow);
+    currentRowMap.set(product.id, newRow);
+  });
+}
+
+
+    function createRow(product) {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>
+          ${product["Product Name"]}
+          ${
+            product["Ownership (Country)"] === "Canada" &&
+            product["Manufacturing (Countries)"] === "Canada"
+              ? '<img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" style="height: 16px; vertical-align: middle; margin-left: 6px;">'
+              : ""
+          }
+        </td>
+        <td>${product["Product Category"]}</td>
+        <td>${product["Ownership (Company)"]}</td>
+        <td>${product["Ownership (Country)"]}</td>
+        <td>${product["Manufacturing (Countries)"]}</td>
+        <td>${product["CANADIAN Score (out of 10)"]}</td>
+        <td>${product["Notes"]}</td>
+      `;
+      return row;
+    }
+
+    function renderPaginationControls(totalPages) {
+      const info = document.getElementById("paginationInfo");
+      info.textContent = `Page ${currentPage} of ${totalPages}`;
+
+      const nextLink = document.getElementById("nextLink");
+      nextLink.classList.toggle("disabled", currentPage >= totalPages);
+
+      const prevLink = document.getElementById("prevLink");
+      prevLink.classList.toggle("disabled", currentPage <= 1);
+    }
+
+    function goToNextPage() {
+      const totalPages = Math.ceil(filteredProducts.length / pageSize) || 1;
+      if (currentPage < totalPages) {
+        currentPage++;
+        updatePaginationAndRender();
+      }
+    }
+
+    function goToPrevPage() {
+      if (currentPage > 1) {
+        currentPage--;
+        updatePaginationAndRender();
+      }
     }
 
     function sortTable(sortBy = null) {
       if (!sortBy) return;
-
       if (sortBy === currentSortField) {
         sortAscending = !sortAscending;
       } else {
         currentSortField = sortBy;
         sortAscending = true;
       }
-
       updateSortArrow(sortBy);
+      doSort();
+      updatePaginationAndRender();
+    }
 
-      products.sort((a, b) => {
-        const aVal = a[sortBy];
-        const bVal = b[sortBy];
-
-        if (typeof aVal === "number" && typeof bVal === "number") {
-          return sortAscending ? aVal - bVal : bVal - aVal;
-        } else {
-          return sortAscending
-            ? aVal.localeCompare(bVal)
-            : bVal.localeCompare(aVal);
-        }
+    function updateSortArrow(sortBy) {
+      document.querySelectorAll("th").forEach((th) => {
+        th.classList.remove("active-asc", "active-desc");
       });
-
-      filterTable();
+      const th = document.getElementById(`th-${sortBy}`);
+      if (th) {
+        th.classList.add(sortAscending ? "active-asc" : "active-desc");
+      }
     }
 
     function populateFilterOptions() {
-      const filterSelect = document.getElementById("productTypeFilter");
-      const types = [...new Set(products.map(product => product["Product Category"]))];
-      types.forEach(type => {
-        const option = document.createElement("option");
-        option.value = type;
-        option.textContent = type;
-        filterSelect.appendChild(option);
+      const filter = document.getElementById("productTypeFilter");
+      filter.innerHTML = "";
+
+      const defaultOption = document.createElement("option");
+      defaultOption.value = "";
+      defaultOption.textContent = "All Types";
+      filter.appendChild(defaultOption);
+
+      categoriesData.forEach((category) => {
+        const group = document.createElement("optgroup");
+        group.label = category.label;
+
+        if (category.subcategories && category.subcategories.length > 0) {
+          category.subcategories.forEach((sub) => {
+            if (sub.subcategories) {
+              sub.subcategories.forEach((subsub) => {
+                const option = document.createElement("option");
+                option.value = subsub.label;
+                option.textContent = `${sub.label} → ${subsub.label}`;
+                group.appendChild(option);
+              });
+            } else {
+              const option = document.createElement("option");
+              option.value = sub.label;
+              option.textContent = sub.label;
+              group.appendChild(option);
+            }
+          });
+        }
+        filter.appendChild(group);
       });
     }
 
-    window.onload = fetchProducts;
+    function buildCategoryMenu(dataArray, parentUl) {
+  dataArray.forEach((item) => {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = "#";
+    a.textContent = item.label;
+
+    a.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      const subMenu = li.querySelector(".submenu");
+      if (subMenu) {
+        // Close any sibling submenus if desired
+        const siblingSubMenus = li.parentNode.querySelectorAll(".submenu");
+        siblingSubMenus.forEach(sm => {
+          if (sm !== subMenu) {
+            sm.style.display = "none";
+          }
+        });
+        // Toggle the current submenu
+        subMenu.style.display = (subMenu.style.display === "block") ? "none" : "block";
+      } else {
+        // No submenu means this is a leaf category: set and filter
+        selectedCategory = item.label;
+        document.getElementById("selectedCategoryDisplay").textContent = `Selected Category: ${item.label}`;
+        doFullFilter();
+      }
+    });
+
+    li.appendChild(a);
+
+    if (item.subcategories && item.subcategories.length > 0) {
+      const subUl = document.createElement("ul");
+      subUl.classList.add("submenu");
+      subUl.style.display = "none"; // Hide submenus by default
+      buildCategoryMenu(item.subcategories, subUl);
+      li.appendChild(subUl);
+    }
+
+    parentUl.appendChild(li);
+  });
+}
+
+
   </script>
+  <footer style="text-align: center; padding: 20px; font-size: 0.8em; color: #555;">
+    <a href="terms.html" style="color: #0077cc; text-decoration: none; margin-right: 15px;">
+      Terms of Service
+    </a>
+    <a href="disclaimer.html" style="color: #0077cc; text-decoration: none;">
+      Liability Statement
+    </a>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+  
 </body>
 </html>

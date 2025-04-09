@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Support the Site | The CANADA List</title>
+  <meta name="description" content="Help keep The CANADA List running. Learn how you can support the site financially or by spreading the word.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<nav class="top-nav">
+  <div class="nav-container">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links" id="mobileMenu">
+      <li><a href="index.html">The List</a></li>
+      <li><a href="submit.html">Submit a Product</a></li>
+      <li><a href="support.html">Support the Site</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <header id="siteHeader">
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" class="flag">
+    <h1><span>The</span> <span style="color: #cc0000">CANADA</span> <span>List</span></h1>
+    <div class="subtitle">Know what you're buying. Support what matters.</div>
+  </header>
+
+  <main>
+    <div class="support-content">
+      <h2>Support The CANADA List</h2>
+      <p>Your support helps us grow and maintain this project.</p>
+    
+      <h3>One-time support options</h3>
+      <div class="donation-row">
+        <button onclick="window.location.href='https://donate.stripe.com/test_4gw6rp61nbKydrydQQ'">$20</button>
+        <button onclick="window.location.href='https://donate.stripe.com/test_6oEbLJexTdSGgDK7su'">$50</button>
+        <button onclick="window.location.href='https://donate.stripe.com/test_bIYg1ZexTbKy1IQeUX'">$100</button>
+      </div>
+    
+      <h3>Recurring support options</h3>
+      <div class="donation-row">
+        <button onclick="window.location.href='https://donate.stripe.com/test_4gw7vtgG1dSGevC004'">$5/month</button>
+        <button onclick="window.location.href='https://donate.stripe.com/test_3csg1Z2Pb01Q9bi28d'">$10/month</button>
+        <button onclick="window.location.href='https://donate.stripe.com/test_7sI3fdexT9Cq87e7sy'">$25/month</button>
+      </div>
+    
+      <h3>Or, choose your own level of support</h3>
+      <div class="custom-donation">
+        <input type="number" placeholder="$ amount">
+        <button>Support</button>
+      </div>
+    </div>
+  </main>
+
+
+
+  <script>
+    function donate(amount) {
+      alert(`Redirecting to a payment page for $${amount}...`);
+      // TODO: Insert actual payment integration here
+    }
+
+    function customDonate() {
+      const amount = document.getElementById("customAmount").value;
+      if (!amount || amount <= 0) {
+        alert("Please enter a valid amount.");
+        return;
+      }
+      alert(`Redirecting to a payment page for $${amount}...`);
+      // TODO: Insert actual payment integration here
+    }
+  </script>
+<footer style="text-align: center; padding: 20px; font-size: 0.8em; color: #555;">
+    <a href="terms.html" style="color: #0077cc; text-decoration: none; margin-right: 15px;">
+        Terms of Service
+    </a>
+    <a href="disclaimer.html" style="color: #0077cc; text-decoration: none;">
+        Liability Statement
+    </a>
+    </footer>
+</body>
+</html>
