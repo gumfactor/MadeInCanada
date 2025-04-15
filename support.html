@@ -8,19 +8,59 @@
 
   <link rel="stylesheet" href="styles.css">
 
+  <meta property="og:title" content="Support The CANADA List" />
+  <meta property="og:description" content="Help keep this independent, Canadian-run resource going. Choose from one-time or monthly options." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thecanadalist.ca/support.html" />
+  <meta property="og:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0C2RC3LEH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0C2RC3LEH');
+</script>
+
 </head>
-<body>
-<nav class="top-nav">
-  <div class="nav-container">
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <ul class="nav-links" id="mobileMenu">
-      <li><a href="index.html">The List</a></li>
-      <li><a href="submit.html">Submit a Product</a></li>
-      <li><a href="support.html">Support the Site</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+
+ <!-- Call to Action Bar -->
+ <div class="cta-bar">
+  <div class="cta-content">
+    <span>Stay apprised of Canadian product info via our newsletter:</span>
+    <form action="https://formsubmit.co/newsletter@thecanadalist.ca" method="POST" class="cta-form">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+      <input type="hidden" name="_subject" value="New Newsletter Signup">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_autoresponse" value="Thanks for signing up for updates from The CANADA List!">
+    </form>
   </div>
-</nav>
+</div>
+
+
+<body>
+
+  <nav class="top-nav">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="nav-container full-width-bar">
+      <div class="nav-left-spacer"></div>
+  
+      <ul class="nav-links" id="mobileMenu">
+        <li><a href="index.html">The List</a></li>
+        <li><a href="submit.html">Submit a Product</a></li>
+        <li><a href="support.html">Support the Site</a></li>
+        <li><a href="Blogs-homepage.html" class="highlight">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  
+      <div class="nav-right-tip">
+        <a href="tipline.html">New: False Flag Tip Line</a>
+      </div>
+    </div>
+  </nav>
 
   <header id="siteHeader">
     <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" class="flag">
@@ -31,31 +71,29 @@
   <main>
     <div class="support-content">
       <h2>Support The CANADA List</h2>
-      <p>Your support helps us grow and maintain this project.</p>
+      <p>This project is a self-funded labor of love. If you appreciate the work, please considering offering a small support, to show your appreciation, and to help us maintain and grow the site.</p>
     
       <h3>One-time support options</h3>
       <div class="donation-row">
-        <button onclick="window.location.href='https://donate.stripe.com/test_4gw6rp61nbKydrydQQ'">$20</button>
-        <button onclick="window.location.href='https://donate.stripe.com/test_6oEbLJexTdSGgDK7su'">$50</button>
-        <button onclick="window.location.href='https://donate.stripe.com/test_bIYg1ZexTbKy1IQeUX'">$100</button>
+        <button onclick="window.location.href='https://donate.stripe.com/aEU17z3y33cc7YcfZ3'">$20</button>
+        <button onclick="window.location.href='https://donate.stripe.com/8wM2bDb0v2886U8dQU'">$50</button>
+        <button onclick="window.location.href='https://donate.stripe.com/5kA17zb0vfYY6U8aEH'">$100</button>
       </div>
     
       <h3>Recurring support options</h3>
       <div class="donation-row">
-        <button onclick="window.location.href='https://donate.stripe.com/test_4gw7vtgG1dSGevC004'">$5/month</button>
-        <button onclick="window.location.href='https://donate.stripe.com/test_3csg1Z2Pb01Q9bi28d'">$10/month</button>
-        <button onclick="window.location.href='https://donate.stripe.com/test_7sI3fdexT9Cq87e7sy'">$25/month</button>
+        <button onclick="window.location.href='https://donate.stripe.com/14k8A1d8DcMMbao002'">$5/month</button>
+        <button onclick="window.location.href='https://donate.stripe.com/14k5nP1pV3ccguI4gh'">$10/month</button>
+        <button onclick="window.location.href='https://donate.stripe.com/8wMbMdfgL9AA6U87ss'">$25/month</button>
       </div>
     
       <h3>Or, choose your own level of support</h3>
       <div class="custom-donation">
         <input type="number" placeholder="$ amount">
-        <button>Support</button>
+        <button onclick="window.location.href='https://donate.stripe.com/8wM5nPecHaEE4M0eV0'">Support</button>
       </div>
     </div>
   </main>
-
-
 
   <script>
     function donate(amount) {
@@ -81,5 +119,13 @@
         Liability Statement
     </a>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('show');
+      }
+    </script>
+
 </body>
 </html>

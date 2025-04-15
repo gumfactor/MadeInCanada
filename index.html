@@ -8,17 +8,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="styles.css">
+
+  <meta property="og:title" content="The CANADA List – Find Canadian-Made Products" />
+  <meta property="og:description" content="Search, sort, and filter to find products that are truly Canadian-owned, made, and sourced." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thecanadalist.ca/" />
+  <meta property="og:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg" />
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0C2RC3LEH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0C2RC3LEH');
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("searchInput");
+    const productTypeFilter = document.getElementById("productTypeFilter");
+
+    if (searchInput) {
+      searchInput.addEventListener("input", function () {
+        gtag('event', 'search_input', {
+          'event_category': 'Interaction',
+          'event_label': searchInput.value
+        });
+      });
+    }
+
+    if (productTypeFilter) {
+      productTypeFilter.addEventListener("change", function () {
+        gtag('event', 'product_filter_change', {
+          'event_category': 'Interaction',
+          'event_label': productTypeFilter.value
+        });
+      });
+    }
+  });
+</script>
+
 </head>
 
+ <!-- Call to Action Bar -->
+ <div class="cta-bar">
+  <div class="cta-content">
+    <span>Stay apprised of Canadian product info via our newsletter:</span>
+    <form action="https://formsubmit.co/newsletter@thecanadalist.ca" method="POST" class="cta-form">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+      <input type="hidden" name="_subject" value="New Newsletter Signup">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_autoresponse" value="Thanks for signing up for updates from The CANADA List!">
+    </form>
+  </div>
+</div>
+
 <nav class="top-nav">
-  <div class="nav-container">
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <div class="nav-container full-width-bar">
+    <div class="nav-left-spacer"></div>
+
     <ul class="nav-links" id="mobileMenu">
       <li><a href="index.html">The List</a></li>
       <li><a href="submit.html">Submit a Product</a></li>
       <li><a href="support.html">Support the Site</a></li>
+      <li><a href="Blogs-homepage.html" class="highlight">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+
+    <div class="nav-right-tip">
+      <a href="tipline.html">New: False Flag Tip Line</a>
+    </div>
   </div>
 </nav>
 
@@ -55,24 +118,19 @@
   <table id="productTable">
     <thead>
       <tr>
-        <th onclick="sortTable('Product Name')" id="th-Product Name">
-          Product Name
-          <span class="arrow"><span class="up">▲</span><span class="down">▼</span></span>
-        </th>
-        <th onclick="sortTable('Product Category')" id="th-Product Category">
-          Product Category
-          <span class="arrow"><span class="up">▲</span><span class="down">▼</span></span>
-        </th>
+        <th onclick="sortTable('Product Name')" id="th-Product Name">Product Name</th>
         <th>Parent Company</th>
-        <th>Ownership</th>
-        <th>Manufacturing</th>
         <th onclick="sortTable('CANADIAN Score (out of 10)')" id="th-CANADIAN Score (out of 10)">
           The <span class="highlight">CANADA</span> Score
-          <span class="arrow"><span class="up">▲</span><span class="down">▼</span></span>
         </th>
+        <th>Product Category</th>
+        <th>Ownership</th>
+        <th>Manufacturing</th>
         <th>Notes</th>
       </tr>
     </thead>
+    
+    
     <tbody id="tableBody">
       <tr id="emptyMessageRow" style="display:none;">
         <td colspan="7" style="text-align:center; font-style:italic; padding:20px;">
@@ -111,7 +169,7 @@
     let currentSortField = '';
     let sortAscending = true;
     let currentPage = 1;
-    const pageSize = 100;
+    const pageSize = 50;
 
     // Debounce for the search input
     let searchDebounceTimer = null;
@@ -277,11 +335,11 @@
               : ""
           }
         </td>
-        <td>${product["Product Category"]}</td>
         <td>${product["Ownership (Company)"]}</td>
+        <td>${product["CANADIAN Score (out of 10)"]}</td>
+        <td>${product["Product Category"]}</td>
         <td>${product["Ownership (Country)"]}</td>
         <td>${product["Manufacturing (Countries)"]}</td>
-        <td>${product["CANADIAN Score (out of 10)"]}</td>
         <td>${product["Notes"]}</td>
       `;
       return row;
@@ -342,7 +400,7 @@
 
       const defaultOption = document.createElement("option");
       defaultOption.value = "";
-      defaultOption.textContent = "All Types";
+      defaultOption.textContent = "Search by Category";
       filter.appendChild(defaultOption);
 
       categoriesData.forEach((category) => {
@@ -426,10 +484,12 @@
 
   <script>
     function toggleMenu() {
-      const menu = document.getElementById('mobileMenu');
-      menu.classList.toggle('show');
+      document.querySelector('.top-nav').classList.toggle('mobile-nav-open');
     }
   </script>
+  
+  
+  
   
 </body>
 </html>

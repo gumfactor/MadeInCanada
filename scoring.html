@@ -8,19 +8,59 @@
 
   <link rel="stylesheet" href="styles.css">
 
+  <meta property="og:title" content="How the CANADA Score Works" />
+  <meta property="og:description" content="Explore the scoring system that rates products on Canadian ownership, manufacturing, sourcing, and job impact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thecanadalist.ca/scoring.html" />
+  <meta property="og:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0C2RC3LEH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0C2RC3LEH');
+</script>
+
 </head>
-<body>
-<nav class="top-nav">
-  <div class="nav-container">
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-    <ul class="nav-links" id="mobileMenu">
-      <li><a href="index.html">The List</a></li>
-      <li><a href="submit.html">Submit a Product</a></li>
-      <li><a href="support.html">Support the Site</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+
+ <!-- Call to Action Bar -->
+ <div class="cta-bar">
+  <div class="cta-content">
+    <span>Stay apprised of Canadian product info via our newsletter:</span>
+    <form action="https://formsubmit.co/newsletter@thecanadalist.ca" method="POST" class="cta-form">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+      <input type="hidden" name="_subject" value="New Newsletter Signup">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_autoresponse" value="Thanks for signing up for updates from The CANADA List!">
+    </form>
   </div>
-</nav>
+</div>
+
+
+<body>
+
+  <nav class="top-nav">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="nav-container full-width-bar">
+      <div class="nav-left-spacer"></div>
+  
+      <ul class="nav-links" id="mobileMenu">
+        <li><a href="index.html">The List</a></li>
+        <li><a href="submit.html">Submit a Product</a></li>
+        <li><a href="support.html">Support the Site</a></li>
+        <li><a href="Blogs-homepage.html" class="highlight">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  
+      <div class="nav-right-tip">
+        <a href="tipline.html">New: False Flag Tip Line</a>
+      </div>
+    </div>
+  </nav>
 
   <header id="siteHeader">
     <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" class="flag">
@@ -66,5 +106,13 @@
       Liability Statement
     </a>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+
 </body>
 </html>
