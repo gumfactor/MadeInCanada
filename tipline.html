@@ -27,8 +27,22 @@
 
 </head>
 
+<script>
+  (function() {
+    if (localStorage.getItem("ctaDismissed") === "true") {
+      const style = document.createElement("style");
+      style.innerHTML = `
+        .cta-bar { display: none !important; }
+        body { padding-top: 85px !important; }
+        .top-nav { top: 0 !important; }
+      `;
+      document.head.appendChild(style);
+    }
+  })();
+</script>
+
  <!-- Call to Action Bar -->
- <div class="cta-bar">
+ <div class="cta-bar" id="ctaBar">
   <div class="cta-content">
     <span>Stay apprised of Canadian product info via our newsletter:</span>
     <form action="https://formsubmit.co/newsletter@thecanadalist.ca" method="POST" class="cta-form">
@@ -38,6 +52,7 @@
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_autoresponse" value="Thanks for signing up for updates from The CANADA List!">
     </form>
+    <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
   </div>
 </div>
 
@@ -157,6 +172,28 @@
       menu.classList.toggle('show');
     }
   </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const ctaBar = document.getElementById("ctaBar");
+    const closeBtn = document.getElementById("closeCTA");
+
+    // Check if user has previously dismissed the CTA
+    if (localStorage.getItem("ctaDismissed") === "true") {
+      ctaBar.style.display = "none";
+      document.body.style.paddingTop = "85px"; // Remove CTA height
+      document.querySelector('.top-nav').style.top = "0";
+    }
+
+    // On click, hide CTA and adjust layout
+    closeBtn.addEventListener("click", () => {
+      localStorage.setItem("ctaDismissed", "true");
+      ctaBar.style.display = "none";
+      document.body.style.paddingTop = "85px"; // Remove CTA height
+      document.querySelector('.top-nav').style.top = "0";
+    });
+  });
+</script>
 
 </body>
 </html>
