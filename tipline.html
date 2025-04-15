@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TipLine: Report False Flags! | The CANADA List</title>
+  <meta name="description" content="Know of a product that is slapping false flags on their products? Report it here - we plan to begin a database of bad actors shortly.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <meta property="og:title" content="Report a False Product to The CANADA List Tipline" />
+  <meta property="og:description" content="Know of a product that is slapping false flags on their products? Report it here - we plan to begin a database of bad actors shortly." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thecanadalist.ca/tipline.html" />
+  <meta property="og:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg" />
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0C2RC3LEH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0C2RC3LEH');
+</script>
+
+
+</head>
+
+ <!-- Call to Action Bar -->
+ <div class="cta-bar">
+  <div class="cta-content">
+    <span>Stay apprised of Canadian product info via our newsletter:</span>
+    <form action="https://formsubmit.co/newsletter@thecanadalist.ca" method="POST" class="cta-form">
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+      <input type="hidden" name="_subject" value="New Newsletter Signup">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_autoresponse" value="Thanks for signing up for updates from The CANADA List!">
+    </form>
+  </div>
+</div>
+
+
+<body>
+
+  <nav class="top-nav">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="nav-container full-width-bar">
+      <div class="nav-left-spacer"></div>
+  
+      <ul class="nav-links" id="mobileMenu">
+        <li><a href="index.html">The List</a></li>
+        <li><a href="submit.html">Submit a Product</a></li>
+        <li><a href="support.html">Support the Site</a></li>
+        <li><a href="Blogs-homepage.html" class="highlight">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  
+      <div class="nav-right-tip">
+        <a href="tipline.html">New: False Flag Tip Line</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="siteHeader">
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" class="flag">
+    <h1><span>The</span> <span style="color: #cc0000">CANADA</span> <span>List</span></h1>
+    <div class="subtitle">Know what you're buying. Support what matters.</div>
+  </header>
+
+  <main>
+    <section id="submit-product" class="form-section">
+        <h1>Report a Product to our Tipline</h1>
+        <p>Do you think you've found a product with a false or misleading Canadian designation on its packaging? Let us know so that we can flag it in our database.</p>
+      
+        <form id="product-form" action="https://formsubmit.co/tipline@thecanadalist.com" method="POST">
+          <div>
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" required placeholder="Product Name">
+          </div>
+      
+          <div>
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required placeholder="Enter a category">
+          </div>
+          
+          <div>
+            <label for="brand">Brand (if known):</label>
+            <input type="text" id="brand" name="brand" placeholder="Brand (if known)">
+          </div>
+      
+          <div>
+            <label for="retailer">Retailer or Store Name:</label>
+            <input type="text" id="retailer" name="retailer" placeholder="Retailer (if relevant)">
+          </div>
+      
+         <div>
+            <label for="location">Location (optional):</label>
+            <input type="text" id="location" name="location" placeholder="e.g., Toronto, ON or Online">
+          </div>
+      
+          <div>
+            <label for="photo">Upload a Photo (optional):</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+          </div>
+      
+          <div>
+            <label for="notes">Additional Notes:</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Provide as much information as you can please"></textarea>
+          </div>
+      
+          <div id="credit-name-container" style="display: none;">
+            <label for="credit-name">Name or handle:</label>
+            <input type="text" id="credit-name" name="credit-name">
+          </div>  
+
+          <button type="submit">Submit</button>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Tipline Submission">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_autoresponse" value="Thank you! Your tip line submission has been received; if verified, we'll add it to our false flags list.">
+        
+          <div id="submission-popup" style="display:none; text-align:center; margin-top:20px; padding:15px; background-color:#e0ffe0; color:#006600; border:1px solid #90ee90; border-radius:6px; font-weight:bold;">
+            ✅ Thank you! Your tip line submission has been received; if verified, we'll add it to our false flags list.
+          </div>
+          </form>
+
+        <div>
+          <h3>✅ What Happens Next?</h3>
+          <p style="color: #000;">Once submitted, our team will review the product and verify key details like ownership, manufacturing and sourcing. Approved submissions will appear in the database once verified.</p>
+          <p style="color: #000;">Thank you for helping make <strong>The CANADA List</strong> more beneficial for Canadians everywhere!</p>
+        </div>
+      </section>
+      
+      <script>
+        document.querySelectorAll('input[name="credit"]').forEach((el) => {
+          el.addEventListener('change', function () {
+            const creditContainer = document.getElementById('credit-name-container');
+            creditContainer.style.display = this.value === 'yes' ? 'block' : 'none';
+          });
+        });
+      </script>
+  </main>
+  <footer style="text-align: center; padding: 20px; font-size: 0.8em; color: #555;">
+    <a href="terms.html" style="color: #0077cc; text-decoration: none; margin-right: 15px;">
+      Terms of Service
+    </a>
+    <a href="disclaimer.html" style="color: #0077cc; text-decoration: none;">
+      Liability Statement
+    </a>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
+      
