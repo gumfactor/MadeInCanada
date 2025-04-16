@@ -6,7 +6,6 @@
   <meta name="description" content="Learn how The CANADA List helps Canadians find products that support local jobs and businesses. See what inspired the project.">
   <meta name="google-site-verification" content="tnvrwqMttr-LnJRmyhdmeQ8o3zhnBJTXH_tqEfqud1U" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="stylesheet" href="styles.css">
 
   <meta property="og:title" content="The CANADA List – Find Canadian-Made Products" />
@@ -14,6 +13,15 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://thecanadalist.ca/" />
   <meta property="og:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg" />
+
+  <link rel="canonical" href="https://thecanadalist.ca/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The CANADA List – Find Canadian-Made Products">
+  <meta name="twitter:description" content="Search, sort, and filter products that are truly Canadian-owned, made, and sourced.">
+  <meta name="twitter:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg">
+  <meta name="twitter:site" content="@TheCanadaList">
+
   
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0C2RC3LEH"></script>
@@ -504,26 +512,80 @@
   </script>
   
   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const ctaBar = document.getElementById("ctaBar");
-      const closeBtn = document.getElementById("closeCTA");
+    const input = document.getElementById('categorySearchInput');
+    const dropdown = document.getElementById('categoryDropdown');
   
-      // Check if user has previously dismissed the CTA
-      if (localStorage.getItem("ctaDismissed") === "true") {
-        ctaBar.style.display = "none";
-        document.body.style.paddingTop = "85px"; // Remove CTA height
-        document.querySelector('.top-nav').style.top = "0";
+    function extractLabels(data) {
+      let result = [];
+      function recurse(items, parents = []) {
+        for (const item of items) {
+          const fullPath = [...parents, item.label];
+          if (item.label) result.push({ label: item.label, path: fullPath });
+          if (item.subcategories) recurse(item.subcategories, fullPath);
+        }
+      }
+      recurse(categoriesData);
+      return result;
+    }
+  
+    function renderDropdown(matches) {
+      dropdown.innerHTML = '';
+  
+      const grouped = {};
+      for (const match of matches) {
+        const [group, subgroup, ...rest] = match.path;
+        const key = `${group}||${subgroup || ''}`;
+        if (!grouped[key]) grouped[key] = [];
+        grouped[key].push(match);
       }
   
-      // On click, hide CTA and adjust layout
-      closeBtn.addEventListener("click", () => {
-        localStorage.setItem("ctaDismissed", "true");
-        ctaBar.style.display = "none";
-        document.body.style.paddingTop = "85px"; // Remove CTA height
-        document.querySelector('.top-nav').style.top = "0";
-      });
+      for (const key in grouped) {
+        const [group, subgroup] = key.split('||');
+        const groupEl = document.createElement('div');
+        groupEl.className = 'category-group';
+        groupEl.textContent = group;
+        dropdown.appendChild(groupEl);
+  
+        if (subgroup) {
+          const subEl = document.createElement('div');
+          subEl.className = 'category-subgroup';
+          subEl.textContent = subgroup;
+          dropdown.appendChild(subEl);
+        }
+  
+        for (const match of grouped[key]) {
+          const item = document.createElement('div');
+          item.className = 'category-item';
+          item.textContent = match.path.join(" > ");
+          item.addEventListener('click', () => {
+            input.value = match.label;
+            dropdown.innerHTML = '';
+            selectedCategory = match.label;
+            doFullFilter();
+          });
+          dropdown.appendChild(item);
+        }
+      }
+    }
+  
+    input.addEventListener('input', () => {
+      const filter = input.value.trim();
+      if (filter === '') {
+        dropdown.innerHTML = '';
+        return;
+      }
+      const flatCategories = extractLabels(categoriesData);
+      const matches = flatCategories.filter(cat => cat.label.toLowerCase().includes(filter.toLowerCase()));
+      renderDropdown(matches);
+    });
+  
+    document.addEventListener('click', (e) => {
+      if (!document.getElementById('categorySearchContainer').contains(e.target)) {
+        dropdown.innerHTML = '';
+      }
     });
   </script>
+  
   
   
 </body>
