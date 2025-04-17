@@ -15,6 +15,10 @@
   <meta property="og:url" content="https://thecanadalist.ca/tipline.html" />
   <meta property="og:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg" />
 
+  <!-- Security Features -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://js.stripe.com https://checkout.stripe.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org https://*.stripe.com;">
+  <meta name="referrer" content="no-referrer-when-downgrade"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org;">
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0C2RC3LEH"></script>
 <script>
@@ -24,6 +28,8 @@
 
   gtag('config', 'G-Z0C2RC3LEH');
 </script>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 
 </head>
@@ -93,46 +99,50 @@
         <form id="product-form" action="https://formsubmit.co/tipline@thecanadalist.ca" method="POST">
           <div>
             <label for="product-name">Product Name:</label>
-            <input type="text" id="product-name" name="product-name" required placeholder="Product Name">
+            <input type="text" id="product-name" name="product-name" required placeholder="Product Name" maxlength="100">
           </div>
       
           <div>
             <label for="category">Category:</label>
-            <input type="text" id="category" name="category" required placeholder="Enter a category">
+            <input type="text" id="category" name="category" required placeholder="Enter a category" maxlength="100">
           </div>
           
           <div>
             <label for="brand">Brand (if known):</label>
-            <input type="text" id="brand" name="brand" placeholder="Brand (if known)">
+            <input type="text" id="brand" name="brand" placeholder="Brand (if known)" maxlength="100">
           </div>
       
           <div>
             <label for="retailer">Retailer or Store Name:</label>
-            <input type="text" id="retailer" name="retailer" placeholder="Retailer (if relevant)">
+            <input type="text" id="retailer" name="retailer" placeholder="Retailer (if relevant)" maxlength="100">
           </div>
       
          <div>
             <label for="location">Location (optional):</label>
-            <input type="text" id="location" name="location" placeholder="e.g., Toronto, ON or Online">
+            <input type="text" id="location" name="location" placeholder="e.g., Toronto, ON or Online" maxlength="100">
           </div>
       
           <div>
-            <label for="photo">Upload a Photo (optional):</label>
-            <input type="file" id="photo" name="photo" accept="image/*">
+            <label for="photo">Upload a Photo (optional; .JPG OR .PNG only):</label>
+            <input type="file" id="photo" name="photo" accept="image/jpeg,image/png">
           </div>
       
-          <div>
+          <div style="position: absolute; left: -9999px;" aria-hidden="true">
+            <label>Leave this field blank if you're human</label>
+            <input type="text" name="_honey">
+          </div>
+          
+           <div>
             <label for="notes">Additional Notes:</label>
-            <textarea id="notes" name="notes" rows="4" placeholder="Provide as much information as you can please"></textarea>
+            <textarea id="notes" name="notes" rows="4" maxlength = "1000" Provide as much information as you can please"></textarea>
           </div>
       
-          <div id="credit-name-container" style="display: none;">
-            <label for="credit-name">Name or handle:</label>
-            <input type="text" id="credit-name" name="credit-name">
-          </div>  
+          <div style="display:flex; justify-content:center; margin-top:15px;">
+            <div class="g-recaptcha" data-sitekey="6LcvShsrAAAAAM7ZsAuqT1ny7kFd6i7XyXBQmRVJ"></div>
+            </div>
 
           <button type="submit">Submit</button>
-          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_captcha" value="true">
           <input type="hidden" name="_subject" value="New Tipline Submission">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_autoresponse" value="Thank you! Your tip line submission has been received; if verified, we'll add it to our false flags list.">
