@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index, follow">
   <title>Why “Made in Canada” Isn’t Always What It Seems</title>
   <meta name="description" content="Why Products that say “Made in Canada” Aren't Always What they Seem.">
   <link rel="stylesheet" href="styles.css">
@@ -21,7 +20,10 @@
   <meta name="twitter:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg">
   <meta name="twitter:site" content="@TheCanadaList">
 
-  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="robots" content="index, follow">
 
   <script type="application/ld+json">
     {
@@ -83,7 +85,11 @@
     <div class="cta-content">
       <span>Stay apprised of Canadian product info via our newsletter:</span>
       <form action="https://formsubmit.co/newsletter@thecanadalist.ca" method="POST" class="cta-form">
-        <input type="email" name="email" placeholder="Enter your email" required />
+        <input type="email" name="email" placeholder="Enter your email" required maxlength="100"/>
+        <div style="position: absolute; left: -9999px;" aria-hidden="true">
+          <label>Leave this field blank</label>
+          <input type="text" name="website">
+        </div>
         <button type="submit">Subscribe</button>
         <input type="hidden" name="_subject" value="New Newsletter Signup">
         <input type="hidden" name="_captcha" value="false">

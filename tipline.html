@@ -5,7 +5,6 @@
   <title>TipLine: Report False Flags! | The CANADA List</title>
   <meta name="description" content="Know of a product that is slapping false flags on their products? Report it here - we plan to begin a database of bad actors shortly.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index, follow">
 
   <link rel="stylesheet" href="styles.css">
 
@@ -19,6 +18,11 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://js.stripe.com https://checkout.stripe.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org https://*.stripe.com;">
   <meta name="referrer" content="no-referrer-when-downgrade"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google.com https://www.gstatic.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://upload.wikimedia.org;">
 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="robots" content="index, follow">
+  
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0C2RC3LEH"></script>
 <script>
@@ -48,21 +52,24 @@
   })();
 </script>
 
- <!-- Call to Action Bar -->
- <div class="cta-bar" id="ctaBar">
-  <div class="cta-content">
-    <span>Stay apprised of Canadian product info via our newsletter:</span>
-    <form action="https://formsubmit.co/newsletter@thecanadalist.ca" method="POST" class="cta-form">
-      <input type="email" name="email" placeholder="Enter your email" required />
-      <button type="submit">Subscribe</button>
-      <input type="hidden" name="_subject" value="New Newsletter Signup">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_autoresponse" value="Thanks for signing up for updates from The CANADA List!">
-    </form>
-    <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
+  <!-- Call to Action Bar -->
+  <div class="cta-bar" id="ctaBar">
+    <div class="cta-content">
+      <span>Stay apprised of Canadian product info via our newsletter:</span>
+      <form action="https://formsubmit.co/newsletter@thecanadalist.ca" method="POST" class="cta-form">
+        <input type="email" name="email" placeholder="Enter your email" required maxlength="100"/>
+        <div style="position: absolute; left: -9999px;" aria-hidden="true">
+          <label>Leave this field blank</label>
+          <input type="text" name="website">
+        </div>
+        <button type="submit">Subscribe</button>
+        <input type="hidden" name="_subject" value="New Newsletter Signup">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_autoresponse" value="Thanks for signing up for updates from The CANADA List!">
+      </form>
+      <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
+    </div>
   </div>
-</div>
-
 
 <body>
 

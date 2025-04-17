@@ -5,7 +5,6 @@
   <title>How Products Are Scored | The CANADA List</title>
   <meta name="description" content="Understand the scoring system used to rate Canadian content in products—from ownership to manufacturing and job impact.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index, follow">
 
   <link rel="stylesheet" href="styles.css">
 
@@ -16,10 +15,15 @@
   <meta property="og:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg" />
 
   <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="How the CANADA Score Works">
-<meta name="twitter:description" content="Understand how our CANADA Score evaluates ownership, manufacturing, sourcing, and job impact.">
-<meta name="twitter:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg">
-<meta name="twitter:site" content="@TheCanadaList">
+  <meta name="twitter:title" content="How the CANADA Score Works">
+  <meta name="twitter:description" content="Understand how our CANADA Score evaluates ownership, manufacturing, sourcing, and job impact.">
+  <meta name="twitter:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg">
+  <meta name="twitter:site" content="@TheCanadaList">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="robots" content="index, follow">
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0C2RC3LEH"></script>
@@ -47,20 +51,24 @@
   })();
 </script>
 
- <!-- Call to Action Bar -->
- <div class="cta-bar" id="ctaBar">
-  <div class="cta-content">
-    <span>Stay apprised of Canadian product info via our newsletter:</span>
-    <form action="https://formsubmit.co/newsletter@thecanadalist.ca" method="POST" class="cta-form">
-      <input type="email" name="email" placeholder="Enter your email" required />
-      <button type="submit">Subscribe</button>
-      <input type="hidden" name="_subject" value="New Newsletter Signup">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_autoresponse" value="Thanks for signing up for updates from The CANADA List!">
-    </form>
-    <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
+  <!-- Call to Action Bar -->
+  <div class="cta-bar" id="ctaBar">
+    <div class="cta-content">
+      <span>Stay apprised of Canadian product info via our newsletter:</span>
+      <form action="https://formsubmit.co/newsletter@thecanadalist.ca" method="POST" class="cta-form">
+        <input type="email" name="email" placeholder="Enter your email" required maxlength="100"/>
+        <div style="position: absolute; left: -9999px;" aria-hidden="true">
+          <label>Leave this field blank</label>
+          <input type="text" name="website">
+        </div>
+        <button type="submit">Subscribe</button>
+        <input type="hidden" name="_subject" value="New Newsletter Signup">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_autoresponse" value="Thanks for signing up for updates from The CANADA List!">
+      </form>
+      <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
+    </div>
   </div>
-</div>
 
 <nav class="top-nav">
   <button class="menu-toggle" onclick="toggleMenu()">☰</button>
