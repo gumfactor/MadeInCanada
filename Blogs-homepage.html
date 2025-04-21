@@ -29,10 +29,14 @@
 
 <script>
     function toggleMenu() {
-      const menu = document.getElementById('mobileMenu');
-      menu.classList.toggle('show');
+      document.querySelector('.top-nav')
+              .classList.toggle('mobile-nav-open');
     }
   </script>
+
+  <!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na3.hs-scripts.com/341701216.js"></script>
+<!-- End of HubSpot Embed Code -->
   
 <body>
 
@@ -50,24 +54,46 @@
         })();
       </script>
 
-  <!-- Call to Action Bar -->
-  <div class="cta-bar" id="ctaBar">
-    <div class="cta-content">
-      <span>Stay apprised of Canadian product info via our newsletter:</span>
-      <form action="https://formsubmit.co/newsletter@thecanadalist.ca" method="POST" class="cta-form">
-        <input type="email" name="email" placeholder="Enter your email" required maxlength="100"/>
-        <div style="position: absolute; left: -9999px;" aria-hidden="true">
-          <label>Leave this field blank</label>
-          <input type="text" name="website">
-        </div>
-        <button type="submit">Subscribe</button>
-        <input type="hidden" name="_subject" value="New Newsletter Signup">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_autoresponse" value="Thanks for signing up for updates from The CANADA List!">
-      </form>
-      <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
-    </div>
+    <!-- Call to Action Bar -->
+<div class="cta-bar" id="ctaBar">
+  <div class="cta-content">
+    <span>Stay apprised of Canadian product info via our newsletter:</span>
+    <form id="myForm" class="cta-form">
+      <input id="email" type="email" name="email" placeholder="Enter your email" required maxlength="100" />
+      <div style="position: absolute; left: -9999px;" aria-hidden="true">
+        <label>Leave this field blank</label>
+        <input type="text" name="website">
+      </div>
+      <button type="submit">Subscribe</button>
+    </form>
+    <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
+
+    <script>
+      document.getElementById("myForm").addEventListener("submit", async function(e) {
+        e.preventDefault();
+
+        const email = document.getElementById("email").value;
+
+        const hubspotUrl = "https://api.hsforms.com/submissions/v3/integration/submit/341701216/01883640-9eae-4052-a49b-78e8846301e3";
+
+        const data = {
+          fields: [
+            { name: "email", value: email }
+          ]
+        };
+
+        await fetch(hubspotUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        });
+
+        alert("Thanks for subscribing!");
+        e.target.reset();
+      });
+    </script>
   </div>
+</div>
 
   <nav class="top-nav">
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
