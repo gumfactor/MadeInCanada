@@ -35,7 +35,51 @@
   gtag('config', 'G-Z0C2RC3LEH');
 </script>
 
+
+    
 </head>
+
+<!-- Call to Action Bar -->
+<div class="cta-bar" id="ctaBar">
+  <div class="cta-content">
+    <span>Stay apprised of Canadian product info via our newsletter:</span>
+    <form id="myForm" class="cta-form">
+      <input id="email" type="email" name="email" placeholder="Enter your email" required maxlength="100" />
+      <div style="position: absolute; left: -9999px;" aria-hidden="true">
+        <label>Leave this field blank</label>
+        <input type="text" name="website">
+      </div>
+      <button type="submit">Subscribe</button>
+    </form>
+    <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
+
+    <script>
+      document.getElementById("myForm").addEventListener("submit", async function(e) {
+        e.preventDefault();
+
+        const email = document.getElementById("email").value;
+
+        const hubspotUrl = "https://api.hsforms.com/submissions/v3/integration/submit/341701216/01883640-9eae-4052-a49b-78e8846301e3";
+
+        const data = {
+          fields: [
+            { name: "email", value: email }
+          ]
+        };
+
+        await fetch(hubspotUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        });
+
+        alert("Thanks for subscribing!");
+        e.target.reset();
+      });
+    </script>
+  </div>
+</div>
+
 
 <script>
   (function() {
