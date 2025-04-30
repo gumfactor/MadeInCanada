@@ -38,44 +38,47 @@
   })();
 </script>
 
-  <!-- Call to Action Bar -->
-<div class="cta-bar" id="ctaBar">
-  <div class="cta-content">
-    <span>Stay apprised of Canadian product info via our newsletter:</span>
-    <form id="myForm" class="cta-form">
-      <input id="email" type="email" name="email" placeholder="Enter your email" required maxlength="100" />
-      <div style="position: absolute; left: -9999px;" aria-hidden="true">
-        <label>Leave this field blank</label>
-        <input type="text" name="website">
-      </div>
-      <button type="submit">Subscribe</button>
-    </form>
-    <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
-
-    <script>
-      document.getElementById("myForm").addEventListener("submit", async function(e) {
-        e.preventDefault();
-
-        const email = document.getElementById("email").value;
-
-        const hubspotUrl = "https://api.hsforms.com/submissions/v3/integration/submit/341701216/01883640-9eae-4052-a49b-78e8846301e3";
-
-        const data = {
-          fields: [
-            { name: "email", value: email }
-          ]
-        };
-
-        await fetch(hubspotUrl, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(data)
-        });
-
-        alert("Thanks for subscribing!");
-        e.target.reset();
-      });
-    </script>
+       <!-- Call to Action Bar -->
+       <div class="cta-bar" id="ctaBar">
+        <div class="cta-content">
+          <span>Stay apprised of Canadian product info via our newsletter:</span>
+          <form id="myForm" class="cta-form">
+            <input id="email" type="email" name="email" placeholder="Enter your email" required maxlength="100" />
+            <div style="position: absolute; left: -9999px;" aria-hidden="true">
+              <label>Leave this field blank</label>
+              <input type="text" name="website">
+            </div>
+            <button type="submit">Subscribe</button>
+          </form>
+          <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
+      
+          <script>
+            document.getElementById("myForm").addEventListener("submit", async function(e) {
+              e.preventDefault();
+      
+              const email = document.getElementById("email").value;
+      
+              const brevoApiKey = "API SECRET";
+      
+              const data = {
+                email: email,
+                listIds: [2], // 👈 Replace with your actual list ID number
+                updateEnabled: true // Optional: updates existing contacts if already subscribed
+              };
+      
+              await fetch("https://api.brevo.com/v3/contacts", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                  "api-key": brevoApiKey
+                },
+                body: JSON.stringify(data)
+              });
+      
+              alert("Thanks for subscribing!");
+              e.target.reset();
+            });
+          </script>
   </div>
 </div>
 
@@ -123,14 +126,15 @@
 <h3>AI-Generated Content</h3>
 <p>Much of the analysis provided is supported by artificial intelligence, which interprets and synthesizes data from various sources. While we take care to review and validate this information, AI is not infallible. Errors can and do occur.</p>
 
-<h3>Corrections</h3>
-<p>We are committed to improving our accuracy. If you believe any information on this site is incorrect or misleading, please contact us at <a href="mailto:support@thecanadalist.ca">support@thecanadalist.ca</a>. We will investigate all credible claims and, if the error is verified, update the listing as quickly as possible.</p>
+<h3>Corrections and Updates</h3>
+<p>The CANADA List is committed to accuracy and transparency. While we strive to ensure that all published information is based on the best publicly available sources at the time of posting, much of the information is AI-facilitated, and errors or changes may occur. If you believe any information on this site is inaccurate, incomplete, or outdated, please contact us at <a href="mailto:support@thecanadalist.ca"></a> support@thecanadalist.ca. We review all credible correction requests promptly. Where appropriate, we will update or correct the relevant material and may note substantive corrections for transparency. Our goal is to provide Canadians with a reliable, trustworthy resource for informed decision-making.</p>
 
 <h3>Third-Party Links</h3>
 <p>Some pages may link to external websites. We do not control or endorse the content on those sites and are not responsible for any third-party content or services.</p>
 
 <h3>Intellectual Property</h3>
-<p>All trademarks, logos, brand names, and product images remain the property of their respective owners. Their inclusion on this site does not imply any affiliation or endorsement.</p>
+<p>The Canada Score™ is a proprietary rating developed by The Canada List to evaluate the Canadian economic impact of consumer products. While the general evaluation dimensions are disclosed for transparency, the specific process used to generate scores — including AI-supported synthesis and internal review — is proprietary. The Canada List claims trademark rights to The Canada Score™ and prohibits unauthorized use, imitation, or reproduction. All trademarks, logos, brand names, and product images remain the property of their respective owners. Their inclusion on this site does not imply any affiliation or endorsement.</p>
+
 
   </main>
   <footer style="text-align: center; padding: 20px; font-size: 0.8em; color: #555;">
