@@ -114,66 +114,29 @@
   <main>
     <section id="submit-product" class="form-section">
         <h1>Submit a Product</h1>
-        <p>Help expand our Canadian product database by sharing something you’ve found!</p>
+        <p style="color: #000000; margin-top: 5px;">We are highly committed to including products from coast to coast. But we need your help to expand the database, especially for locally-owned business/products. Help expand our Canadian product database by adding any products that we don't yet include.</p>
       
         <form id="product-form" action="https://formsubmit.co/newproduct@thecanadalist.ca" method="POST">
           <div>
-            <label for="product-name">Product Name:</label>
-            <input type="text" id="product-name" name="product-name" required placeholder="e.g., Kirkland Organic Peanut Butter" maxlength="100">
+            <label for="product-name">Product Name(s):</label>
+            <textarea id="product-name" name="product-name" rows="4" required placeholder="Enter up to 10 product names, each on a separate line." maxlength="2000"></textarea>
+            <p style="font-size: 0.9em; color: #000000; margin-top: 5px;">If you would like to submit products in bulk, please email us directly at <a href="mailto:support@thecanadalist.ca">support@thecanadalist.ca</a>.</p>
           </div>
-      
+  
           <div>
-            <label for="category">Category:</label>
-            <select id="category" name="category" required>
-              <option value="" disabled selected hidden>Select Product Category</option>
-            </select>
+            <label for="email">Your Email (optional):</label>
+            <input type="text" id="submitEmail" name="email" placeholder="We'll notify you when your products are added." maxlength="100">
           </div>
-          
-          <div>
-            <label for="brand">Brand (if known):</label>
-            <input type="text" id="brand" name="brand" placeholder="e.g., Kirkland" maxlength="100">
-          </div>
-      
-          <div>
-            <label for="retailer">Retailer or Store Name:</label>
-            <input type="text" id="retailer" name="retailer" placeholder="e.g., Costco" maxlength="100">
-          </div>
-      
-         <div>
-            <label for="location">Location (optional):</label>
-            <input type="text" id="location" name="location" placeholder="e.g., Toronto, ON or Online" maxlength="100">
-          </div>
-      
-          <div style="position: absolute; left: -9999px;" aria-hidden="true">
-            <label>Leave this field blank if you're human</label>
-            <input type="text" name="_honey">
-          </div>
-          
-          <div>
-            <label for="photo">Upload a Photo (optional; .JPG OR .PNG only):</label>
-            <input type="file" id="photo" name="photo" accept="image/jpeg,image/png">
-          </div>
-      
-          <div>
-            <label for="notes">Additional Notes:</label>
-            <textarea id="notes" name="notes" rows="4" maxlength="1000" placeholder="Provide any additional product notes, as relevant"></textarea>
-          </div>
-
-          <div>
-            <label for="email">Email:</label>
-            <input type="text" id="submitEmail" name="email"  placeholder="Provide your email, if willing." maxlength="100">
-          </div>
-      
-          <div style="display:flex; justify-content:center; margin-top:15px;">
-          <div class="g-recaptcha" data-sitekey="6LcvShsrAAAAAM7ZsAuqT1ny7kFd6i7XyXBQmRVJ"></div>
-          </div>
-
+  
+          <div class="g-recaptcha" data-sitekey="6LcvShsrAAAAAM7ZsAuqT1ny7kFd6i7XyXBQmRVJ" style="margin-top: 15px;"></div>
+  
           <button type="submit">Submit</button>
           <input type="hidden" name="_captcha" value="true">
           <input type="hidden" name="_subject" value="New Product Submission">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_autoresponse" value="Thank you! Your product submission has been received and will appear on the site once verified.">
-        
+        </form>
+                
           <div id="submission-popup" style="display:none; text-align:center; margin-top:20px; padding:15px; background-color:#e0ffe0; color:#006600; border:1px solid #90ee90; border-radius:6px; font-weight:bold;">
             ✅ Your product has been submitted and will appear on the site once verified.
           </div>
@@ -222,8 +185,8 @@
 
         <div>
           <h3>✅ What Happens Next?</h3>
-          <p style="color: #000;">Once submitted, our team will review the product and verify key details like ownership, manufacturing and sourcing. Approved submissions will appear in the database once verified.</p>
-          <p style="color: #000;">Thank you for helping make <strong>The CANADA List</strong> more beneficial for Canadians everywhere!</p>
+          <p style="color: #000;">Once submitted, our team will review the product and verify key details including ownership, manufacturing, sourcing and job support/creation. If you provided your email, we'll notify you once the product has been added to the database.</p>
+          <p style="color: #000;">Thank you for helping make support <strong>The <span style="color: #cc0000;">CANADA</span> List</strong>!</p>
         </div>
       </section>
       
@@ -269,7 +232,6 @@
     document.querySelector('.top-nav').style.top = "0";
   });
 
-  // ✅ Move this part here:
   const form = document.getElementById("myForm");
   if (form) {
     form.addEventListener("submit", async function(e) {
@@ -296,6 +258,19 @@
 
 </script>
 
+<!-- Ensure a maximum of 10 products are entered at once.-->
+<script>
+  document.getElementById("product-form").addEventListener("submit", function (e) {
+    const input = document.getElementById("product-name").value;
+    const productCount = input.split(",").filter(item => item.trim() !== "").length;
+  
+    if (productCount > 10) {
+      alert("Please enter no more than 10 products. For larger submissions, contact support@thecanadalist.ca.");
+      e.preventDefault();
+    }
+  });
+  </script>
+  
 </body>
 </html>
       
