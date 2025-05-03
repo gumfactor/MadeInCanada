@@ -42,28 +42,83 @@
 </script>
 <script>
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("searchInput");
-    const productTypeFilter = document.getElementById("productTypeFilter");
-
-    if (searchInput) {
-      searchInput.addEventListener("input", function () {
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("searchInput");
+  const productTypeFilter = document.getElementById("productTypeFilter");
+  const ownershipCanada = document.getElementById("ownershipCanada");
+  const manufacturingCanada = document.getElementById("manufacturingCanada");
+  
+  // 1. Fire on Enter key (keyword search)
+  if (searchInput) {
+    searchInput.addEventListener("keypress", function (event) {
+      if (event.key === "Enter") {
         gtag('event', 'search_input', {
           'event_category': 'Interaction',
           'event_label': searchInput.value
         });
-      });
-    }
+      }
+    });
+  }
 
-    if (productTypeFilter) {
-      productTypeFilter.addEventListener("change", function () {
-        gtag('event', 'product_filter_change', {
-          'event_category': 'Interaction',
-          'event_label': productTypeFilter.value
-        });
+  // 2. Fire on category dropdown change
+  if (productTypeFilter) {
+    productTypeFilter.addEventListener("change", function () {
+      gtag('event', 'category_filter', {
+        'event_category': 'Interaction',
+        'event_label': productTypeFilter.value
       });
+    });
+  }
+
+  // 3. Fire on basic checkbox filter clicks
+  if (ownershipCanada) {
+    ownershipCanada.addEventListener("change", function () {
+      gtag('event', 'basic_filter_applied', {
+        'event_category': 'Interaction',
+        'event_label': 'Ownership: Canadian Only'
+      });
+    });
+  }
+  if (manufacturingCanada) {
+    manufacturingCanada.addEventListener("change", function () {
+      gtag('event', 'basic_filter_applied', {
+        'event_category': 'Interaction',
+        'event_label': 'Manufacturing: Canadian Only'
+      });
+    });
+  }
+
+  // 4. Fire on Advanced Filters being applied
+  const applyAdvancedFilters = () => {
+    const selectedOwnership = Array.from(document.querySelectorAll('input[name="ownershipCountry"]:checked')).map(cb => cb.value);
+    const selectedManufacturing = Array.from(document.querySelectorAll('input[name="manufacturingCountry"]:checked')).map(cb => cb.value);
+    const selectedCompanies = Array.from(document.querySelectorAll('input[name="companyGroup"]:checked')).map(cb => cb.value);
+    const scoreRange = window.scoreSlider ? window.scoreSlider.noUiSlider.get().map(Number) : [1, 10];
+
+    const selectedFilters = {
+      ownership: selectedOwnership,
+      manufacturing: selectedManufacturing,
+      company: selectedCompanies,
+      scoreRange: scoreRange
+    };
+
+    gtag('event', 'advanced_filter_applied', {
+      'event_category': 'Interaction',
+      'event_label': JSON.stringify(selectedFilters)
+    });
+  };
+
+  document.getElementById("filterModal").addEventListener("change", function (e) {
+    if (e.target.matches('input[type="checkbox"]') || e.target.matches('input[type="radio"]')) {
+      applyAdvancedFilters();
     }
   });
+
+  if (window.scoreSlider) {
+    window.scoreSlider.noUiSlider.on('change', applyAdvancedFilters);
+  }
+});
+
 </script>
 
 </meta></meta></meta></head>
@@ -125,6 +180,7 @@
   <div class="nav-container full-width-bar">
     <div class="nav-left-spacer"></div>
 
+
     <ul class="nav-links" id="mobileMenu">
       <li><a href="index.html">The List</a></li>
       <li><a href="submit.html">Submit a Product</a></li>
@@ -145,11 +201,11 @@
 
 <body>
 
-<header id="siteHeader" style="position: relative;">
-  <img alt="Canadian flag" class="flag" src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg"/>
-    <h1><span>The</span> <span style="color: #cc0000">CANADA</span> <span>List</span></h1>
-  <div class="subtitle">Know what you're buying. Support what matters.</div>
-  <div class="header-links">
+  <header id="siteHeader" style="position: relative;">
+    <img alt="Canadian flag" class="flag" src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg"/>
+      <h1><span>The</span> <span style="color: #cc0000">CANADA</span> <span>List</span></h1>
+    <div class="subtitle">Know what you're buying. Support what matters.</div>
+   <div class="header-links">
     <a href="about.html">Why this site exists</a>
     <a href="scoring.html">How the CANADA scores are derived</a>
   </div>
@@ -204,10 +260,6 @@
                 </span>
               </label>
               <hr style="border: none; border-top: 1px solid #ccc; margin: 8px 0;"/>
-              <label><input name="ownershipCountry" type="checkbox" value="China"/> China</label>
-              <label><input name="ownershipCountry" type="checkbox" value="Europe"/> Europe</label>
-              <label><input name="ownershipCountry" type="checkbox" value="UK"/> UK</label>
-              <label><input name="ownershipCountry" type="checkbox" value="Vietnam"/> Vietnam</label>
             </div>
           </div>
       
@@ -236,10 +288,6 @@
                 </span>
               </label>
               <hr style="border: none; border-top: 1px solid #ccc; margin: 8px 0;"/>
-              <label><input name="manufacturingCountry" type="checkbox" value="China"/> China</label>
-              <label><input name="manufacturingCountry" type="checkbox" value="Europe"/> Europe</label>
-              <label><input name="manufacturingCountry" type="checkbox" value="UK"/> UK</label>
-              <label><input name="manufacturingCountry" type="checkbox" value="Vietnam"/> Vietnam</label>
             </div>
           </div>
       
@@ -341,6 +389,8 @@
     let currentPage = 1;
     const pageSize = 50;
 
+    const isMobile = window.innerWidth <= 768;
+
     // Debounce for the search input
     let searchDebounceTimer = null;
 
@@ -354,11 +404,21 @@
       populateFilterOptions();
     };
 
+    if (isMobile) {
+  document.addEventListener("DOMContentLoaded", () => {
+    const paginationEl = document.getElementById("paginationControls");
+    if (paginationEl) {
+      paginationEl.style.display = "none";
+    }
+  });
+}
+
     // Fetch TheCanadaList.json
     async function fetchProducts() {
   try {
     const response = await fetch('./TheCanadaList.json');
     products = await response.json();
+    populateCountryDropdowns(products);
     // Set default sort: Score column in descending order
     currentSortField = "CANADIAN Score (out of 10)";
     sortAscending = false;
@@ -594,23 +654,48 @@
 }
 
 
-    function updatePaginationAndRender() {
-      const totalPages = Math.ceil(filteredProducts.length / pageSize) || 1;
-      if (currentPage > totalPages) currentPage = totalPages;
-      if (currentPage < 1) currentPage = 1;
+function updatePaginationAndRender() {
+  const totalPages = Math.ceil(filteredProducts.length / pageSize) || 1;
+  if (currentPage > totalPages) currentPage = totalPages;
+  if (currentPage < 1) currentPage = 1;
 
-      const pageProducts = filteredProducts.slice(
-        (currentPage - 1) * pageSize,
-        currentPage * pageSize
-      );
-      patchTable(pageProducts);
+  const pageProducts = filteredProducts.slice(
+    (currentPage - 1) * pageSize,
+    currentPage * pageSize
+  );
 
-      document.getElementById("emptyMessageRow").style.display =
-        filteredProducts.length === 0 ? "table-row" : "none";
-      renderPaginationControls(totalPages);
-    }
+  if (!isMobile) {
+    patchTable(pageProducts);
+  } else if (currentPage === 1) {
+    patchTable(pageProducts);
+  } else {
+    patchTableAppend(pageProducts);
+  }
 
-    function patchTable(newPageProducts) {
+  // ✅ FIX: Only show empty message if no results
+  const emptyRow = document.getElementById("emptyMessageRow");
+  emptyRow.style.display = filteredProducts.length === 0 ? "table-row" : "none";
+
+  if (!isMobile) {
+    renderPaginationControls(totalPages);
+  } else {
+    const el = document.getElementById("paginationControls");
+    if (el) el.style.display = "none";
+  }
+}
+
+
+document.getElementById("emptyMessageRow").style.display =
+    filteredProducts.length === 0 ? "table-row" : "none";
+
+    if (!isMobile) {
+    renderPaginationControls(totalPages);
+  } else {
+    const el = document.getElementById("paginationControls");
+    if (el) el.style.display = "none";  // ✅ Force hide
+  }
+
+function patchTable(newPageProducts) {
   const tbody = document.getElementById("tableBody");
   tbody.innerHTML = ""; // clear the table body
   currentRowMap.clear(); // clear the map so the new order is built fresh
@@ -621,6 +706,14 @@
   });
 }
 
+function patchTableAppend(newProducts) {
+  const tbody = document.getElementById("tableBody");
+  newProducts.forEach(product => {
+    const newRow = createRow(product);
+    tbody.appendChild(newRow);
+    currentRowMap.set(product.id, newRow);
+  });
+}
 
     function createRow(product) {
       const row = document.createElement("tr");
@@ -956,6 +1049,9 @@
   const filter   = input.value.toLowerCase();
   const dropdown = input.closest(".dropdown-menu");
   const isCompany = dropdown.id === "companyDropdown";
+  const isOwnership = dropdown.id === "ownershipDropdown";
+  const isManufacturing = dropdown.id === "manufacturingDropdown";
+  const SPECIAL = new Set(["Canada", "hasCanada", "!USA"]);
 
   if (isCompany && window.companyNameGroups) {
     // 🟡 Collect previously checked values
@@ -996,21 +1092,52 @@
       hintLabel.style.cursor = "default";
       dropdown.appendChild(hintLabel);
     }
-  } else {
-    // Show/hide for Ownership & Manufacturing; preserve top three
-    const alwaysVisible = new Set(["Canada", "hasCanada", "!USA"]);
 
+  } else if (isOwnership || isManufacturing) {
+    const name = isOwnership ? "ownershipCountry" : "manufacturingCountry";
+    const fullList = isOwnership ? window.allOwnershipCountries : window.allManufacturingCountries;
+
+    // Preserve checked items
+    const previouslyChecked = new Set(
+      Array.from(dropdown.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value)
+    );
+
+    // Remove non-special country labels and prior hint
+    dropdown.querySelectorAll("label").forEach(label => {
+      const input = label.querySelector("input");
+      if (input && !SPECIAL.has(input.value)) label.remove();
+    });
+    dropdown.querySelectorAll("label.hint").forEach(label => label.remove());
+
+    // Filter and render
+    const matching = fullList.filter(c => c.toLowerCase().includes(filter));
+
+    matching.forEach(country => {
+      const label = document.createElement("label");
+      const checked = previouslyChecked.has(country) ? "checked" : "";
+      label.innerHTML = `<input name="${name}" type="checkbox" value="${country}" ${checked}/> ${country}`;
+      dropdown.appendChild(label);
+    });
+
+    if (filter.length === 0) {
+      const hintLabel = document.createElement("label");
+      hintLabel.innerText = "...search for more";
+      hintLabel.className = "hint";
+      hintLabel.style.opacity = "0.6";
+      hintLabel.style.cursor = "default";
+      dropdown.appendChild(hintLabel);
+    }
+
+  } else {
+    // fallback: basic filtering behavior (just hide/show)
     dropdown.querySelectorAll("label").forEach(label => {
       const cb = label.querySelector('input[type="checkbox"]');
-      if (cb && alwaysVisible.has(cb.value)) {
-        label.style.display = "";
-      } else {
-        const text = label.textContent.toLowerCase();
-        label.style.display = text.includes(filter) ? "" : "none";
-      }
+      const text = label.textContent.toLowerCase();
+      label.style.display = text.includes(filter) ? "" : "none";
     });
   }
 }
+
 
 
 </script>
@@ -1060,8 +1187,98 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+function populateCountryDropdowns(products) {
+  const ownershipDropdown = document.getElementById("ownershipDropdown");
+  const manufacturingDropdown = document.getElementById("manufacturingDropdown");
+
+  const SPECIAL = new Set(["Canada", "hasCanada", "!USA"]);
+
+  const ownershipSet = new Set();
+  const manufacturingSet = new Set();
+
+  // Collect country data
+  products.forEach(p => {
+    const own = p["Ownership (Country)"];
+    if (own) own.split(/[;/]/).map(x => x.trim()).forEach(c => ownershipSet.add(c));
+
+    const manuf = p["Manufacturing (Countries)"];
+    if (manuf) {
+      manuf.split(/[;/]/)
+          .map(c => c.trim())
+          .filter(c => c.length > 0)
+          .forEach(c => manufacturingSet.add(c));
+    }
+  });
+
+  function sortWithPriority(set) {
+    const all = Array.from(set).filter(c => !SPECIAL.has(c));
+    const top = PRIORITY.filter(c => all.includes(c));
+    const rest = all.filter(c => !PRIORITY.includes(c)).sort((a, b) => a.localeCompare(b));
+    return { top, rest, all };
+  }
+
+  function renderCountryDropdown(dropdown, countrySet, name, windowKey) {
+    // Remove non-special entries
+    dropdown.querySelectorAll("label").forEach(label => {
+      const input = label.querySelector("input");
+      if (input && !SPECIAL.has(input.value)) label.remove();
+    });
+    dropdown.querySelectorAll("label.hint").forEach(e => e.remove());
+
+    const fullList = Array.from(countrySet).filter(c => !SPECIAL.has(c)).sort((a, b) => a.localeCompare(b));
+    const initialDisplay = fullList.slice(0, 6);
+
+    initialDisplay.forEach(country => {
+      const label = document.createElement("label");
+      label.innerHTML = `<input name="${name}" type="checkbox" value="${country}"/> ${country}`;
+      dropdown.appendChild(label);
+    });
+
+    const hintLabel = document.createElement("label");
+    hintLabel.innerText = "...search for more";
+    hintLabel.className = "hint";
+    hintLabel.style.opacity = "0.6";
+    hintLabel.style.cursor = "default";
+    dropdown.appendChild(hintLabel);
+  
+    // Save for dynamic filtering
+    window[windowKey] = fullList;
+  }
+
+  renderCountryDropdown(ownershipDropdown, ownershipSet, "ownershipCountry", "allOwnershipCountries");
+  renderCountryDropdown(manufacturingDropdown, manufacturingSet, "manufacturingCountry", "allManufacturingCountries");
+}
+
+let loadingNextPage = false;
+
+if (isMobile) {
+  window.addEventListener('scroll', () => {
+    if (loadingNextPage) return;
+
+    const scrollThreshold = 300;
+    const scrollY = window.scrollY;
+    const visible = window.innerHeight;
+    const pageHeight = document.body.offsetHeight;
+
+    if (pageHeight - (scrollY + visible) < scrollThreshold) {
+      const totalPages = Math.ceil(filteredProducts.length / pageSize) || 1;
+      if (currentPage < totalPages) {
+        loadingNextPage = true;
+        currentPage++;
+        const nextPageProducts = filteredProducts.slice(
+          (currentPage - 1) * pageSize,
+          currentPage * pageSize
+        );
+        patchTableAppend(nextPageProducts);
+        loadingNextPage = false;
+      }
+    }
+  });
+}
 
 </script>
+
+
 
 </body>
 </html>
