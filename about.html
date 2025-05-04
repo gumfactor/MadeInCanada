@@ -178,3 +178,184 @@
   
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find Canadian-Made Products | The CANADA List</title>
+  <meta name="description" content="Discover which products are truly Canadian. Search by category, brand, or score to support local jobs and industry.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <meta property="og:title" content="Why The CANADA List Exists" />
+  <meta property="og:description" content="Learn why this project was created and how it helps Canadians make informed, patriotic buying decisions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thecanadalist.ca/about.html" />
+  <meta property="og:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Why The CANADA List Exists">
+  <meta name="twitter:description" content="Learn how The CANADA List helps Canadians make smarter choices and support local jobs.">
+  <meta name="twitter:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg">
+  <meta name="twitter:site" content="@TheCanadaList">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="robots" content="index, follow">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0C2RC3LEH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0C2RC3LEH');
+</script>
+
+
+    
+</head>
+
+<!-- Call to Action Bar -->
+<div class="cta-bar" id="ctaBar">
+  <div class="cta-content">
+    <span>Stay apprised of Canadian product info via our newsletter:</span>
+    <form id="myForm" class="cta-form">
+      <input id="email" type="email" name="email" placeholder="Enter your email" required maxlength="100" />
+      <div style="position: absolute; left: -9999px;" aria-hidden="true">
+        <label>Leave this field blank</label>
+        <input type="text" name="website">
+      </div>
+      <button type="submit">Subscribe</button>
+    </form>
+    <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
+
+    <script>
+      document.getElementById("myForm").addEventListener("submit", async function(e) {
+        e.preventDefault();
+
+        const email = document.getElementById("email").value;
+
+        const hubspotUrl = "https://api.hsforms.com/submissions/v3/integration/submit/341701216/01883640-9eae-4052-a49b-78e8846301e3";
+
+        const data = {
+          fields: [
+            { name: "email", value: email }
+          ]
+        };
+
+        await fetch(hubspotUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        });
+
+        alert("Thanks for subscribing!");
+        e.target.reset();
+      });
+    </script>
+  </div>
+</div>
+
+
+<script>
+  (function() {
+    if (localStorage.getItem("ctaDismissed") === "true") {
+      const style = document.createElement("style");
+      style.innerHTML = `
+        .cta-bar { display: none !important; }
+        body { padding-top: 85px !important; }
+        .top-nav { top: 0 !important; }
+      `;
+      document.head.appendChild(style);
+    }
+  })();
+</script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na3.hs-scripts.com/341701216.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<body>
+ 
+  <nav class="top-nav">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="nav-container full-width-bar">
+      <div class="nav-left-spacer"></div>
+  
+      <ul class="nav-links" id="mobileMenu">
+        <li><a href="index.html">The List</a></li>
+        <li><a href="submit.html">Submit a Product</a></li>
+        <li><a href="support.html">Support the Site</a></li>
+        <li><a href="Blogs-homepage.html" class="highlight">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  
+      <div class="nav-right-tip">
+        <a href="tipline.html">New: False Flag Tip Line</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="siteHeader">
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" class="flag">
+    <h1><span>The</span> <span style="color: #cc0000">CANADA</span> <span>List</span></h1>
+    <div class="subtitle">Know what you're buying. Support what matters.</div>
+  </header>
+  <main style="padding: 20px; max-width: 1000px; margin: auto;">
+    
+<h1>What is This Site About?</h1>
+<p>This platform helps Canadians discover, compare, and choose products and brands based on how much they support the Canadian economy. Whether you're shopping for food, clothing, or household goods, you can quickly see which options are truly Canadian—and which ones just feel like they are.</p>
+
+<h2>Why It Exists</h2>
+<p>Canadians often want to support local businesses, but it's not always easy to tell which brands are genuinely Canadian-owned or which products are actually made here. Many companies use branding that suggests Canadian identity without meaningfully contributing to Canadian jobs, manufacturing, or ownership. This site cuts through the noise.</p>
+
+<h2>Why It Matters</h2>
+<p>Every dollar you spend is a vote. By choosing Canadian-owned and Canadian-made products, you're helping to strengthen our economy, create local jobs, reduce supply chain vulnerability, and support businesses that reinvest in Canadian communities. Our purchasing choices shape the kind of economy—and country—we live in.</p>
+
+<h2>How It Works</h2>
+<p>Search, sort, and filter thousands of products by category, ownership, manufacturing location, and more. Each listing includes a CANADA Score—a clear, 1-to-10 rating of how much the product or brand supports the Canadian economy.</p>
+
+  </main>
+  <footer style="text-align: center; padding: 20px; font-size: 0.8em; color: #555;">
+    <a href="terms.html" style="color: #0077cc; text-decoration: none; margin-right: 15px;">
+      Terms of Service
+    </a>
+    <a href="disclaimer.html" style="color: #0077cc; text-decoration: none;">
+      Liability Statement
+    </a>
+  </footer>
+  <script>
+    function toggleMenu() {
+    document.querySelector('.top-nav').classList.toggle('mobile-nav-open');
+  }
+  
+  </script> 
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const ctaBar = document.getElementById("ctaBar");
+    const closeBtn = document.getElementById("closeCTA");
+
+    // Check if user has previously dismissed the CTA
+    if (localStorage.getItem("ctaDismissed") === "true") {
+      ctaBar.style.display = "none";
+      document.body.style.paddingTop = "85px"; // Remove CTA height
+      document.querySelector('.top-nav').style.top = "0";
+    }
+
+    // On click, hide CTA and adjust layout
+    closeBtn.addEventListener("click", () => {
+      localStorage.setItem("ctaDismissed", "true");
+      ctaBar.style.display = "none";
+      document.body.style.paddingTop = "85px"; // Remove CTA height
+      document.querySelector('.top-nav').style.top = "0";
+    });
+  });
+</script>
+  
+</body>
+</html>
