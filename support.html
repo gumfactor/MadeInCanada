@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Support the Site | The CANADA List</title>
+  <meta name="description" content="Help keep The CANADA List running. Learn how you can support the site financially or by spreading the word.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <meta property="og:title" content="Support The CANADA List" />
+  <meta property="og:description" content="Help keep this independent, Canadian-run resource going. Choose from one-time or monthly options." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thecanadalist.ca/support.html" />
+  <meta property="og:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Support The CANADA List">
+<meta name="twitter:description" content="Help us keep this project alive and independent. Every contribution helps Canadians shop smarter.">
+<meta name="twitter:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg">
+<meta name="twitter:site" content="@TheCanadaList">
+
+<!-- Security Features -->
+<meta http-equiv="Content-Security-Policy"
+  content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' https://js.stripe.com https://checkout.stripe.com https://www.googletagmanager.com https://www.google.com https://www.gstatic.com;
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' data: https://upload.wikimedia.org https://*.stripe.com;
+    connect-src 'self' https://api.hsforms.com;
+  ">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="index, follow">
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0C2RC3LEH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0C2RC3LEH');
+</script>
+
+</head>
+
+<script>
+  (function() {
+    if (localStorage.getItem("ctaDismissed") === "true") {
+      const style = document.createElement("style");
+      style.innerHTML = `
+        .cta-bar { display: none !important; }
+        body { padding-top: 85px !important; }
+        .top-nav { top: 0 !important; }
+      `;
+      document.head.appendChild(style);
+    }
+  })();
+</script>
+
+    <!-- Call to Action Bar -->
+<div class="cta-bar" id="ctaBar">
+  <div class="cta-content">
+    <span>Stay apprised of Canadian product info via our newsletter:</span>
+    <form id="myForm" class="cta-form">
+      <input id="email" type="email" name="email" placeholder="Enter your email" required maxlength="100" />
+      <div style="position: absolute; left: -9999px;" aria-hidden="true">
+        <label>Leave this field blank</label>
+        <input type="text" name="website">
+      </div>
+      <button type="submit">Subscribe</button>
+    </form>
+    <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
+  </div>
+</div>
+
+
+  <nav class="top-nav">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="nav-container full-width-bar">
+      <div class="nav-left-spacer"></div>
+  
+      <ul class="nav-links" id="mobileMenu">
+        <li><a href="index.html">The List</a></li>
+        <li><a href="submit.html">Submit a Product</a></li>
+        <li><a href="support.html">Support the Site</a></li>
+        <li><a href="Blogs-homepage.html" class="highlight">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  
+      <div class="nav-right-tip">
+        <a href="tipline.html">New: False Flag Tip Line</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na3.hs-scripts.com/341701216.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+  <body>
+
+  <header id="siteHeader">
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" class="flag">
+    <h1><span>The</span> <span style="color: #cc0000">CANADA</span> <span>List</span></h1>
+    <div class="subtitle">Know what you're buying. Support what matters.</div>
+  </header>
+
+  <main>
+    <div class="support-content">
+      <p>This project is about the mission, not the money.</p>
+      <p>It a self-funded labor of love.</p>
+      <p>Nonetheless, a project of this magnitude doesn't come without costs. If you appreciate the work, please considering offering a small support to help us maintain - or better yet grow - the site.</p>
+    
+      <h3>One-time support options</h3>
+      <div class="donation-row">
+        <button onclick="window.location.href='https://donate.stripe.com/8wM7vX1pV2886U85kr'">$5</button>
+        <button onclick="window.location.href='https://donate.stripe.com/9AQ7vX7Oj8wwdiw7sA'">$10</button>
+        <button onclick="window.location.href='https://donate.stripe.com/4gw9E5c4zfYY4M0aEN'">$25</button>
+      </div>
+    
+      <h3>Recurring support options</h3>
+      <div class="donation-row">
+        <button onclick="window.location.href='https://donate.stripe.com/14k8A1d8DcMMbao002'">$5/month</button>
+        <button onclick="window.location.href='https://donate.stripe.com/14k5nP1pV3ccguI4gh'">$10/month</button>
+        <button onclick="window.location.href='https://donate.stripe.com/8wMbMdfgL9AA6U87ss'">$25/month</button>
+      </div>
+    
+      <h3>Or, choose your own level of support</h3>
+      <div class="custom-donation">
+        <input type="number" placeholder="$ amount">
+        <button onclick="window.location.href='https://donate.stripe.com/8wM5nPecHaEE4M0eV0'">Support</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function donate(amount) {
+      alert(`Redirecting to a payment page for $${amount}...`);
+      // TODO: Insert actual payment integration here
+    }
+
+    function customDonate() {
+      const amount = document.getElementById("customAmount").value;
+      if (!amount || amount <= 0) {
+        alert("Please enter a valid amount.");
+        return;
+      }
+      alert(`Redirecting to a payment page for $${amount}...`);
+      // TODO: Insert actual payment integration here
+    }
+  </script>
+<footer style="text-align: center; padding: 20px; font-size: 0.8em; color: #555;">
+    <a href="terms.html" style="color: #0077cc; text-decoration: none; margin-right: 15px;">
+        Terms of Service
+    </a>
+    <a href="disclaimer.html" style="color: #0077cc; text-decoration: none;">
+        Liability Statement
+    </a>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.querySelector('.top-nav').classList.toggle('mobile-nav-open');
+      }
+    </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const ctaBar = document.getElementById("ctaBar");
+  const closeBtn = document.getElementById("closeCTA");
+
+  if (localStorage.getItem("ctaDismissed") === "true") {
+    ctaBar.style.display = "none";
+    document.body.style.paddingTop = "85px";
+    document.querySelector('.top-nav').style.top = "0";
+  }
+
+  closeBtn.addEventListener("click", () => {
+    localStorage.setItem("ctaDismissed", "true");
+    ctaBar.style.display = "none";
+    document.body.style.paddingTop = "85px";
+    document.querySelector('.top-nav').style.top = "0";
+  });
+
+  // ✅ Move this part here:
+  const form = document.getElementById("myForm");
+  if (form) {
+    form.addEventListener("submit", async function(e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+
+      const hubspotUrl = "https://api.hsforms.com/submissions/v3/integration/submit/341701216/01883640-9eae-4052-a49b-78e8846301e3";
+
+      const data = {
+        fields: [{ name: "email", value: email }]
+      };
+
+      await fetch(hubspotUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      alert("Thanks for subscribing!");
+      e.target.reset();
+    });
+  }
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms of Use</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="robots" content="index, follow">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0C2RC3LEH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0C2RC3LEH');
+</script>
+
+</head>
+
+<script>
+  (function() {
+    if (localStorage.getItem("ctaDismissed") === "true") {
+      const style = document.createElement("style");
+      style.innerHTML = `
+        .cta-bar { display: none !important; }
+        body { padding-top: 85px !important; }
+        .top-nav { top: 0 !important; }
+      `;
+      document.head.appendChild(style);
+    }
+  })();
+</script>
+
+    <!-- Call to Action Bar -->
+<div class="cta-bar" id="ctaBar">
+  <div class="cta-content">
+    <span>Stay apprised of Canadian product info via our newsletter:</span>
+    <form id="myForm" class="cta-form">
+      <input id="email" type="email" name="email" placeholder="Enter your email" required maxlength="100" />
+      <div style="position: absolute; left: -9999px;" aria-hidden="true">
+        <label>Leave this field blank</label>
+        <input type="text" name="website">
+      </div>
+      <button type="submit">Subscribe</button>
+    </form>
+    <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
+
+    <script>
+      document.getElementById("myForm").addEventListener("submit", async function(e) {
+        e.preventDefault();
+
+        const email = document.getElementById("email").value;
+
+        const hubspotUrl = "https://api.hsforms.com/submissions/v3/integration/submit/341701216/01883640-9eae-4052-a49b-78e8846301e3";
+
+        const data = {
+          fields: [
+            { name: "email", value: email }
+          ]
+        };
+
+        await fetch(hubspotUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        });
+
+        alert("Thanks for subscribing!");
+        e.target.reset();
+      });
+    </script>
+  </div>
+</div>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na3.hs-scripts.com/341701216.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<body>
+
+  <nav class="top-nav">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="nav-container full-width-bar">
+      <div class="nav-left-spacer"></div>
+  
+      <ul class="nav-links" id="mobileMenu">
+        <li><a href="index.html">The List</a></li>
+        <li><a href="submit.html">Submit a Product</a></li>
+        <li><a href="support.html">Support the Site</a></li>
+        <li><a href="Blogs-homepage.html" class="highlight">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  
+      <div class="nav-right-tip">
+        <a href="tipline.html">New: False Flag Tip Line</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="siteHeader">
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" class="flag">
+    <h1><span>The</span> <span style="color: #cc0000">CANADA</span> <span>List</span></h1>
+    <div class="subtitle">Know what you're buying. Support what matters.</div>
+  </header>
+  <main style="padding: 20px; max-width: 1000px; margin: auto;">
+    
+<h2>Terms of Use</h2>
+<p><strong>Effective Date:</strong> [Insert Date]</p>
+
+<p>Welcome to The CANADA List (“we,” “us,” or “our”). By accessing or using this website, you agree to the following terms. If you do not agree, please do not use the site.</p>
+
+<h3>1. Use of the Site</h3>
+<p>You agree to use this website only for lawful purposes. You may not use it in any way that could harm, disable, or impair the site or interfere with others’ use.</p>
+
+<h3>2. Information Accuracy</h3>
+<p>While we work to ensure the accuracy of all data presented—especially CANADA Scores and product information—we cannot guarantee completeness, correctness, or timeliness. Information may change, and errors may occur. Use the site at your own discretion.</p>
+
+<h3>3. AI-Generated Content</h3>
+<p>Some content is generated or supported by artificial intelligence. It may occasionally contain inaccuracies. You acknowledge that this is an evolving tool and not a definitive or infallible source.</p>
+
+<h3>4. No Endorsement</h3>
+<p>Inclusion of a product or brand does not imply endorsement. Trademarks, logos, and brand names are the property of their respective owners.</p>
+
+<h3>5. Limitation of Liability</h3>
+<p>We are not liable for any direct, indirect, incidental, consequential, or punitive damages arising from your use of the site or reliance on its content. The platform is provided “as is” and “as available.”</p>
+
+<h3>6. User Contributions</h3>
+<p>If you submit corrections or feedback, you grant us the right to use, modify, or incorporate your suggestions without compensation or obligation. We may choose not to publish or act on every submission.</p>
+
+<h3>Indemnification</h3>
+<p>You agree to indemnify and hold harmless The CANADA List, its affiliates, officers, directors, employees, and agents from any claims, losses, damages, liabilities, including legal fees, arising out of your use of the site or violation of these Terms.</p>
+
+<h3>7. Intellectual Property</h3>
+<p>All site content, layout, and original material are the intellectual property of The CANADA List unless otherwise noted. You may not reuse or reproduce our content without permission.</p>
+
+<h3>8. Modifications to Terms</h3>
+<p>We may update these Terms from time to time. Continued use of the site after changes means you accept the new Terms.</p>
+
+<h3>9. Governing Law</h3>
+<p>These Terms are governed by the laws of the Province of Ontario and the laws of Canada applicable therein. Any disputes must be resolved in a court of competent jurisdiction in Ontario.</p>
+
+<h3>10. Contact</h3>
+<p>For questions, corrections, or feedback, reach us at:<br>
+📧 <a href="mailto:support@thecanadalist.ca">support@thecanadalist.ca</a></p>
+
+  </main>
+  <footer style="text-align: center; padding: 20px; font-size: 0.8em; color: #555;">
+    <a href="terms.html" style="color: #0077cc; text-decoration: none; margin-right: 15px;">
+      Terms of Service
+    </a>
+    <a href="disclaimer.html" style="color: #0077cc; text-decoration: none;">
+      Liability Statement
+    </a>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const ctaBar = document.getElementById("ctaBar");
+    const closeBtn = document.getElementById("closeCTA");
+
+    // Check if user has previously dismissed the CTA
+    if (localStorage.getItem("ctaDismissed") === "true") {
+      ctaBar.style.display = "none";
+      document.body.style.paddingTop = "85px"; // Remove CTA height
+      document.querySelector('.top-nav').style.top = "0";
+    }
+
+    // On click, hide CTA and adjust layout
+    closeBtn.addEventListener("click", () => {
+      localStorage.setItem("ctaDismissed", "true");
+      ctaBar.style.display = "none";
+      document.body.style.paddingTop = "85px"; // Remove CTA height
+      document.querySelector('.top-nav').style.top = "0";
+    });
+  });
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms of Service</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="referrer" content="no-referrer-when-downgrade">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="robots" content="index, follow">
+
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0C2RC3LEH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0C2RC3LEH');
+</script>
+
+</head>
+
+<script>
+  (function() {
+    if (localStorage.getItem("ctaDismissed") === "true") {
+      const style = document.createElement("style");
+      style.innerHTML = `
+        .cta-bar { display: none !important; }
+        body { padding-top: 85px !important; }
+        .top-nav { top: 0 !important; }
+      `;
+      document.head.appendChild(style);
+    }
+  })();
+</script>
+
+       <!-- Call to Action Bar -->
+       <div class="cta-bar" id="ctaBar">
+        <div class="cta-content">
+          <span>Stay apprised of Canadian product info via our newsletter:</span>
+          <form id="myForm" class="cta-form">
+            <input id="email" type="email" name="email" placeholder="Enter your email" required maxlength="100" />
+            <div style="position: absolute; left: -9999px;" aria-hidden="true">
+              <label>Leave this field blank</label>
+              <input type="text" name="website">
+            </div>
+            <button type="submit">Subscribe</button>
+          </form>
+          <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
+      
+          <script>
+            document.getElementById("myForm").addEventListener("submit", async function(e) {
+              e.preventDefault();
+      
+              const email = document.getElementById("email").value;
+      
+              const brevoApiKey = "API SECRET";
+      
+              const data = {
+                email: email,
+                listIds: [2], // 👈 Replace with your actual list ID number
+                updateEnabled: true // Optional: updates existing contacts if already subscribed
+              };
+      
+              await fetch("https://api.brevo.com/v3/contacts", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                  "api-key": brevoApiKey
+                },
+                body: JSON.stringify(data)
+              });
+      
+              alert("Thanks for subscribing!");
+              e.target.reset();
+            });
+          </script>
+  </div>
+</div>
+
+
+
+<body>
+
+  <nav class="top-nav">
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <div class="nav-container full-width-bar">
+      <div class="nav-left-spacer"></div>
+  
+      <ul class="nav-links" id="mobileMenu">
+        <li><a href="index.html">The List</a></li>
+        <li><a href="submit.html">Submit a Product</a></li>
+        <li><a href="support.html">Support the Site</a></li>
+        <li><a href="Blogs-homepage.html" class="highlight">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  
+      <div class="nav-right-tip">
+        <a href="tipline.html">New: False Flag Tip Line</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="siteHeader">
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" class="flag">
+    <h1><span>The</span> <span style="color: #cc0000">CANADA</span> <span>List</span></h1>
+    <div class="subtitle">Know what you're buying. Support what matters.</div>
+  </header>
+  <main style="padding: 20px; max-width: 1000px; margin: auto;">
+    
+<h2>Legal Disclaimer & Liability Statement</h2>
+<p><strong>Last updated:</strong> Apr 8, 2025</p>
+
+<p>The CANADA List is an informational tool designed to help Canadians make more informed purchasing decisions. The data presented on this site—including CANADA Scores, ownership information, and manufacturing details—is compiled using a combination of AI analysis, publicly available information, company websites, regulatory databases, and, in some cases, user contributions. While we strive for accuracy and transparency, the information on this site is not guaranteed to be complete, up to date, or error-free.</p>
+
+<h3>No Warranty</h3>
+<p>We make no express or implied warranties about the reliability, accuracy, or completeness of the information provided. This includes, but is not limited to, any implied warranties of merchantability or fitness for a particular purpose.</p>
+
+<h3>Use at Your Own Risk</h3>
+<p>By using this website, you agree that your reliance on the information provided is entirely at your own risk. We are not liable for any decisions made based on this information, nor for any damages (direct, indirect, incidental, or consequential) arising from its use.</p>
+
+<h3>AI-Generated Content</h3>
+<p>Much of the analysis provided is supported by artificial intelligence, which interprets and synthesizes data from various sources. While we take care to review and validate this information, AI is not infallible. Errors can and do occur.</p>
+
+<h3>Corrections and Updates</h3>
+<p>The CANADA List is committed to accuracy and transparency. While we strive to ensure that all published information is based on the best publicly available sources at the time of posting, much of the information is AI-facilitated, and errors or changes may occur. If you believe any information on this site is inaccurate, incomplete, or outdated, please contact us at <a href="mailto:support@thecanadalist.ca"></a> support@thecanadalist.ca. We review all credible correction requests promptly. Where appropriate, we will update or correct the relevant material and may note substantive corrections for transparency. Our goal is to provide Canadians with a reliable, trustworthy resource for informed decision-making.</p>
+
+<h3>Third-Party Links</h3>
+<p>Some pages may link to external websites. We do not control or endorse the content on those sites and are not responsible for any third-party content or services.</p>
+
+<h3>Intellectual Property</h3>
+<p>The Canada Score™ is a proprietary rating developed by The Canada List to evaluate the Canadian economic impact of consumer products. While the general evaluation dimensions are disclosed for transparency, the specific process used to generate scores — including AI-supported synthesis and internal review — is proprietary. The Canada List claims trademark rights to The Canada Score™ and prohibits unauthorized use, imitation, or reproduction. All trademarks, logos, brand names, and product images remain the property of their respective owners. Their inclusion on this site does not imply any affiliation or endorsement.</p>
+
+
+  </main>
+  <footer style="text-align: center; padding: 20px; font-size: 0.8em; color: #555;">
+    <a href="terms.html" style="color: #0077cc; text-decoration: none; margin-right: 15px;">
+      Terms of Service
+    </a>
+    <a href="disclaimer.html" style="color: #0077cc; text-decoration: none;">
+      Liability Statement
+    </a>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const ctaBar = document.getElementById("ctaBar");
+    const closeBtn = document.getElementById("closeCTA");
+
+    // Check if user has previously dismissed the CTA
+    if (localStorage.getItem("ctaDismissed") === "true") {
+      ctaBar.style.display = "none";
+      document.body.style.paddingTop = "85px"; // Remove CTA height
+      document.querySelector('.top-nav').style.top = "0";
+    }
+
+    // On click, hide CTA and adjust layout
+    closeBtn.addEventListener("click", () => {
+      localStorage.setItem("ctaDismissed", "true");
+      ctaBar.style.display = "none";
+      document.body.style.paddingTop = "85px"; // Remove CTA height
+      document.querySelector('.top-nav').style.top = "0";
+    });
+  });
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>About The CANADA List | Why We Made This Site</title>
+<meta name="description" content="Learn how The CANADA List helps Canadians find products that support local jobs and businesses. See what inspired the project.">
+<meta name="google-site-verification" content="tnvrwqMttr-LnJRmyhdmeQ8o3zhnBJTXH_tqEfqud1U" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:title" content="The CANADA List – See How Canadian the Products You Buy Are" />
+<meta property="og:description" content="Search, sort, and filter to find products that are truly Canadian-owned, made, and sourced." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://thecanadalist.ca/" />
+<meta property="og:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg" />
+
+<link rel="canonical" href="https://thecanadalist.ca/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The CANADA List – See How Canadian the Products You Buy Are">
+<meta name="twitter:description" content="Search, sort, and filter products that are truly Canadian-owned, made, and sourced.">
+<meta name="twitter:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg">
+<meta name="twitter:site" content="@TheCanadaList">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="index, follow">
+<script defer src="https://cdn.jsdelivr.net/npm/nouislider@15/dist/nouislider.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@15/dist/nouislider.min.css">
+<link href="styles.css" rel="stylesheet"/>
+
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Z0C2RC3LEH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0C2RC3LEH');
+</script>
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("searchInput");
+  const productTypeFilter = document.getElementById("productTypeFilter");
+  const ownershipCanada = document.getElementById("ownershipCanada");
+  const manufacturingCanada = document.getElementById("manufacturingCanada");
+  
+  // 1. Fire on Enter key (keyword search)
+  if (searchInput) {
+    searchInput.addEventListener("keypress", function (event) {
+      if (event.key === "Enter") {
+        gtag('event', 'search_input', {
+          'event_category': 'Interaction',
+          'event_label': searchInput.value
+        });
+      }
+    });
+  }
+
+  // 2. Fire on category dropdown change
+  if (productTypeFilter) {
+    productTypeFilter.addEventListener("change", function () {
+      gtag('event', 'category_filter', {
+        'event_category': 'Interaction',
+        'event_label': productTypeFilter.value
+      });
+    });
+  }
+
+  // 3. Fire on basic checkbox filter clicks
+  if (ownershipCanada) {
+    ownershipCanada.addEventListener("change", function () {
+      gtag('event', 'basic_filter_applied', {
+        'event_category': 'Interaction',
+        'event_label': 'Ownership: Canadian Only'
+      });
+    });
+  }
+  if (manufacturingCanada) {
+    manufacturingCanada.addEventListener("change", function () {
+      gtag('event', 'basic_filter_applied', {
+        'event_category': 'Interaction',
+        'event_label': 'Manufacturing: Canadian Only'
+      });
+    });
+  }
+
+  // 4. Fire on Advanced Filters being applied
+  const applyAdvancedFilters = () => {
+    const selectedOwnership = Array.from(document.querySelectorAll('input[name="ownershipCountry"]:checked')).map(cb => cb.value);
+    const selectedManufacturing = Array.from(document.querySelectorAll('input[name="manufacturingCountry"]:checked')).map(cb => cb.value);
+    const selectedCompanies = Array.from(document.querySelectorAll('input[name="companyGroup"]:checked')).map(cb => cb.value);
+    const scoreRange = window.scoreSlider ? window.scoreSlider.noUiSlider.get().map(Number) : [1, 10];
+
+    const selectedFilters = {
+      ownership: selectedOwnership,
+      manufacturing: selectedManufacturing,
+      company: selectedCompanies,
+      scoreRange: scoreRange
+    };
+
+    gtag('event', 'advanced_filter_applied', {
+      'event_category': 'Interaction',
+      'event_label': JSON.stringify(selectedFilters)
+    });
+  };
+
+  document.getElementById("filterModal").addEventListener("change", function (e) {
+    if (e.target.matches('input[type="checkbox"]') || e.target.matches('input[type="radio"]')) {
+      applyAdvancedFilters();
+    }
+  });
+
+  if (window.scoreSlider) {
+    window.scoreSlider.noUiSlider.on('change', applyAdvancedFilters);
+  }
+});
+
+</script>
+
+</meta></meta></meta></head>
+<script>
+  (function() {
+    if (localStorage.getItem("ctaDismissed") === "true") {
+      const style = document.createElement("style");
+      style.innerHTML = `
+        .cta-bar { display: none !important; }
+        body { padding-top: 85px !important; }
+        .top-nav { top: 0 !important; }
+      `;
+      document.head.appendChild(style);
+    }
+  })();
+</script>
+<!-- Call to Action Bar -->
+<div class="cta-bar" id="ctaBar">
+  <div class="cta-content">
+    <span>Stay apprised of Canadian product info via our newsletter:</span>
+    <form id="myForm" class="cta-form">
+      <input id="email" type="email" name="email" placeholder="Enter your email" required maxlength="100" />
+      <div style="position: absolute; left: -9999px;" aria-hidden="true">
+        <label>Leave this field blank</label>
+        <input type="text" name="website">
+      </div>
+      <button type="submit">Subscribe</button>
+    </form>
+    <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
+
+    <script>
+      document.getElementById("myForm").addEventListener("submit", async function(e) {
+        e.preventDefault();
+
+        const email = document.getElementById("email").value;
+
+        const hubspotUrl = "https://api.hsforms.com/submissions/v3/integration/submit/341701216/01883640-9eae-4052-a49b-78e8846301e3";
+
+        const data = {
+          fields: [
+            { name: "email", value: email }
+          ]
+        };
+
+        await fetch(hubspotUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        });
+
+        alert("Thanks for subscribing!");
+        e.target.reset();
+      });
+    </script>
+  </div>
+</div>
+<nav class="top-nav">
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <div class="nav-container full-width-bar">
+    <div class="nav-left-spacer"></div>
+
+
+    <ul class="nav-links" id="mobileMenu">
+      <li><a href="index.html">The List</a></li>
+      <li><a href="submit.html">Submit a Product</a></li>
+      <li><a href="support.html">Support the Site</a></li>
+      <li><a href="Blogs-homepage.html" class="highlight">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-right-tip">
+      <a href="tipline.html">New: False Flag Tip Line</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-na3.hs-scripts.com/341701216.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<body>
+
+  <header id="siteHeader" style="position: relative;">
+    <img alt="Canadian flag" class="flag" src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg"/>
+      <h1><span>The</span> <span style="color: #cc0000">CANADA</span> <span>List</span></h1>
+    <div class="subtitle">Know what you're buying. Support what matters.</div>
+   <div class="header-links">
+    <a href="about.html">Why this site exists</a>
+    <a href="scoring.html">How the CANADA scores are derived</a>
+  </div>
+</header>
+
+<div id="controls">
+  <div id="controlsRow" style="position: relative;">
+    <input id="searchInput" placeholder="Search by keyword..." type="text"/>
+    <select id="productTypeFilter">
+    <option value="">All Types</option>
+    </select>
+  <div id="filtersContainer">
+  <label><input id="ownershipCanada" type="checkbox"/> Filter Canadian Ownership only</label>
+  <label><input id="manufacturingCanada" type="checkbox"/> Filter Canadian Manufacturing only</label>
+</div>
+
+<!-- Filter icon with attached modal -->
+<div class="filter-wrapper">
+    <div class="icon-container" id="filterTrigger">
+        <svg class="filter-icon" height="30" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 18h4v-2h-4v2zm-7-5h18v-2H3v2zm3-7v2h12V6H6z"></path>
+        </svg>
+        <span class="filter-label">Advanced Filters</span>
+      </div>
+<div class="modal" id="filterModal">
+<div class="modal-content">
+    <div class="filter-layout">
+        <!-- LEFT: PILL COLUMN -->
+        <div class="pill-column">
+          <div class="pill-dropdown-wrapper">
+            <button class="pill" id="ownershipPill" aria-expanded="false" aria-controls="ownershipDropdown">
+              Ownership ▾
+            </button>
+            <div id="ownershipDropdown" class="dropdown-menu" role="menu" aria-hidden="true">
+              <input type="text" class="dropdown-search" placeholder="Search..." onkeyup="filterDropdownOptions(this)">
+              <label><input name="ownershipCountry" type="checkbox" value="Canada"/> 100% Canadian
+                <img alt="🇨🇦" src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" style="height: 14px; vertical-align: middle; margin-right: 6px;"/>
+              </label>
+              <label><input name="ownershipCountry" type="checkbox" value="hasCanada"/> Some Canadian ownership
+                <img alt="🇨🇦" src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" style="height: 14px; vertical-align: middle; margin-right: 14px;"/>
+              </label>
+              <label style="display: flex; align-items: center; gap: 6px;">
+                <input name="ownershipCountry" type="checkbox" value="!USA"/> All but USA 
+                <span style="position: relative; display: inline-block; height: 14px; width: 21px; margin-left: 17px;">
+                  <img alt="USA Flag" src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" style="height: 13px; width: 27px; display: block; border-radius: 2px; margin-top: -1px; margin-left: 10px;"/>
+                  <span style="position: absolute; top: 0; left: 12px; width: 100%; height: 100%; pointer-events: none;">
+                    <svg height="14" viewBox="0 0 24 24" width="21">
+                      <line stroke="red" stroke-width="5" x1="1" x2="24" y1="1" y2="24"/>
+                      <line stroke="red" stroke-width="5" x1="24" x2="1" y1="1" y2="24"/>
+                    </svg>
+                  </span>
+                </span>
+              </label>
+              <hr style="border: none; border-top: 1px solid #ccc; margin: 8px 0;"/>
+            </div>
+          </div>
+      
+          <div class="pill-dropdown-wrapper">
+            <button class="pill" id="manufacturingPill" aria-expanded="false" aria-controls="manufacturingDropdown">
+              Manufacturing ▾
+            </button>
+            <div id="manufacturingDropdown" class="dropdown-menu" role="menu" aria-hidden="true">
+              <input type="text" class="dropdown-search" placeholder="Search..." onkeyup="filterDropdownOptions(this)">
+              <label><input name="manufacturingCountry" type="checkbox" value="Canada"/> 100% Canadian 
+                <img alt="🇨🇦" src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" style="height: 14px; vertical-align: middle; margin-right: 6px;"/>
+              </label>
+              <label><input name="manufacturingCountry" type="checkbox" value="hasCanada"/> Some Canadian manufacturing
+                <img alt="🇨🇦" src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" style="height: 14px; vertical-align: middle; margin-right: 14px;"/>
+              </label>
+              <label style="display: flex; align-items: center; gap: 6px;">
+                <input name="manufacturingCountry" type="checkbox" value="!USA"/> All but USA 
+                <span style="position: relative; display: inline-block; height: 14px; width: 21px; margin-left: 17px;">
+                  <img alt="USA Flag" src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" style="height: 13px; width: 27px; display: block; border-radius: 2px; margin-top: -1px; margin-left: 10px;"/>
+                  <span style="position: absolute; top: 0; left: 12px; width: 100%; height: 100%; pointer-events: none;">
+                    <svg height="14" viewBox="0 0 24 24" width="21">
+                      <line stroke="red" stroke-width="5" x1="1" x2="24" y1="1" y2="24"/>
+                      <line stroke="red" stroke-width="5" x1="24" x2="1" y1="1" y2="24"/>
+                    </svg>
+                  </span>
+                </span>
+              </label>
+              <hr style="border: none; border-top: 1px solid #ccc; margin: 8px 0;"/>
+            </div>
+          </div>
+      
+          <div class="pill-dropdown-wrapper">
+            <button class="pill" id="companyPill" aria-expanded="false" aria-controls="companyDropdown">
+              Company ▾
+            </button>
+            <div id="companyDropdown" class="dropdown-menu" role="menu" aria-hidden="true">
+              <input type="text" class="dropdown-search" placeholder="Search..." onkeyup="filterDropdownOptions(this)">
+            </div>
+          </div>
+          <div class="pill-dropdown-wrapper">
+            <button class="pill" id="scorePill" aria-expanded="false" aria-controls="scoreDropdown">
+              CANADA Score ▾
+            </button>
+            <div id="scoreDropdown" class="dropdown-menu" role="menu" aria-hidden="true">
+                <div id="scoreSlider" style="margin:16px 12px;"></div>
+                <div style="text-align:center; font-size:14px; margin-top:6px;">
+                  <span id="scoreLabel">1 – 10</span>
+                </div>
+              </div>              
+          </div>          
+        </div>
+      
+        <!-- RIGHT: FULL-WIDTH CHECKBOX FILTERS -->
+         <!--
+        <div class="checkbox-column">
+          <label><input id="onlyCanadianOwned" type="checkbox"/> Only show Canadian-owned products</label>
+          <label><input id="onlyCanadianMade" type="checkbox"/> Only show Canadian-made products</label>
+          <label><input id="excludeSubsidiaries" type="checkbox"/> Exclude subsidiaries of foreign firms</label>
+          <label><input id="hideLowScore" type="checkbox"/> Hide products with CANADA Score below 5</label>
+        </div>
+      </div>
+        -->
+      
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="selectedCategoryDisplay"></div>
+<table id="productTable">
+<thead>
+<tr>
+<th id="th-Product Name" onclick="sortTable('Product Name')">Product Name</th>
+<th>Parent Company</th>
+<th id="th-CANADIAN Score (out of 10)" onclick="sortTable('CANADIAN Score (out of 10)')">
+          The <span class="highlight">CANADA</span> Score
+        </th>
+<th>Product Category</th>
+<th>Ownership</th>
+<th>Manufacturing</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody id="tableBody">
+  <!-- rows will go here -->
+</tbody>
+<tbody>
+  <tr id="emptyMessageRow" style="display:none;">
+    <td colspan="7" style="text-align:center; font-style:italic; padding:20px;">
+      No products found — try broadening your search.
+    </td>
+  </tr>
+</tbody>
+
+</table>
+<div id="indexPaginationWrapper">
+  <div id="paginationControls">
+    <span id="prevLink" class="disabled" onclick="goToPrevPage()">Previous Page</span>
+    <span id="paginationInfo" style="margin-bottom: 8px; font-size: 16px;"></span>
+    <span id="nextLink" onclick="goToNextPage()">Next Page</span>
+  </div>
+</div>
+<script src="./categoriesData.js"></script>
+<script>
+    /////////////////////////////////////////////////
+    // We'll store all products in memory, but only
+    // do minimal DOM updates to avoid full rebuild.
+    /////////////////////////////////////////////////
+
+    let products = [];
+    let selectedCategory = "";
+
+    // We'll keep a global array of filtered data
+    let filteredProducts = [];
+
+    // We'll keep track of the last known filter state
+    let lastSearchValue = null;
+    let lastTypeFilter = null;
+    let lastOwnershipCanada = false;
+    let lastManufacturingCanada = false;
+
+    let lastScoreMin = 1;  
+    let lastScoreMax = 10;
+
+    let currentSortField = '';
+    let sortAscending = true;
+    let currentPage = 1;
+    const pageSize = 50;
+
+    const isMobile = window.innerWidth <= 768;
+
+    // Debounce for the search input
+    let searchDebounceTimer = null;
+
+    // We'll store references to the <tr> elements we create.
+    let currentRowMap = new Map();
+
+    // Single onload
+    window.onload = async function() {
+      await fetchProducts();
+      console.log("categoriesData?", categoriesData);
+      populateFilterOptions();
+    };
+
+    if (isMobile) {
+  document.addEventListener("DOMContentLoaded", () => {
+    const paginationEl = document.getElementById("paginationControls");
+    if (paginationEl) {
+      paginationEl.style.display = "none";
+    }
+  });
+}
+
+    // Fetch TheCanadaList.json
+    async function fetchProducts() {
+  try {
+    const response = await fetch('./TheCanadaList.json');
+    products = await response.json();
+    populateCountryDropdowns(products);
+    // Set default sort: Score column in descending order
+    currentSortField = "CANADIAN Score (out of 10)";
+    sortAscending = false;
+    doFullFilter();
+  } catch (error) {
+    console.error("Error fetching products:", error);
+  }
+}
+
+    // Debounce for search input
+    document.getElementById("searchInput").addEventListener("input", () => {
+      currentPage = 1;
+      clearTimeout(searchDebounceTimer);
+      searchDebounceTimer = setTimeout(() => {
+        doFullFilter();
+      }, 300);
+    });
+
+    document.getElementById("productTypeFilter").addEventListener("change", () => {
+      currentPage = 1;
+      doFullFilter();
+    });
+
+    document.getElementById("ownershipCanada").addEventListener("change", () => {
+      currentPage = 1;
+      doFullFilter();
+    });
+
+    document.getElementById("manufacturingCanada").addEventListener("change", () => {
+      currentPage = 1;
+      doFullFilter();
+    });
+
+    function normalizeCompanyName(name) {
+    return name
+      .toLowerCase()
+      .replace(/ inc\.?/g, "")
+      .replace(/ corp\.?/g, "")
+      .replace(/ incorporated/g, "")
+      .replace(/ limited| ltd\.?/g, "")
+      .replace(/ company| co\.?/g, "")
+      .replace(/ coffee| canada| foods| group/g, "")
+      .replace(/[^a-z]/g, "")
+      .trim();
+  }
+
+    function doFullFilter() {
+        const searchValue = document.getElementById("searchInput").value.toLowerCase();
+        const typeFilter = document.getElementById("productTypeFilter").value;
+        const ownershipCanada = document.getElementById("ownershipCanada").checked;
+        const manufacturingCanada = document.getElementById("manufacturingCanada").checked;
+
+        // Track selected country checkboxes
+        const selectedOwnershipCountries = Array.from(
+            document.querySelectorAll('input[name="ownershipCountry"]:checked')
+        ).map(cb => cb.value);
+
+        if (ownershipCanada && !selectedOwnershipCountries.includes("Canada")) {
+            selectedOwnershipCountries.push("Canada");
+        }
+
+        const ownershipCountryChanged = JSON.stringify(selectedOwnershipCountries) !== JSON.stringify(window.lastOwnershipCountries || []);
+
+        const selectedManufacturingCountries = Array.from(
+          document.querySelectorAll('input[name="manufacturingCountry"]:checked')
+        ).map(cb => cb.value);
+
+        if (manufacturingCanada && !selectedManufacturingCountries.includes("Canada")) {
+            selectedManufacturingCountries.push("Canada");
+        }
+
+        const manufacturingCountryChanged = JSON.stringify(selectedManufacturingCountries) !== JSON.stringify(window.lastManufacturingCountries || []);
+
+        const selectedCompanyGroups = Array.from(
+          document.querySelectorAll('input[name="companyGroup"]:checked')
+        ).map(cb => cb.value);
+
+        const companyGroupChanged = JSON.stringify(selectedCompanyGroups) !== JSON.stringify(window.lastCompanyGroups || []);
+
+        const [scoreMin, scoreMax] = window.scoreSlider
+          ? window.scoreSlider.noUiSlider.get().map(Number)
+        : [1, 10];
+
+        const sliderChanged = scoreMin !== lastScoreMin || scoreMax !== lastScoreMax;
+
+        // Only skip filtering if nothing at all has changed
+        if (
+            searchValue === lastSearchValue &&
+            typeFilter === lastTypeFilter &&
+            ownershipCanada === lastOwnershipCanada &&
+            manufacturingCanada === lastManufacturingCanada &&
+            !ownershipCountryChanged && !manufacturingCountryChanged && 
+            !companyGroupChanged && !sliderChanged &&
+            currentSortField
+        ) 
+        {
+            if (nothingChanged && currentSortField) {
+                doSort();
+                updatePaginationAndRender();
+                return;
+                }
+         }
+
+        // Update last-known state
+        lastSearchValue = searchValue;
+        lastTypeFilter = typeFilter;
+        lastOwnershipCanada = ownershipCanada;
+        lastManufacturingCanada = manufacturingCanada;
+        window.lastOwnershipCountries = selectedOwnershipCountries;
+        window.lastManufacturingCountries = selectedManufacturingCountries;
+        window.lastCompanyGroups          = selectedCompanyGroups;  
+        lastScoreMin  = scoreMin;          // ← add
+        lastScoreMax  = scoreMax;          // ← add        
+
+        // Filter the full product list
+        filteredProducts = products.filter(product => {
+            const searchFields = [
+            product["Product Name"],
+            product["Product Category"],
+            product["Ownership (Company)"],
+            product["Ownership (Country)"],
+            product["Manufacturing (Countries)"],
+            product["Notes"]
+            ];
+
+            const matchesSearch = searchFields.some(field =>
+            String(field || "").toLowerCase().includes(searchValue)
+            );
+
+            const matchesType =
+            !typeFilter ||
+            product["Product Category"]?.toLowerCase().trim() === typeFilter.toLowerCase().trim();
+
+            const matchesOwnership =
+                selectedOwnershipCountries.length === 0 ||
+                selectedOwnershipCountries.some(value => {
+
+            const own = (product["Ownership (Country)"] || "").toLowerCase().trim();
+
+                if (value === "Canada") {
+                return own === "canada";
+                } else if (value === "hasCanada") {
+                return own.includes("canada");
+                } else if (value === "!USA") {
+                // Exclude if USA or variants are mentioned
+                return !["usa", "united states", "u.s."].some(term => own.includes(term));
+                } else {
+                return own.includes(value.toLowerCase());
+                }
+            });
+
+            const matchesManufacturing =
+                selectedManufacturingCountries.length === 0 ||
+                selectedManufacturingCountries.some(value => {
+            const manuf = (product["Manufacturing (Countries)"] || "").toLowerCase().trim();
+
+                if (value === "Canada") {
+                return manuf === "canada";
+                } else if (value === "hasCanada") {
+                return manuf.includes("canada");
+                } else if (value === "!USA") {
+                return !["usa", "united states", "u.s."].some(term => manuf.includes(term));
+                } else {
+                return manuf.includes(value.toLowerCase());
+                }
+            });
+
+
+
+
+              const selectedCompanyGroups = Array.from(
+                document.querySelectorAll('input[name="companyGroup"]:checked')
+              ).map(cb => cb.value);
+
+              const productCompany = (product["Ownership (Company)"] || "").trim();
+              const normalizedProductCompany = normalizeCompanyName(productCompany);
+              
+              const matchesCompany =
+              selectedCompanyGroups.length === 0 ||
+              selectedCompanyGroups.some(selected =>
+                normalizeCompanyName(selected) === normalizedProductCompany
+              );
+
+              const productScore = parseInt(product["CANADIAN Score (out of 10)"], 10);
+              
+              const withinScoreRange =
+                !isNaN(productScore) &&
+                productScore >= scoreMin &&
+                productScore <= scoreMax;
+
+                const ownCountryLower   = (product["Ownership (Country)"]        || "").toLowerCase();
+                const manufCountryLower = (product["Manufacturing (Countries)"] || "").toLowerCase();
+
+                const passesOwnershipCanada = !ownershipCanada || ownCountryLower === "canada";
+                const passesManufacturingCanada = !manufacturingCanada || manufCountryLower === "canada";
+
+                return (
+                matchesSearch &&
+                matchesType &&
+                matchesOwnership &&
+                matchesCompany &&
+                withinScoreRange &&
+                matchesManufacturing &&
+                passesOwnershipCanada &&
+                passesManufacturingCanada
+                );             
+             });
+
+        doSort();
+        updatePaginationAndRender();
+    }
+
+    function doSort() {
+  if (!currentSortField) return;
+  filteredProducts.sort((a, b) => {
+    let aVal = a[currentSortField];
+    let bVal = b[currentSortField];
+    // If sorting by Canada Score, force numeric conversion.
+    if (currentSortField === "CANADIAN Score (out of 10)") {
+      aVal = parseFloat(String(aVal).trim());
+      bVal = parseFloat(String(bVal).trim());
+      if (isNaN(aVal)) aVal = 0;
+      if (isNaN(bVal)) bVal = 0;
+    }
+    if (typeof aVal === "number" && typeof bVal === "number") {
+      return sortAscending ? aVal - bVal : bVal - aVal;
+    } else {
+      return sortAscending
+        ? String(aVal).localeCompare(String(bVal))
+        : String(bVal).localeCompare(String(aVal));
+    }
+  });
+}
+
+
+function updatePaginationAndRender() {
+  const totalPages = Math.ceil(filteredProducts.length / pageSize) || 1;
+  if (currentPage > totalPages) currentPage = totalPages;
+  if (currentPage < 1) currentPage = 1;
+
+  const pageProducts = filteredProducts.slice(
+    (currentPage - 1) * pageSize,
+    currentPage * pageSize
+  );
+
+  if (!isMobile) {
+    patchTable(pageProducts);
+  } else if (currentPage === 1) {
+    patchTable(pageProducts);
+  } else {
+    patchTableAppend(pageProducts);
+  }
+
+  // ✅ FIX: Only show empty message if no results
+  const emptyRow = document.getElementById("emptyMessageRow");
+  emptyRow.style.display = filteredProducts.length === 0 ? "table-row" : "none";
+
+  if (!isMobile) {
+    renderPaginationControls(totalPages);
+  } else {
+    const el = document.getElementById("paginationControls");
+    if (el) el.style.display = "none";
+  }
+}
+
+
+document.getElementById("emptyMessageRow").style.display =
+    filteredProducts.length === 0 ? "table-row" : "none";
+
+    if (!isMobile) {
+    renderPaginationControls(totalPages);
+  } else {
+    const el = document.getElementById("paginationControls");
+    if (el) el.style.display = "none";  // ✅ Force hide
+  }
+
+function patchTable(newPageProducts) {
+  const tbody = document.getElementById("tableBody");
+  tbody.innerHTML = ""; // clear the table body
+  currentRowMap.clear(); // clear the map so the new order is built fresh
+  newPageProducts.forEach(product => {
+    const newRow = createRow(product);
+    tbody.appendChild(newRow);
+    currentRowMap.set(product.id, newRow);
+  });
+}
+
+function patchTableAppend(newProducts) {
+  const tbody = document.getElementById("tableBody");
+  newProducts.forEach(product => {
+    const newRow = createRow(product);
+    tbody.appendChild(newRow);
+    currentRowMap.set(product.id, newRow);
+  });
+}
+
+    function createRow(product) {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>
+          ${product["Product Name"]}
+          ${
+            product["Ownership (Country)"] === "Canada" &&
+            product["Manufacturing (Countries)"] === "Canada"
+              ? '<img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" style="height: 16px; vertical-align: middle; margin-left: 6px;">'
+              : ""
+          }
+        </td>
+        <td>${product["Ownership (Company)"]}</td>
+        <td>${product["CANADIAN Score (out of 10)"]}</td>
+        <td>${product["Product Category"]}</td>
+        <td>${product["Ownership (Country)"]}</td>
+        <td>${product["Manufacturing (Countries)"]}</td>
+        <td>${product["Notes"]}</td>
+      `;
+      return row;
+    }
+
+    function renderPaginationControls(totalPages) {
+      const info = document.getElementById("paginationInfo");
+      info.textContent = `Page ${currentPage} of ${totalPages}`;
+
+      const nextLink = document.getElementById("nextLink");
+      nextLink.classList.toggle("disabled", currentPage >= totalPages);
+
+      const prevLink = document.getElementById("prevLink");
+      prevLink.classList.toggle("disabled", currentPage <= 1);
+    }
+
+    function goToNextPage() {
+      const totalPages = Math.ceil(filteredProducts.length / pageSize) || 1;
+      if (currentPage < totalPages) {
+        currentPage++;
+        updatePaginationAndRender();
+      }
+    }
+
+    function goToPrevPage() {
+      if (currentPage > 1) {
+        currentPage--;
+        updatePaginationAndRender();
+      }
+    }
+
+    function sortTable(sortBy = null) {
+      if (!sortBy) return;
+      if (sortBy === currentSortField) {
+        sortAscending = !sortAscending;
+      } else {
+        currentSortField = sortBy;
+        sortAscending = true;
+      }
+      updateSortArrow(sortBy);
+      doSort();
+      updatePaginationAndRender();
+    }
+
+    function updateSortArrow(sortBy) {
+      document.querySelectorAll("th").forEach((th) => {
+        th.classList.remove("active-asc", "active-desc");
+      });
+      const th = document.getElementById(`th-${sortBy}`);
+      if (th) {
+        th.classList.add(sortAscending ? "active-asc" : "active-desc");
+      }
+    }
+
+    function populateFilterOptions() {
+      const filter = document.getElementById("productTypeFilter");
+      filter.innerHTML = "";
+
+      const defaultOption = document.createElement("option");
+      defaultOption.value = "";
+      defaultOption.textContent = "Search by Category";
+      filter.appendChild(defaultOption);
+
+      categoriesData.forEach((category) => {
+        const group = document.createElement("optgroup");
+        group.label = category.label;
+
+        if (category.subcategories && category.subcategories.length > 0) {
+          category.subcategories.forEach((sub) => {
+            if (sub.subcategories) {
+              sub.subcategories.forEach((subsub) => {
+                const option = document.createElement("option");
+                option.value = subsub.label;
+                option.textContent = `${sub.label} → ${subsub.label}`;
+                group.appendChild(option);
+              });
+            } else {
+              const option = document.createElement("option");
+              option.value = sub.label;
+              option.textContent = sub.label;
+              group.appendChild(option);
+            }
+          });
+        }
+        filter.appendChild(group);
+      });
+    }
+
+    function buildCategoryMenu(dataArray, parentUl) {
+  dataArray.forEach((item) => {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = "#";
+    a.textContent = item.label;
+
+    a.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      const subMenu = li.querySelector(".submenu");
+      if (subMenu) {
+        // Close any sibling submenus if desired
+        const siblingSubMenus = li.parentNode.querySelectorAll(".submenu");
+        siblingSubMenus.forEach(sm => {
+          if (sm !== subMenu) {
+            sm.style.display = "none";
+          }
+        });
+        // Toggle the current submenu
+        subMenu.style.display = (subMenu.style.display === "block") ? "none" : "block";
+      } else {
+        // No submenu means this is a leaf category: set and filter
+        selectedCategory = item.label;
+        document.getElementById("selectedCategoryDisplay").textContent = `Selected Category: ${item.label}`;
+        doFullFilter();
+      }
+    });
+
+    li.appendChild(a);
+
+    if (item.subcategories && item.subcategories.length > 0) {
+      const subUl = document.createElement("ul");
+      subUl.classList.add("submenu");
+      subUl.style.display = "none"; // Hide submenus by default
+      buildCategoryMenu(item.subcategories, subUl);
+      li.appendChild(subUl);
+    }
+
+    parentUl.appendChild(li);
+  });
+}
+
+
+  </script>
+<footer style="text-align: center; padding: 20px; font-size: 0.8em; color: #555;">
+<a href="terms.html" style="color: #0077cc; text-decoration: none; margin-right: 15px;">
+      Terms of Service
+    </a>
+<a href="disclaimer.html" style="color: #0077cc; text-decoration: none;">
+      Liability Statement
+    </a>
+</footer>
+<script>
+    function toggleMenu() {
+      document.querySelector('.top-nav').classList.toggle('mobile-nav-open');
+    }
+  </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const ctaBar = document.getElementById("ctaBar");
+      const closeBtn = document.getElementById("closeCTA");
+  
+      // Check if user has previously dismissed the CTA
+      if (localStorage.getItem("ctaDismissed") === "true") {
+        ctaBar.style.display = "none";
+        document.body.style.paddingTop = "85px"; // Remove CTA height
+        document.querySelector('.top-nav').style.top = "0";
+      }
+  
+      // On click, hide CTA and adjust layout
+      closeBtn.addEventListener("click", () => {
+        localStorage.setItem("ctaDismissed", "true");
+        ctaBar.style.display = "none";
+        document.body.style.paddingTop = "85px"; // Remove CTA height
+        document.querySelector('.top-nav').style.top = "0";
+      });
+    });
+  </script>
+  
+<script>
+    const filterTrigger = document.getElementById('filterTrigger');
+    const filterModal = document.getElementById('filterModal');
+  
+    // Toggle modal on filter icon click
+    filterTrigger.addEventListener('click', (e) => {
+      e.stopPropagation(); // Prevent this from triggering the outside click listener
+      filterModal.classList.toggle('show');
+    });
+  
+    // Close modal (and dropdowns) when clicking outside
+    document.addEventListener("click", function (event) {
+      const isClickInsideModal = filterModal.contains(event.target);
+      const isClickOnTrigger = filterTrigger.contains(event.target);
+  
+      if (!isClickInsideModal && !isClickOnTrigger) {
+        filterModal.classList.remove("show");
+  
+        // Close any dropdowns inside the modal
+        document.querySelectorAll(".dropdown-menu.show").forEach(drop => {
+          drop.classList.remove("show");
+        });
+  
+        // Reset aria-expanded on any pills
+        document.querySelectorAll(".pill[aria-expanded='true']").forEach(pill => {
+          pill.setAttribute("aria-expanded", "false");
+        });
+      }
+    });
+  </script>
+  
+  <script>
+  
+    function setupDropdownToggle(pillId, dropdownId) {
+      const pill = document.getElementById(pillId);
+      const dropdown = document.getElementById(dropdownId);
+  
+      if (!pill || !dropdown) return;
+  
+      pill.addEventListener("click", (e) => {
+        e.stopPropagation();
+  
+        // Close all other dropdowns
+        document.querySelectorAll(".dropdown-menu.show").forEach((menu) => {
+          if (menu !== dropdown) {
+            menu.classList.remove("show");
+          }
+        });
+  
+        // Reset aria on all other pills
+        document.querySelectorAll(".pill[aria-expanded='true']").forEach((otherPill) => {
+          if (otherPill !== pill) {
+            otherPill.setAttribute("aria-expanded", "false");
+          }
+        });
+  
+        const expanded = pill.getAttribute("aria-expanded") === "true";
+        pill.setAttribute("aria-expanded", String(!expanded));
+        dropdown.setAttribute("aria-hidden", String(expanded));
+        dropdown.classList.toggle("show", !expanded);
+      });
+    }
+
+  function capitalize(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
+  
+    setupDropdownToggle("ownershipPill", "ownershipDropdown");
+    setupDropdownToggle("manufacturingPill", "manufacturingDropdown");
+    setupDropdownToggle("companyPill", "companyDropdown");
+    setupDropdownToggle("scorePill", "scoreDropdown");
+
+    fetch("TheCanadaList.json")
+  .then(response => response.json())
+  .then(data => {
+    const groupMap = new Map();
+
+    data.forEach(item => {
+      const raw = (item["Ownership (Company)"] || "").trim();
+      if (!raw) return;
+
+      const normalized = normalizeCompanyName(raw);
+      if (!groupMap.has(normalized)) groupMap.set(normalized, new Set());
+      groupMap.get(normalized).add(raw);
+    });
+
+    // Build dropdown
+    const container = document.getElementById("companyDropdown");
+    
+    const sortedGroups = [...groupMap.keys()].sort();
+
+    sortedGroups.slice(0, 8).forEach(normalized => {
+      const displayName = [...groupMap.get(normalized)][0];  // show one actual company name
+      const label = document.createElement("label");
+      label.innerHTML = `<input type="checkbox" name="companyGroup" value="${normalized}"> ${displayName}`;
+      container.appendChild(label);
+    });
+
+    // Add 9th entry: "...search for more"
+    const hintLabel = document.createElement("label");
+    hintLabel.style.opacity = "0.6";
+    hintLabel.style.cursor = "default";
+    hintLabel.innerText = "...search for more";
+    container.appendChild(hintLabel);
+
+    // Save for use in filtering
+    window.companyNameGroups = groupMap;
+    setTimeout(() => {
+      if (products && products.length > 0) {
+        doFullFilter();
+      }
+    }, 0);
+  });
+  
+    document.addEventListener("click", function (event) {
+      const clickedInsideModal = filterModal.contains(event.target);
+      const clickedInsideDropdown = event.target.closest(".dropdown-menu");
+      const clickedOnPill = event.target.closest(".pill");
+      const clickedOnTrigger = filterTrigger.contains(event.target);
+  
+      if (!clickedInsideModal && !clickedOnTrigger) {
+        // Clicked outside modal: close everything
+        filterModal.classList.remove("show");
+  
+        document.querySelectorAll(".dropdown-menu.show").forEach(drop => {
+          drop.classList.remove("show");
+        });
+  
+        document.querySelectorAll(".pill[aria-expanded='true']").forEach(pill => {
+          pill.setAttribute("aria-expanded", "false");
+        });
+      } else if (!clickedInsideDropdown && !clickedOnPill) {
+        // Clicked inside modal, but not in a dropdown or pill → close dropdowns only
+        document.querySelectorAll(".dropdown-menu.show").forEach(drop => {
+          drop.classList.remove("show");
+        });
+  
+        document.querySelectorAll(".pill[aria-expanded='true']").forEach(pill => {
+          pill.setAttribute("aria-expanded", "false");
+        });
+      }
+    });
+  </script>
+  
+<script>
+  function filterDropdownOptions(input) {
+  const filter   = input.value.toLowerCase();
+  const dropdown = input.closest(".dropdown-menu");
+  const isCompany = dropdown.id === "companyDropdown";
+  const isOwnership = dropdown.id === "ownershipDropdown";
+  const isManufacturing = dropdown.id === "manufacturingDropdown";
+  const SPECIAL = new Set(["Canada", "hasCanada", "!USA"]);
+
+  if (isCompany && window.companyNameGroups) {
+    // 🟡 Collect previously checked values
+    const previouslyChecked = new Set(
+      Array.from(dropdown.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value)
+    );
+
+    // Clear labels – we’ll rebuild the list for Company
+    dropdown.querySelectorAll("label").forEach(label => label.remove());
+
+    const sortedGroups = [...window.companyNameGroups.keys()].sort();
+
+    const matchingGroups = sortedGroups.filter(normalized => {
+      const variants = window.companyNameGroups.get(normalized);
+      return [...variants].some(original =>
+        original.toLowerCase().includes(filter)
+      );
+    });
+
+    const toDisplay = filter.length > 0
+      ? matchingGroups
+      : sortedGroups.slice(0, 8);
+
+    toDisplay.forEach(normalized => {
+      const displayName = [...window.companyNameGroups.get(normalized)][0];
+      const label = document.createElement("label");
+
+      const isChecked = previouslyChecked.has(normalized) ? "checked" : "";
+
+      label.innerHTML = `<input type="checkbox" name="companyGroup" value="${normalized}" ${isChecked}> ${displayName}`;
+      dropdown.appendChild(label);
+    });
+
+    if (filter.length === 0 && sortedGroups.length > 8) {
+      const hintLabel = document.createElement("label");
+      hintLabel.innerText = "...search for more";
+      hintLabel.style.opacity = "0.6";
+      hintLabel.style.cursor = "default";
+      dropdown.appendChild(hintLabel);
+    }
+
+  } else if (isOwnership || isManufacturing) {
+    const name = isOwnership ? "ownershipCountry" : "manufacturingCountry";
+    const fullList = isOwnership ? window.allOwnershipCountries : window.allManufacturingCountries;
+
+    // Preserve checked items
+    const previouslyChecked = new Set(
+      Array.from(dropdown.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value)
+    );
+
+    // Remove non-special country labels and prior hint
+    dropdown.querySelectorAll("label").forEach(label => {
+      const input = label.querySelector("input");
+      if (input && !SPECIAL.has(input.value)) label.remove();
+    });
+    dropdown.querySelectorAll("label.hint").forEach(label => label.remove());
+
+    // Filter and render
+    const matching = fullList.filter(c => c.toLowerCase().includes(filter));
+
+    matching.forEach(country => {
+      const label = document.createElement("label");
+      const checked = previouslyChecked.has(country) ? "checked" : "";
+      label.innerHTML = `<input name="${name}" type="checkbox" value="${country}" ${checked}/> ${country}`;
+      dropdown.appendChild(label);
+    });
+
+    if (filter.length === 0) {
+      const hintLabel = document.createElement("label");
+      hintLabel.innerText = "...search for more";
+      hintLabel.className = "hint";
+      hintLabel.style.opacity = "0.6";
+      hintLabel.style.cursor = "default";
+      dropdown.appendChild(hintLabel);
+    }
+
+  } else {
+    // fallback: basic filtering behavior (just hide/show)
+    dropdown.querySelectorAll("label").forEach(label => {
+      const cb = label.querySelector('input[type="checkbox"]');
+      const text = label.textContent.toLowerCase();
+      label.style.display = text.includes(filter) ? "" : "none";
+    });
+  }
+}
+
+
+
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const el = document.getElementById("scoreSlider");
+      if (!el) return;
+    
+      noUiSlider.create(el, {
+        start: [1, 10],
+        connect: true,
+        step: 1,
+        range: { min: 1, max: 10 },
+        format: { to: v => Math.round(v), from: v => Number(v) }
+      });
+    
+      // update label
+      const label = document.getElementById("scoreLabel");
+      el.noUiSlider.on("update", v => { label.textContent = v.join(" – "); });
+    
+      // trigger filter on release
+      el.noUiSlider.on("change", () => { currentPage = 1; doFullFilter(); });
+    
+      // make it visible to doFullFilter()
+      window.scoreSlider = el;
+    });
+    </script>
+    
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.addEventListener("change", (e) => {
+    if (!e.target.matches("input[type='checkbox']")) return;
+
+    const name = e.target.name;
+    const id = e.target.id;
+
+    if (
+      ["ownershipCountry", "manufacturingCountry", "companyGroup", "canadaScore"].includes(name) ||
+      ["ownershipCanada", "manufacturingCanada"].includes(id)
+    ) {
+      currentPage = 1;
+      doFullFilter();
+    }
+  });
+});
+
+function populateCountryDropdowns(products) {
+  const ownershipDropdown = document.getElementById("ownershipDropdown");
+  const manufacturingDropdown = document.getElementById("manufacturingDropdown");
+
+  const SPECIAL = new Set(["Canada", "hasCanada", "!USA"]);
+
+  const ownershipSet = new Set();
+  const manufacturingSet = new Set();
+
+  // Collect country data
+  products.forEach(p => {
+    const own = p["Ownership (Country)"];
+    if (own) own.split(/[;/]/).map(x => x.trim()).forEach(c => ownershipSet.add(c));
+
+    const manuf = p["Manufacturing (Countries)"];
+    if (manuf) {
+      manuf.split(/[;/]/)
+          .map(c => c.trim())
+          .filter(c => c.length > 0)
+          .forEach(c => manufacturingSet.add(c));
+    }
+  });
+
+  function sortWithPriority(set) {
+    const all = Array.from(set).filter(c => !SPECIAL.has(c));
+    const top = PRIORITY.filter(c => all.includes(c));
+    const rest = all.filter(c => !PRIORITY.includes(c)).sort((a, b) => a.localeCompare(b));
+    return { top, rest, all };
+  }
+
+  function renderCountryDropdown(dropdown, countrySet, name, windowKey) {
+    // Remove non-special entries
+    dropdown.querySelectorAll("label").forEach(label => {
+      const input = label.querySelector("input");
+      if (input && !SPECIAL.has(input.value)) label.remove();
+    });
+    dropdown.querySelectorAll("label.hint").forEach(e => e.remove());
+
+    const fullList = Array.from(countrySet).filter(c => !SPECIAL.has(c)).sort((a, b) => a.localeCompare(b));
+    const initialDisplay = fullList.slice(0, 6);
+
+    initialDisplay.forEach(country => {
+      const label = document.createElement("label");
+      label.innerHTML = `<input name="${name}" type="checkbox" value="${country}"/> ${country}`;
+      dropdown.appendChild(label);
+    });
+
+    const hintLabel = document.createElement("label");
+    hintLabel.innerText = "...search for more";
+    hintLabel.className = "hint";
+    hintLabel.style.opacity = "0.6";
+    hintLabel.style.cursor = "default";
+    dropdown.appendChild(hintLabel);
+  
+    // Save for dynamic filtering
+    window[windowKey] = fullList;
+  }
+
+  renderCountryDropdown(ownershipDropdown, ownershipSet, "ownershipCountry", "allOwnershipCountries");
+  renderCountryDropdown(manufacturingDropdown, manufacturingSet, "manufacturingCountry", "allManufacturingCountries");
+}
+
+let loadingNextPage = false;
+
+if (isMobile) {
+  window.addEventListener('scroll', () => {
+    if (loadingNextPage) return;
+
+    const scrollThreshold = 300;
+    const scrollY = window.scrollY;
+    const visible = window.innerHeight;
+    const pageHeight = document.body.offsetHeight;
+
+    if (pageHeight - (scrollY + visible) < scrollThreshold) {
+      const totalPages = Math.ceil(filteredProducts.length / pageSize) || 1;
+      if (currentPage < totalPages) {
+        loadingNextPage = true;
+        currentPage++;
+        const nextPageProducts = filteredProducts.slice(
+          (currentPage - 1) * pageSize,
+          currentPage * pageSize
+        );
+        patchTableAppend(nextPageProducts);
+        loadingNextPage = false;
+      }
+    }
+  });
+}
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What is This Site About?</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <meta property="og:title" content="Contact The CANADA List" />
+  <meta property="og:description" content="Have a question or media request? Get in touch with the team behind The CANADA List." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thecanadalist.ca/contact.html" />
+  <meta property="og:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg" />
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0C2RC3LEH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Z0C2RC3LEH');
+</script>
+
+</head>
+
+<body>
+
+  <!-- Call to Action Bar -->
+  <div class="cta-bar" id="ctaBar">
+    <div class="cta-content">
+      <span>Stay apprised of Canadian product info via our newsletter:</span>
+      <form action="https://formsubmit.co/newsletter@thecanadalist.ca" method="POST" class="cta-form">
+        <input type="email" name="email" placeholder="Enter your email" required maxlength="100"/>
+        <div style="position: absolute; left: -9999px;" aria-hidden="true">
+          <label>Leave this field blank</label>
+          <input type="text" name="website">
+        </div>
+        <button type="submit">Subscribe</button>
+        <input type="hidden" name="_subject" value="New Newsletter Signup">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_autoresponse" value="Thanks for signing up for updates from The CANADA List!">
+      </form>
+      <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
+    </div>
+  </div>
+
+  
+  <nav class="top-nav">
+    <div class="nav-container">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul class="nav-links" id="mobileMenu">
+        <li><a href="index.html">The List</a></li>
+        <li><a href="submit.html">Submit a Product</a></li>
+        <li><a href="support.html">Support the Site</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <header id="siteHeader">
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Flag_of_Canada.svg" alt="Canadian flag" class="flag">
+    <h1><span>The</span> <span style="color: #cc0000">CANADA</span> <span>List</span></h1>
+    <div class="subtitle">Know what you're buying. Support what matters.</div>
+  </header>
+  <main style="padding: 20px; max-width: 1000px; margin: auto;">
+
+<h1>Contact Us</h1>
+
+<div class="section">
+    <h2>     General Inquiries</h2>
+    <div class="contact-info">
+      <p>     Email: <a href="mailto:info@thecanadalist.com">info@thecanadalist.com</a></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>     Feature Requests/Suggestions</h2>
+    <p>     Have a suggestion for a new feature? We'd love to hear from you!</p>
+    <div class="contact-info">
+      <p>     Email: <a href="mailto:info@thecanadalist.com">suggestions@thecanadalist.com</a></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>     Think you've found an Error?</h2>
+    <p>     We're always working to maintain the most accurate and up to date information possible, but mistakes do happen and information does change. 
+      If you think you've noticed a mistake, please let us know and we'll make every effort to verify/fix it as soon as possible</p>
+    <div class="contact-info">
+      <p>     Email: <a href="mailto:media@thecanadalist.com">mistakes@thecanadalist.com</a></p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>     Media Inquiries</h2>
+    <div class="contact-info">
+      <p>     Email: <a href="mailto:media@thecanadalist.com">media@thecanadalist.com</a></p>
+    </div>
+  </div>
+
+  <footer style="text-align: center; padding: 20px; font-size: 0.8em; color: #555;">
+    <a href="terms.html" style="color: #0077cc; text-decoration: none; margin-right: 15px;">
+      Terms of Service
+    </a>
+    <a href="disclaimer.html" style="color: #0077cc; text-decoration: none;">
+      Liability Statement
+    </a>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
