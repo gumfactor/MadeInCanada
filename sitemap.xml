@@ -1,16 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://thecanadalist.ca/</loc></url>
-  <url><loc>https://thecanadalist.ca/about.html</loc></url>
-  <url><loc>https://thecanadalist.ca/scoring.html</loc></url>
-  <url><loc>https://thecanadalist.ca/submit.html</loc></url>
-  <url><loc>https://thecanadalist.ca/support.html</loc></url>
-  <url><loc>https://thecanadalist.ca/contact.html</loc></url>
-  <url><loc>https://thecanadalist.ca/terms.html</loc></url>
-  <url><loc>https://thecanadalist.ca/disclaimer.html</loc></url>
-  <url><loc>https://thecanadalist.ca/Blogs-homepage.html</loc></url>
-  <url><loc>https://thecanadalist.ca/blog-2025-04-01-Why%20'Made%20in%20Canada'%20Isn't%20Always%20What%20it%20Seems.html</loc></url>
-  <url><loc>https://thecanadalist.ca/blogs-2025-04-12-Breakfast%20Cereal%20Breakdown%20-%20Which%20Cereals%20are%20Truly%20Canadian.html</loc></url>
-  <url><loc>https://thecanadalist.ca/tipline.html</loc></url>
+  
+  <!-- Core Pages -->
+  <url>
+    <loc>https://thecanadalist.ca/</loc>
+    <lastmod>2025-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://thecanadalist.ca/about.html</loc>
+    <lastmod>2025-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thecanadalist.ca/scoring.html</loc>
+    <lastmod>2025-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thecanadalist.ca/submit.html</loc>
+    <lastmod>2025-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://thecanadalist.ca/support.html</loc>
+    <lastmod>2025-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://thecanadalist.ca/contact.html</loc>
+    <lastmod>2025-04-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://thecanadalist.ca/terms.html</loc>
+    <lastmod>2025-04-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://thecanadalist.ca/disclaimer.html</loc>
+    <lastmod>2025-04-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://thecanadalist.ca/tipline.html</loc>
+    <lastmod>2025-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Blog Index -->
+  <url>
+    <loc>https://thecanadalist.ca/Blogs-homepage.html</loc>
+    <lastmod>2025-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://thecanadalist.ca/blog-2025-04-01-Why%20'Made%20in%20Canada'%20Isn't%20Always%20What%20it%20Seems.html</loc>
+    <lastmod>2025-04-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thecanadalist.ca/blogs-2025-04-12-Breakfast%20Cereal%20Breakdown%20-%20Which%20Cereals%20are%20Truly%20Canadian.html</loc>
+    <lastmod>2025-04-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thecanadalist.ca/blog%202025-04-26-Which%20Burger%20Joints%20are%20the%20most%20Canadian.html</loc>
+    <lastmod>2025-04-26</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thecanadalist.ca/blog%202025-04-28-A%20Call%20to%20Arms%20-%20Protect%20our%20Country.html</loc>
+    <lastmod>2025-04-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
+
 
