@@ -152,7 +152,7 @@
         <li><a href="index.html">The List</a></li>
         <li><a href="submit.html">Submit a Product</a></li>
         <li><a href="support.html">Support the Site</a></li>
-        <li><a href="Blogs-homepage.html" class="highlight">Blog</a></li>
+        <li><a href="blogs-homepage.html" class="highlight">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <div class="nav-right-tip">
@@ -320,6 +320,8 @@
     <p>Still, none of these brands scored a 1 or 2. Many do employ Canadians, manufacture domestically, or use local ingredients. That nuance is why The CANADA List exists—to cut through the symbols and tell the full story using our CANADA Score framework based on four pillars: ownership, manufacturing, sourcing, and job creation.</p>
 
     <p>So: consult the list. Buy with awareness. And support the economy that surrounds you.</p>
+
+    <p><a href="blogs-homepage.html">← Back to Blog</a></p>
   </main>
 
   <footer style="text-align: center; padding: 20px; font-size: 0.8em; color: #555;">
@@ -332,5 +334,26 @@
       document.querySelector('.top-nav').classList.toggle('mobile-nav-open');
     }
   </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const ctaBar = document.getElementById("ctaBar");
+    const closeBtn = document.getElementById("closeCTA");
+
+    if (localStorage.getItem("ctaDismissed") === "true") {
+      ctaBar.style.display = "none";
+      document.body.style.paddingTop = "85px";
+      document.querySelector('.top-nav').style.top = "0";
+    }
+
+    closeBtn.addEventListener("click", () => {
+      localStorage.setItem("ctaDismissed", "true");
+      ctaBar.style.display = "none";
+      document.body.style.paddingTop = "85px";
+      document.querySelector('.top-nav').style.top = "0";
+    });
+  });
+</script>
+
 </body>
 </html>

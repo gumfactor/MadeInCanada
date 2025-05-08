@@ -116,6 +116,13 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://thecanadalist.ca/WR-May-8.html</loc>
+    <lastmod>2025-05-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
 
 
