@@ -1171,6 +1171,15 @@ ul li {
     max-height: 300px;
     overflow-y: auto;
   }
+  
+/* Polls*/
+
+ .poll-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
 
   .category-item {
     font-size: 14px;
