@@ -1,7 +1,3 @@
-// A first-draft example of how you might organize your categories.
-// Each "label" corresponds to a top-level or sub-level category. 
-// You can rename or shuffle items around as you wish.
-
 const categoriesData = [
   {
     label: "Food & Beverages",

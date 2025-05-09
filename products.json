@@ -1,0 +1,90 @@
+[
+  {
+    "brand": "President's Choice Decadent Chocolate Chip Cookies",
+    "type": "Cookies",
+    "ownership": "Canadian-owned (Loblaw Companies)",
+    "manufacturing": "Primarily Canada",
+    "rating": 9,
+    "notes": "Canadian brand, manufactured in Canada, but some ingredients (e.g., cocoa, vanilla) are imported."
+  },
+  {
+    "brand": "President's Choice Decadent Chocolate Chip Cookies",
+    "type": "Cookies",
+    "ownership": "Canadian-owned (Loblaw Companies)",
+    "manufacturing": "Primarily Canada",
+    "rating": 9,
+    "notes": "Canadian brand, manufactured in Canada, but some ingredients (e.g., cocoa, vanilla) are imported."
+  },
+  {
+    "brand": "Irresistibles Chocolate Chip Cookies",
+    "type": "Cookies",
+    "ownership": "Canadian-owned (Metro Inc.)",
+    "manufacturing": "Primarily Canada",
+    "rating": 9,
+    "notes": "Metro's house brand is Canadian-made, but some ingredients are sourced globally."
+  },
+  {
+    "brand": "Dare Bear Paws",
+    "type": "Cookies",
+    "ownership": "Canadian-owned (Dare Foods)",
+    "manufacturing": "Multiple locations in Canada",
+    "rating": 10,
+    "notes": "Fully Canadian-owned and manufactured, using Canadian ingredients whenever possible."
+  },
+  {
+    "brand": "Chapman's Ice Cream",
+    "type": "Dairy",
+    "ownership": "Canadian-owned (Chapman\u2019s)",
+    "manufacturing": "Ontario, Canada",
+    "rating": 10,
+    "notes": "Fully Canadian-owned and made in Canada."
+  },
+  {
+    "brand": "Quaker Oats",
+    "type": "Cereal",
+    "ownership": "U.S.-owned (PepsiCo)",
+    "manufacturing": "Peterborough, Ontario",
+    "rating": 6,
+    "notes": "Made in Canada, but foreign-owned."
+  },
+  {
+    "brand": "President's Choice Decadent Chocolate Chip Cookies",
+    "type": "Chocolate Chip",
+    "ownership": "Canadian-owned (Loblaw Companies)",
+    "manufacturing": "Made in Canada",
+    "rating": 9,
+    "notes": "Owned and distributed by a Canadian company. Made in Canada, but some ingredients (e.g., cocoa, vanilla) are imported."
+  },
+  {
+    "brand": "Dare Ultimate Chocolate Chip Cookies",
+    "type": "Chocolate Chip",
+    "ownership": "Canadian-owned (Dare Foods)",
+    "manufacturing": "Made and produced in Canada",
+    "rating": 10,
+    "notes": "Owned, produced, and distributed in Canada. Uses primarily Canadian ingredients where possible."
+  },
+  {
+    "brand": "Chips Ahoy!",
+    "type": "Chocolate Chip",
+    "ownership": "U.S.-owned (Mondel\u0113z International)",
+    "manufacturing": "Made in Canada",
+    "rating": 6,
+    "notes": "Manufactured in Canada but owned and distributed by a U.S. company."
+  },
+  {
+    "brand": "Dad's Oatmeal Cookies",
+    "type": "Oatmeal",
+    "ownership": "U.S.-owned (Mondel\u0113z International)",
+    "manufacturing": "Made in Canada",
+    "rating": 6,
+    "notes": "Produced in Canada, but owned and distributed by a U.S. company."
+  },
+  {
+    "brand": "Felix & Norton Cookies",
+    "type": "Other Specialty Cookies",
+    "ownership": "Canadian-owned",
+    "manufacturing": "Made in Canada (Markham, Ontario)",
+    "rating": 10,
+    "notes": "Fully owned, made, and distributed in Canada. Premium gourmet cookies."
+  }
+]

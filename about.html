@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Find Canadian-Made Products | The CANADA List</title>
   <meta name="description" content="Discover which products are truly Canadian. Search by category, brand, or score to support local jobs and industry.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="stylesheet" href="styles.css">
+  <link rel="canonical" href="https://thecanadalist.ca/about.html">
 
   <meta property="og:title" content="Why The CANADA List Exists" />
   <meta property="og:description" content="Learn why this project was created and how it helps Canadians make informed, patriotic buying decisions." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://thecanadalist.ca/about.html" />
   <meta property="og:image" content="https://thecanadalist.ca/images/The Canada List Banner.jpg" />
+  <meta property="og:site_name" content="The CANADA List" />
+  <meta property="og:locale" content="en_CA" />
+
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Why The CANADA List Exists">
@@ -25,7 +28,58 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="robots" content="index, follow">
 
-  <!-- Google tag (gtag.js) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "About The CANADA List",
+      "headline": "About The CANADA List",
+      "description": "Learn why this project exists and how it empowers Canadians to support local jobs and products.",
+      "url": "https://thecanadalist.ca/about.html",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://thecanadalist.ca/about.html"
+      },
+      "image": "https://thecanadalist.ca/images/The%20Canada%20List%20Banner.jpg",
+      "isAccessibleForFree": true,
+      "keywords": "Canadian economy, local products, Canadian-made, support Canada",
+      "datePublished": "2025-04-01",
+      "dateModified": "2025-04-01",
+      "publisher": {
+        "@type": "Organization",
+        "name": "The CANADA List",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://thecanadalist.ca/images/The%20Canada%20List%20Banner.jpg",
+          "@id": "https://thecanadalist.ca/logo"
+        }
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://thecanadalist.ca/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "https://thecanadalist.ca/about.html"
+          }
+        ]
+      }
+      </script>
+      
+    
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0C2RC3LEH"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -110,7 +164,7 @@
         <li><a href="index.html">The List</a></li>
         <li><a href="submit.html">Submit a Product</a></li>
         <li><a href="support.html">Support the Site</a></li>
-        <li><a href="Blogs-homepage.html" class="highlight">Blog</a></li>
+        <li><a href="blogs-homepage.html" class="highlight">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
   
@@ -150,8 +204,8 @@
   </footer>
   <script>
     function toggleMenu() {
-    document.querySelector('.top-nav').classList.toggle('mobile-nav-open');
-  }
+      document.getElementById("mobileMenu").classList.toggle("show");
+    }
   </script> 
 
 <script>

@@ -181,48 +181,45 @@
   </header>
   <main style="padding: 20px; max-width: 1000px; margin: auto;">
 
-    <section class="form-section" style="max-width: 600px;">
-    <form action="https://script.google.com/macros/s/AKfycbyTygvvwBhJJ2PDMwrhL8ZWirUBCRe5lQmUPCV13OjTMHA2IjBVA__46t48zj3DUer2/exec"
-      method="POST"
-      target="hidden_iframe"
-      onsubmit="showThankYouMessage()">
-
+    
+    <form id="featurePollForm" method="POST" style="background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); max-width: 600px; margin: 40px auto; font-family: Arial, sans-serif;">
         <h2 style="color: #cc0000; text-align: center; margin-bottom: 20px;">Which of the following potential features would you find most valuable?</h2>
       
-        <fieldset style="border: none; margin-bottom: 20px;">
-          <legend style="font-weight: 600; margin-bottom: 10px; color: #333;">Please select your top choice:</legend>
-          <br>
-          <label class="poll-option"><input type="radio" name="response" value="More detailed filter options" required> More detailed filter options</label><br>
-          <label class="poll-option"><input type="radio" name="response" value="Saved filter settings" required> The ability to have your filter settings saved at each login</label><br>
-          <label class="poll-option"><input type="radio" name="response" value="Detailed score breakdowns" required> Detailed score breakdowns for each of ownership, manufacturing, sourcing and job creation</label><br>
-          <label class="poll-option"><input type="radio" name="response" value="Saved favourites / Shopping list" required> The ability to save favourite products or create a personal shopping list</label><br>
-          <label class="poll-option"><input type="radio" name="response" value="A better mobile experience" required> A better mobile experience</label>
-        </fieldset>
+        <label for="email" style="display: block; font-weight: 600; margin-bottom: 8px; color: #333;">Your Email Address:</label>
+        <input type="email" name="user" id="email" required placeholder="you@example.com"
+               style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 20px; font-size: 16px; background: #fafafa;">
       
-        <label for="email" style="display: block; margin: 10px 0; text-align: center;">Email</label>
-        <input type="email" id="email" name="user" placeholder="you@example.com" maxlength="100" style="display: block; margin: 0 auto 20px auto; padding: 10px; width: 300px; max-width: 90%; border: 1px solid #ccc; border-radius: 4px;">
+        <fieldset style="border: none; margin-bottom: 20px;">
+          <legend style="font-weight: 600; margin-bottom: 10px; color: #333;">Choose a category:</legend>
+          <label class="poll-option">
+            <input type="radio" name="response" value="More detailed filter options" required>
+            More detailed filter options 
+          </label>
+          <label class="poll-option">
+            <input type="radio" name="response" value="Saved filter settings" required>
+            The ability to have your filter settings saved at each login
+          </label>
+          <label class="poll-option">
+            <input type="radio" name="response" value="Detailed score breakdowns" required>
+            Detailed score breakdowns for each of ownership, manufacturing, sourcing and job creation
+          </label>
+          <label class="poll-option">
+            <input type="radio" name="response" value="Saved favourites / Shopping list" required>
+            The ability to save favourite products or create a personal shopping list
+          </label>
+          <label class="poll-option">
+            <input type="radio" name="response" value="A better mobile experience" required>
+            A better mobile experience
+          </label>
+        </fieldset>
       
         <button type="submit"
                 style="background-color: #cc0000; color: #fff; border: none; border-radius: 6px; padding: 12px 20px; font-size: 16px; font-weight: bold; cursor: pointer; display: block; margin: auto;">
           Submit Vote
         </button>
-      
-        <div id="formResponseMessage" style="display: none; text-align: center; margin-top: 20px; font-weight: bold; color: #2e7d32;">
-          ✅ Thanks for voting!
-        </div>
       </form>
-    </section>
       
-      <iframe name="hidden_iframe" style="display:none;"></iframe>
-      
-      <script>
-        function showThankYouMessage() {
-          setTimeout(() => {
-            document.getElementById("formResponseMessage").style.display = "block";
-          }, 500);
-        }
-      </script>
-      
+      <div id="formResponseMessage" style="display: none; text-align: center; margin-top: 20px; font-weight: bold;"></div>
 
 <footer style="text-align: center; padding: 20px; font-size: 0.8em; color: #555;">
     <a href="terms.html" style="color: #0077cc; text-decoration: none; margin-right: 15px;">
