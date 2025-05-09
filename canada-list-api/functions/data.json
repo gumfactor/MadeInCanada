@@ -1,0 +1,20 @@
+[
+    {
+      "Product Name": "Dempster's Bread",
+      "Ownership (Company)": "Weston Foods",
+      "CANADIAN Score (out of 10)": 4,
+      "Product Category": "Bakery",
+      "Ownership (Country)": "Canada",
+      "Manufacturing (Countries)": "Canada",
+      "Notes": "Owned by Canadian company but makes use of global supply chains."
+    },
+    {
+      "Product Name": "Red River Cereal",
+      "Ownership (Company)": "Sunny Boy Foods Ltd.",
+      "CANADIAN Score (out of 10)": 10,
+      "Product Category": "Breakfast",
+      "Ownership (Country)": "Canada",
+      "Manufacturing (Countries)": "Canada",
+    "Notes": "Owned by Canadian company but makes use of global supply chains."
+  }
+]
