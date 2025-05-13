@@ -120,33 +120,33 @@
     </form>
     <button id="closeCTA" aria-label="Close CTA Bar">✕</button>
       
-          <script>
-            document.getElementById("myForm").addEventListener("submit", async function(e) {
-              e.preventDefault();
-      
-              const email = document.getElementById("email").value;
-      
-              const brevoApiKey = "API SECRET";
-      
-              const data = {
-                email: email,
-                listIds: [2], // 👈 Replace with your actual list ID number
-                updateEnabled: true // Optional: updates existing contacts if already subscribed
-              };
-      
-              await fetch("https://api.brevo.com/v3/contacts", {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                  "api-key": brevoApiKey
-                },
-                body: JSON.stringify(data)
-              });
-      
-              alert("Thanks for subscribing!");
-              e.target.reset();
-            });
-          </script>
+    <script>
+      document.getElementById("myForm").addEventListener("submit", async function(e) {
+        e.preventDefault();
+    
+        const email = document.getElementById("email").value;
+    
+        const hubspotUrl = "https://api.hsforms.com/submissions/v3/integration/submit/341701216/01883640-9eae-4052-a49b-78e8846301e3";
+    
+        const data = {
+          fields: [
+            { name: "email", value: email }
+          ]
+        };
+    
+        await fetch(hubspotUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
+    
+        alert("Thanks for subscribing!");
+        e.target.reset();
+      });
+    </script>
+    
   </div>
 </div>
 
