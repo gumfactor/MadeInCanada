@@ -67,3 +67,7 @@ node_modules/
 
 # dataconnect generated files
 .dataconnect
+
+# Don't commit BFG or secret references
+bfg-*.jar
+secrets.txt
