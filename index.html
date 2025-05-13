@@ -190,9 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  if (window.scoreSlider) {
-    window.scoreSlider.noUiSlider.on('change', applyAdvancedFilters);
-  }
+  
 });
 
 </script>
@@ -214,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- Call to Action Bar -->
 <div class="cta-bar" id="ctaBar">
   <div class="cta-content">
-    <span>Stay apprised of Canadian product info via our newsletter:</span>
+    <span>This site is just the beginning! Stay apprised of Canadian product info and site updates via our newsletter:</span>
     <form id="myForm" class="cta-form">
       <input id="email" type="email" name="email" placeholder="Enter your email" required maxlength="100" />
       <div style="position: absolute; left: -9999px;" aria-hidden="true">
@@ -447,6 +445,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let products = [];
     let selectedCategory = "";
+    let totalPages = 1;
 
     // We'll keep a global array of filtered data
     let filteredProducts = [];
@@ -731,7 +730,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function updatePaginationAndRender() {
-  const totalPages = Math.ceil(filteredProducts.length / pageSize) || 1;
+  totalPages = Math.ceil(filteredProducts.length / pageSize) || 1;
   if (currentPage > totalPages) currentPage = totalPages;
   if (currentPage < 1) currentPage = 1;
 
@@ -1240,6 +1239,11 @@ function patchTableAppend(newProducts) {
     
       // make it visible to doFullFilter()
       window.scoreSlider = el;
+      el.noUiSlider.on("change", () => {
+        currentPage = 1;
+        doFullFilter();
+        applyAdvancedFilters();
+      });
     });
     </script>
     
@@ -1337,7 +1341,6 @@ if (isMobile) {
     const pageHeight = document.body.offsetHeight;
 
     if (pageHeight - (scrollY + visible) < scrollThreshold) {
-      const totalPages = Math.ceil(filteredProducts.length / pageSize) || 1;
       if (currentPage < totalPages) {
         loadingNextPage = true;
         currentPage++;
