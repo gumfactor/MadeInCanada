@@ -67,7 +67,7 @@
 
   <!-- Blog Index -->
   <url>
-    <loc>https://thecanadalist.ca/Blogs-homepage.html</loc>
+    <loc>https://thecanadalist.ca/blogs-homepage.html</loc>
     <lastmod>2025-04-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -75,7 +75,7 @@
 
   <!-- Blog Posts -->
   <url>
-    <loc>https://thecanadalist.ca/blog-2025-04-01-Why-'Made-in-Canada'-Isn't-Always-What-it-Seems.html</loc>
+    <loc>https://thecanadalist.ca/blog-2025-04-01-Why-Made-in-Canada-Isnt-Always-What-it-Seems.html</loc>
     <lastmod>2025-04-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
